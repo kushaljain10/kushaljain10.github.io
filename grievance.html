@@ -6,7 +6,12 @@
 Grievance
 </title>
 <style>
-.select-list {
+@media only screen and (max-width: 640px) {
+    #issue-box , #name-box {
+        width: 100%;
+    }
+}
+#select-list {
 	margin-left: auto;
 	margin-right:auto;
 	margin-top:auto;
@@ -127,11 +132,11 @@ button:hover {
   <div id="forms">
   <form>
   <label class="labels" for="name">Name: </label>
-  <input class="input-box" type="text" maxlength="30" name="name" size="30">
+  <input class="input-box" type="text" maxlength="30" name="name" size="30" id="name-box">
   <br>
   <label class="labels" for="list">Workshop Chosen: </label>
   <br>
-  <select name="list" class="select-list">
+  <select name="list" id="select-list">
 	<option value="Advertising">Advertising and Marketing</option>
 	<option value="Android">Android App Development</option>
 	<option value="AI">Artificial Intelligence</option>
