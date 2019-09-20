@@ -1,3 +1,5 @@
+<html>
 <?
 echo "hello";
 ?>
+</html>
