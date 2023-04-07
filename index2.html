@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portrait TV Example</title>
+    <style>
+      /* Define the styles for the iframe container */
+      #iframe-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vw;
+        transform: rotate(90deg) translateX(-100%);
+        transform-origin: left;
+      }
+      
+      /* Define the styles for the iframe */
+      #rotated-iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="iframe-container">
+      <iframe id="rotated-iframe" src="https://www.upraised.co"></iframe>
+    </div>
+  </body>
+</html>
