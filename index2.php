@@ -1,5 +1,0 @@
-<html>
-<?
-echo "hello";
-?>
-</html>
