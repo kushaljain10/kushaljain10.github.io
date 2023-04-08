@@ -28,10 +28,39 @@
   <body>
     <div id="image-container">
       <!-- <img id="rotated-image" src="https://i.ibb.co/M1BsYc5/Mint-2.png"> -->
-      <img id="rotated-image" src="./IPL CSK vs MI.png">
+      <img id="rotated-image" src="./8th April.png">
     </div>
   </body>
   <script>
+var images = [
+    "./8th April.png",
+    "./IPL CSK vs MI.png"
+];
 
+var currentIndex = 0;
+
+setInterval(function() {
+    var nextIndex = (currentIndex + 1) % images.length;
+    var currentImage = document.getElementById("rotated-image");
+    var nextImage = new Image();
+    nextImage.src = images[nextIndex];
+    nextImage.onload = function() {
+        currentImage.src = nextImage.src;
+        fadeIn(currentImage);
+    }
+    currentIndex = nextIndex;
+}, 10000);
+
+function fadeIn(element) {
+    var op = 0.1;  // initial opacity
+    element.style.opacity = op;
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        op += op * 0.1;
+    }, 50);
+}
   </script>
 </html>
