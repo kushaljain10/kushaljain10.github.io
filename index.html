@@ -19,6 +19,9 @@
   height: 100vw;
   width: 100vh;
 }
+.card-body {
+  background-color: #333 !important;
+}
       /* #rotated-iframe {
     position: absolute;
     top: -53vh;
@@ -37,4 +40,10 @@
       <iframe id="rotated-iframe" scrolling="no" src="https://www.tournifyapp.com/live/blrxzo/standings"></iframe>
     </div>
   </body>
+  <script>
+    window.onload = function() {
+      const iframe = document.getElementById('rotated-iframe');
+      iframe.style.filter = 'invert(100%)';
+};
+  </script>
 </html>
