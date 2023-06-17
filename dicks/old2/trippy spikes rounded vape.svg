@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1428)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<mask id="mask0_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="84" y="340" width="344" height="160">
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+</mask>
+<g mask="url(#mask0_75_1428)">
+<circle cx="256" cy="336.328" r="327" fill="#C2FD52"/>
+<circle cx="255.999" cy="336.327" r="287.206" fill="#FF00B1"/>
+<circle cx="256" cy="336.329" r="253.468" fill="#AD00FF"/>
+<circle cx="256" cy="336.328" r="213.675" fill="#00A8FF"/>
+<circle cx="256" cy="336.328" r="180.802" fill="#C2FD52"/>
+<circle cx="256.001" cy="336.329" r="148.794" fill="#D22D27"/>
+<circle cx="256.001" cy="336.329" r="120.246" fill="#FFB74A"/>
+<circle cx="256.001" cy="336.329" r="87.373" fill="#AD00FF"/>
+<circle cx="256.324" cy="336.652" r="53.8936" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="25.6689" fill="#C2FD52"/>
+</g>
+<mask id="mask1_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="196" y="96" width="120" height="376">
+<rect x="196" y="96" width="120" height="376" fill="#F15824"/>
+</mask>
+<g mask="url(#mask1_75_1428)">
+<circle cx="256" cy="269.672" r="335" fill="#C2FD52"/>
+<circle cx="255.999" cy="269.671" r="294.233" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="259.669" fill="#AD00FF"/>
+<circle cx="256" cy="269.672" r="218.902" fill="#00A8FF"/>
+<circle cx="256" cy="269.672" r="185.225" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="152.434" fill="#D22D27"/>
+<circle cx="256" cy="269.672" r="123.188" fill="#FFB74A"/>
+<circle cx="256.001" cy="269.673" r="89.5106" fill="#AD00FF"/>
+<circle cx="256.332" cy="270.004" r="55.2121" fill="#FF00B1"/>
+<path d="M262 96H250V132H262V96Z" fill="#E3E3E3"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1428">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.98 71.0202L147.825 48.9102V71.0202L194.055 48.9102V71.0202L232.58 48.9102V71.0202V103.18L111.98 103.18V71.0202Z" fill="#121212"/>
+<rect x="111.98" y="103.18" width="8.04" height="26.8" fill="#121212"/>
+<rect x="224.54" y="103.18" width="8.04" height="26.8" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M128.84 136.69C128.84 126.329 137.239 117.93 147.6 117.93V117.93V117.93C157.961 117.93 166.36 126.329 166.36 136.69V136.69C166.36 147.051 157.961 155.45 147.6 155.45V155.45C137.239 155.45 128.84 147.051 128.84 136.69V136.69V136.69Z" fill="#121212" fill-opacity="0.4"/>
+<path d="M128.84 136.69V136.69C128.84 147.051 137.239 155.45 147.6 155.45V155.45C157.961 155.45 166.36 147.051 166.36 136.69V136.69C166.36 126.329 157.961 117.93 147.6 117.93V117.93V117.93C137.239 117.93 128.84 126.329 128.84 136.69V136.69ZM128.84 136.69L110.08 118.6" stroke="#121212" stroke-width="4.02"/>
+<path d="M166.36 136.02H177.08" stroke="#121212" stroke-width="4.02"/>
+<path d="M177.08 136.69C177.08 126.329 185.479 117.93 195.84 117.93V117.93V117.93C206.201 117.93 214.6 126.329 214.6 136.69V136.69V136.69C214.6 147.051 206.201 155.45 195.84 155.45V155.45C185.479 155.45 177.08 147.051 177.08 136.69V136.69Z" fill="#121212" fill-opacity="0.4"/>
+<path d="M214.6 136.69V136.69C214.6 126.329 206.201 117.93 195.84 117.93V117.93V117.93C185.479 117.93 177.08 126.329 177.08 136.69V136.69C177.08 147.051 185.479 155.45 195.84 155.45V155.45C206.201 155.45 214.6 147.051 214.6 136.69V136.69ZM214.6 136.69L233.36 118.6" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M155.177 202.82H188.2" stroke="#121212" stroke-width="4.02"/>
+<rect width="10.72" height="10.72" transform="matrix(1 0 0 -1 175.47 213.539)" fill="#2D2D2D" stroke="#121212" stroke-width="4.02"/>
+<rect width="16.08" height="42.88" transform="matrix(1 0 0 -1 172.79 256.419)" fill="#2D2D2D" stroke="#121212" stroke-width="4.02"/>
+<rect width="16.08" height="8.04" transform="matrix(1 0 0 -1 172.79 221.579)" fill="white" stroke="#121212" stroke-width="4.02"/>
+<rect width="5.36" height="5.36" transform="matrix(1 0 0 -1 178.15 235.278)" fill="#D22D27"/>
+</svg>
+</g></svg>

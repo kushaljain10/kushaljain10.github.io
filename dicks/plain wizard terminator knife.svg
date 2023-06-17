@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+<path d="M262 96H250V132H262V96Z" fill="#F15824">
+<animate attributeName="fill" values="#F15824; #F15824; #fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#F15824" keyTimes="0; 0.74; 0.76; 0.78;0.8;0.82;0.84;0.86;0.88;0.9;0.92;0.94;0.96;0.98;1" dur="5s" repeatCount="indefinite" />
+</path>
+</g>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M231.82 97.8198H111.22V71.0198L180.23 10.3848H231.82L201.67 25.1248V53.2648L231.82 71.0198V97.8198Z" fill="#AD00FF"/>
+<rect x="71.02" y="97.8198" width="201" height="10.72" fill="#AD00FF"/>
+<rect x="111.22" y="87.0996" width="120.6" height="10.72" fill="#FFB039"/>
+<path d="M186.93 18.7598L188.735 24.3153H194.577L189.851 27.7488L191.656 33.3043L186.93 29.8708L182.204 33.3043L184.009 27.7488L179.284 24.3153H185.125L186.93 18.7598Z" fill="#FFB039"/>
+<path d="M158.12 38.1899L159.925 43.7454H165.767L161.041 47.1789L162.846 52.7344L158.12 49.3009L153.395 52.7344L155.2 47.1789L150.474 43.7454H156.315L158.12 38.1899Z" fill="#FFB039"/>
+<path d="M179.56 54.9399L181.365 60.4954H187.207L182.481 63.9289L184.286 69.4844L179.56 66.0509L174.834 69.4844L176.639 63.9289L171.914 60.4954H177.755L179.56 54.9399Z" fill="#FFB039"/>
+<path d="M138.69 66.3296L140.495 71.8851H146.337L141.611 75.3186L143.416 80.8741L138.69 77.4406L133.964 80.8741L135.769 75.3186L131.044 71.8851H136.885L138.69 66.3296Z" fill="#FFB039"/>
+<path d="M212.39 66.3301L214.195 71.8856H220.037L215.311 75.3191L217.116 80.8746L212.39 77.4411L207.665 80.8746L209.47 75.3191L204.744 71.8856H210.585L212.39 66.3301Z" fill="#FFB039"/>
+</g></svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M111.82 119.26H162.74L168.1 124.62L157.38 154.77L111.82 141.37V119.26Z" fill="#121212"/>
+<path d="M232.42 119.26H181.5L176.14 124.62L186.86 154.77L232.42 141.37V119.26Z" fill="#121212"/>
+<rect x="162.74" y="119.26" width="18.76" height="8.04" fill="#121212"/>
+</g>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M145.52 190.76H199.12L196.44 202.15L193.76 212.87H150.88L148.2 202.15L145.52 190.76Z" fill="white"/>
+<path d="M148.2 202.15L150.88 212.87H193.76L196.44 202.15M148.2 202.15L145.52 190.76H199.12L196.44 202.15M148.2 202.15H196.44" stroke="#121212" stroke-width="4.02"/>
+<g>
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="-4 0;12 0;-4 0" />
+<rect width="16.08" height="42.88" transform="matrix(0 -1 -1 0 124.75 210.189)" fill="#2D2D2D"/>
+<path d="M134.656 218.229L126.646 218.229V202.149M134.656 186.069H126.646V202.149M126.646 202.149H214.53" stroke="#2D2D2D" stroke-width="4.02"/>
+<path d="M79.8601 212.869V202.149V191.429" stroke="#2D2D2D" stroke-width="4.02"/>
+</g>
+</g></svg>
+</g></svg>

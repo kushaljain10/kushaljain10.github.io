@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1459)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#8B634A"/>
+<path d="M316 176H196V472H316V176Z" fill="#AE7B5C"/>
+<path d="M316 176H196V96H316V176Z" fill="#8B634A"/>
+<path d="M262 96H250V132H262V96Z" fill="#AE7B5C"/>
+</g>
+<defs>
+<clipPath id="clip0_75_1459">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M112.18 81.7803H232.78V30.8603H112.18V81.7803Z" fill="#121212"/>
+<path d="M90.7402 108.581H254.22L232.78 81.7806H112.18L90.7402 108.581Z" fill="#2D2D2D"/>
+</svg>
+</g><g id="layer3" transform="translate(256, 227)"><svg></svg></g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M144.8 190.76H198.4L195.72 202.15L193.04 212.87H150.16L147.48 202.15L144.8 190.76Z" fill="white"/>
+<path d="M147.48 202.15L150.16 212.87H193.04L195.72 202.15M147.48 202.15L144.8 190.76H198.4L195.72 202.15M147.48 202.15H195.72" stroke="#121212" stroke-width="4.02"/>
+<path d="M171.767 269.484C146.81 269.484 133.41 253.404 133.41 253.404L164.793 202.149H178.741L210.125 253.404C210.125 253.404 196.725 269.484 171.767 269.484Z" fill="#FFB74A" stroke="#121212" stroke-width="4.02"/>
+<path d="M171.767 269.484C146.81 269.484 133.41 253.404 133.41 253.404L138.538 245.029C138.538 245.029 150.495 257.759 171.767 257.759C191.03 257.759 204.997 245.029 204.997 245.029L210.125 253.404C210.125 253.404 196.725 269.484 171.767 269.484Z" fill="#FF9900" stroke="#121212" stroke-width="4.02"/>
+<circle cx="161.55" cy="241.01" r="8.04" fill="#D22D27"/>
+<circle cx="172.27" cy="215.55" r="6.7" fill="#D22D27"/>
+<circle cx="182.99" cy="235.649" r="6.7" fill="#D22D27"/>
+</svg>
+</g></svg>

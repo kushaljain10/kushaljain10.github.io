@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.62 71.02H232.22V161.805L223.51 162.14V87.1L171.92 105.86L120.33 87.1V162.14H111.62V71.02Z" fill="#121212"/>
+<path d="M158.52 25.46L185.32 36.18L179.96 79.06L163.88 79.0599L158.52 25.46Z" fill="#121212"/>
+<path d="M155.84 57.2852H188" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.94 117.251H165.46V154.771H127.94V117.251Z" fill="white" fill-opacity="0.4"/>
+<path d="M127.94 117.251H165.46V154.771H127.94V117.251ZM127.94 117.251H111.86" stroke="#121212" stroke-width="4.02"/>
+<path d="M166.13 123.281H178.86" stroke="#121212" stroke-width="4.02"/>
+<path d="M178.86 117.251H216.38V154.771H178.86V117.251Z" fill="white" fill-opacity="0.4"/>
+<path d="M216.38 117.251H178.86V154.771H216.38V117.251ZM216.38 117.251H232.46" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M154.617 202.82H187.64" stroke="#121212" stroke-width="4.02"/>
+<path d="M229.85 213.54L186.3 202.82L237.89 234.645L246.6 217.225L251.29 207.845L236.215 200.81L231.693 209.855L229.85 213.54Z" fill="#77492D"/>
+<path d="M246.6 217.225L251.29 207.845L236.215 200.81L231.693 209.855M246.6 217.225L237.89 234.645L186.3 202.82L229.85 213.54L231.693 209.855M246.6 217.225L231.693 209.855" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

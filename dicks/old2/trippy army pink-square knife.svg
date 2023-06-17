@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1428)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<mask id="mask0_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="84" y="340" width="344" height="160">
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+</mask>
+<g mask="url(#mask0_75_1428)">
+<circle cx="256" cy="336.328" r="327" fill="#C2FD52"/>
+<circle cx="255.999" cy="336.327" r="287.206" fill="#FF00B1"/>
+<circle cx="256" cy="336.329" r="253.468" fill="#AD00FF"/>
+<circle cx="256" cy="336.328" r="213.675" fill="#00A8FF"/>
+<circle cx="256" cy="336.328" r="180.802" fill="#C2FD52"/>
+<circle cx="256.001" cy="336.329" r="148.794" fill="#D22D27"/>
+<circle cx="256.001" cy="336.329" r="120.246" fill="#FFB74A"/>
+<circle cx="256.001" cy="336.329" r="87.373" fill="#AD00FF"/>
+<circle cx="256.324" cy="336.652" r="53.8936" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="25.6689" fill="#C2FD52"/>
+</g>
+<mask id="mask1_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="196" y="96" width="120" height="376">
+<rect x="196" y="96" width="120" height="376" fill="#F15824"/>
+</mask>
+<g mask="url(#mask1_75_1428)">
+<circle cx="256" cy="269.672" r="335" fill="#C2FD52"/>
+<circle cx="255.999" cy="269.671" r="294.233" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="259.669" fill="#AD00FF"/>
+<circle cx="256" cy="269.672" r="218.902" fill="#00A8FF"/>
+<circle cx="256" cy="269.672" r="185.225" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="152.434" fill="#D22D27"/>
+<circle cx="256" cy="269.672" r="123.188" fill="#FFB74A"/>
+<circle cx="256.001" cy="269.673" r="89.5106" fill="#AD00FF"/>
+<circle cx="256.332" cy="270.004" r="55.2121" fill="#FF00B1"/>
+<path d="M262 96H250V132H262V96Z" fill="#E3E3E3"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1428">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.58 57.6601L171.88 41.5801L232.18 57.6601V92.5001H111.58V57.6601Z" fill="#165B32"/>
+<path d="M171.88 53.6401L175.031 60.0238L182.075 61.0475L176.978 66.0165L178.181 73.0328L171.88 69.7201L165.579 73.0328L166.782 66.0165L161.685 61.0475L168.73 60.0238L171.88 53.6401Z" fill="#FEED59"/>
+<rect x="111.58" y="81.7798" width="120.6" height="10.72" fill="#FEED59"/>
+<path d="M111.58 92.5H232.18V103.22L171.88 116.62L111.58 103.22V92.5Z" fill="#0C4122"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.3 117.251H164.82V154.771H127.3V117.251Z" fill="#FF00B1" fill-opacity="0.6"/>
+<path d="M127.3 117.251H164.82V154.771H127.3V117.251ZM127.3 117.251H111.22" stroke="#121212" stroke-width="4.02"/>
+<path d="M165.49 123.281H178.22" stroke="#121212" stroke-width="4.02"/>
+<path d="M178.22 117.251H215.74V154.771H178.22V117.251Z" fill="#FF00B1" fill-opacity="0.6"/>
+<path d="M215.74 117.251H178.22V154.771H215.74V117.251ZM215.74 117.251H231.82" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M145.52 190.76H199.12L196.44 202.15L193.76 212.87H150.88L148.2 202.15L145.52 190.76Z" fill="white"/>
+<path d="M148.2 202.15L150.88 212.87H193.76L196.44 202.15M148.2 202.15L145.52 190.76H199.12L196.44 202.15M148.2 202.15H196.44" stroke="#121212" stroke-width="4.02"/>
+<rect width="16.08" height="42.88" transform="matrix(0 -1 -1 0 124.75 210.189)" fill="#2D2D2D"/>
+<path d="M134.656 218.229L126.646 218.229V202.149M134.656 186.069H126.646V202.149M126.646 202.149H214.53" stroke="#2D2D2D" stroke-width="4.02"/>
+<path d="M79.8601 212.869V202.149V191.429" stroke="#2D2D2D" stroke-width="4.02"/>
+</svg>
+</g></svg>

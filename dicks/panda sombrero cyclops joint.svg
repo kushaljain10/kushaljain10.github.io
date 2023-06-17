@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1465)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#2D2D2D"/>
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M316 176H196V472H316V176Z" fill="#E3E3E3"/>
+<path d="M316 176H196V96H316V176Z" fill="#2D2D2D"/>
+<path d="M262 96H250V132H262V96Z" fill="#E3E3E3">
+<animate attributeName="fill" values="#E3E3E3; #E3E3E3; #fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#E3E3E3" keyTimes="0; 0.74; 0.76; 0.78;0.8;0.82;0.84;0.86;0.88;0.9;0.92;0.94;0.96;0.98;1" dur="5s" repeatCount="indefinite" />
+</path>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1465">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M111.22 71.0195H231.82V71.0195C231.82 37.7168 204.823 10.7195 171.52 10.7195V10.7195C138.217 10.7195 111.22 37.7168 111.22 71.0195V71.0195Z" fill="#D22D27"/>
+<path d="M45.5601 108.54H297.48L308.2 71.0195H34.8401L45.5601 108.54Z" fill="#FFB74A"/>
+<path d="M88.4401 108.54L74.6214 81.7397L61.6401 108.54H88.4401Z" fill="#D22D27"/>
+<path d="M136.68 108.54L122.861 81.7397L109.88 108.54H136.68Z" fill="#D22D27"/>
+<path d="M184.92 108.54L171.101 81.7397L158.12 108.54H184.92Z" fill="#D22D27"/>
+<path d="M233.16 108.54L219.341 81.7397L206.36 108.54H233.16Z" fill="#D22D27"/>
+<path d="M281.4 108.54L267.581 81.7397L254.6 108.54H281.4Z" fill="#D22D27"/>
+</g></svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M111.7 119.26H232.3V154.1L186.07 156.78L172 146.06L157.93 156.78L111.7 154.1V119.26Z" fill="#121212"/>
+<rect x="122.42" y="129.979" width="99.16" height="13.4" fill="#6C0400">
+<animate attributeName="fill" dur="8s" repeatCount="indefinite" keyTimes="0;0.05;0.075;0.1;0.12;0.15;0.5;0.55;1" values="#6C0400;#FF0900;#6C0400;#FF0900;#6C0400;#FF0900;#FF0900;#6C0400;#6C0400" />
+</rect>
+</g>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M154.577 202.34H187.6" stroke="#121212" stroke-width="4.02"/>
+<path d="M247.178 250.204L221.35 226.783L199.596 214.099L187.877 202.38L178.832 202.38L204.377 233.417L215.666 246.065L236.842 262.522L247.178 250.204Z" fill="white"/>
+<path d="M215.666 246.065L236.842 262.522L247.178 250.204L221.35 226.783M215.666 246.065L221.35 226.783M215.666 246.065L204.377 233.417M221.35 226.783L199.596 214.099M204.377 233.417L178.832 202.38L187.877 202.38L199.596 214.099M204.377 233.417L199.596 214.099" stroke="#121212" stroke-width="4.02"/>
+<path d="M244.494 250.363L236.203 260.244L232 257L240.597 246.804L244.494 250.363Z" fill="#2d2d2d">
+<animate attributeName="fill" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="#2d2d2d;red;#2d2d2d" />
+</path>
+<path d="M256.61 259.3C275.705 263.99 296.14 256.285 300.83 228.145C305.52 200.005 263.31 179.57 284.08 148.75" stroke="white" stroke-width="4.02">
+<animate attributeName="stroke" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="white;transparent;white" />
+</path>
+<line x1="230.513" y1="255.662" x2="239.513" y2="245.662" stroke="#121212" stroke-width="4"/>
+</g></svg>
+</g></svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1357)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#DA420F"/>
+<path d="M125 340H109L117 364L125 340Z" fill="#1D1D1D"/>
+<path d="M170 340H154L162 372L170 340Z" fill="#1D1D1D"/>
+<path d="M108 400L84 392V408L108 400Z" fill="#1D1D1D"/>
+<path d="M404 400L428 392V408L404 400Z" fill="#1D1D1D"/>
+<path d="M116 432L84 424V440L116 432Z" fill="#1D1D1D"/>
+<path d="M396 432L428 424V440L396 432Z" fill="#1D1D1D"/>
+<path d="M132 464L84 456V472L132 464Z" fill="#1D1D1D"/>
+<path d="M380 464L428 456V472L380 464Z" fill="#1D1D1D"/>
+<path d="M387 340H403L395 364L387 340Z" fill="#1D1D1D"/>
+<path d="M342 340H358L350 372L342 340Z" fill="#1D1D1D"/>
+<path d="M316 176H196V472H316V176Z" fill="#F15824"/>
+<path d="M220 276L196 268V284L220 276Z" fill="#1D1D1D"/>
+<path d="M220 244L196 236V252L220 244Z" fill="#1D1D1D"/>
+<path d="M292 276L316 268V284L292 276Z" fill="#1D1D1D"/>
+<path d="M292 244L316 236V252L292 244Z" fill="#1D1D1D"/>
+<path d="M228 308L196 300V316L228 308Z" fill="#1D1D1D"/>
+<path d="M284 308L316 300V316L284 308Z" fill="#1D1D1D"/>
+<path d="M316 176H196V96H316V176Z" fill="#DA420F"/>
+<path d="M262 96H250V132H262V96Z" fill="#F15824"/>
+</g>
+<defs>
+<clipPath id="clip0_75_1357">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M112.18 81.7803H232.78V30.8603H112.18V81.7803Z" fill="#121212"/>
+<path d="M90.7402 108.581H254.22L232.78 81.7806H112.18L90.7402 108.581Z" fill="#2D2D2D"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="111.54" y="127.3" width="56.28" height="8.04" fill="#121212"/>
+<rect x="119.58" y="127.3" width="8.04" height="8.04" fill="white"/>
+<rect x="175.86" y="127.3" width="56.28" height="8.04" fill="#121212"/>
+<rect x="183.9" y="135.34" width="40.2" height="8.04" fill="#121212"/>
+<rect x="191.94" y="143.38" width="24.12" height="8.04" fill="#121212"/>
+<rect x="119.58" y="135.34" width="40.2" height="8.04" fill="#121212"/>
+<rect x="127.62" y="143.38" width="24.12" height="8.04" fill="#121212"/>
+<rect x="111.54" y="119.26" width="120.6" height="8.04" fill="#121212"/>
+<rect x="127.62" y="135.34" width="8.04" height="8.04" fill="white"/>
+<rect x="135.66" y="143.38" width="8.04" height="8.04" fill="white"/>
+<rect x="183.9" y="127.3" width="8.04" height="8.04" fill="white"/>
+<rect x="191.94" y="135.34" width="8.04" height="8.04" fill="white"/>
+<rect x="199.98" y="143.38" width="8.04" height="8.04" fill="white"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M144.8 190.76H198.4L195.72 202.15L193.04 212.87H150.16L147.48 202.15L144.8 190.76Z" fill="white"/>
+<path d="M147.48 202.15L150.16 212.87H193.04L195.72 202.15M147.48 202.15L144.8 190.76H198.4L195.72 202.15M147.48 202.15H195.72" stroke="#121212" stroke-width="4.02"/>
+<path d="M171.767 269.484C146.81 269.484 133.41 253.404 133.41 253.404L164.793 202.149H178.741L210.125 253.404C210.125 253.404 196.725 269.484 171.767 269.484Z" fill="#FFB74A" stroke="#121212" stroke-width="4.02"/>
+<path d="M171.767 269.484C146.81 269.484 133.41 253.404 133.41 253.404L138.538 245.029C138.538 245.029 150.495 257.759 171.767 257.759C191.03 257.759 204.997 245.029 204.997 245.029L210.125 253.404C210.125 253.404 196.725 269.484 171.767 269.484Z" fill="#FF9900" stroke="#121212" stroke-width="4.02"/>
+<circle cx="161.55" cy="241.01" r="8.04" fill="#D22D27"/>
+<circle cx="172.27" cy="215.55" r="6.7" fill="#D22D27"/>
+<circle cx="182.99" cy="235.649" r="6.7" fill="#D22D27"/>
+</svg>
+</g></svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1405)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#0097D8"/>
+<path d="M316 176H196V472H316V176Z" fill="#00B2FF"/>
+<path d="M227.5 400.5L196 431V415L227.5 400.5Z" fill="#2C71A3"/>
+<path d="M222 336L196 344V328L222 336Z" fill="#2C71A3"/>
+<path d="M124 429.5L84 465V449L124 429.5Z" fill="#2C71A3"/>
+<path d="M276 347.5L316 383V367L276 347.5Z" fill="#2C71A3"/>
+<path d="M388 429.5L428 465V449L388 429.5Z" fill="#2C71A3"/>
+<path d="M124 406L84 374V386.8L124 406Z" fill="#2C71A3"/>
+<path d="M276 324L316 292V304.8L276 324Z" fill="#2C71A3"/>
+<path d="M388 406L428 374V386.8L388 406Z" fill="#2C71A3"/>
+<path d="M228 176H212L228 216V176Z" fill="#2C71A3"/>
+<path d="M264 176H248L256 282L264 176Z" fill="#2C71A3"/>
+<path d="M300 176H284V216L300 176Z" fill="#2C71A3"/>
+<path d="M316 176H196V96H316V176Z" fill="#0097D8"/>
+<path d="M262 96H250V132H262V96Z" fill="#00B2FF"/>
+</g>
+<defs>
+<clipPath id="clip0_75_1405">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.42 71.02H232.02V103.18L111.42 103.18V71.02Z" fill="#121212"/>
+<rect x="111.42" y="103.18" width="8.04" height="16.08" fill="#121212"/>
+<rect x="223.98" y="103.18" width="8.04" height="16.08" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.58 117.251H165.1V154.771H127.58V117.251Z" fill="#121212"/>
+<path d="M127.58 117.251H165.1V154.771H127.58V117.251ZM127.58 117.251H111.5" stroke="#121212" stroke-width="4.02"/>
+<path d="M165.77 123.281H178.5" stroke="#121212" stroke-width="4.02"/>
+<path d="M178.5 117.251H216.02V154.771H178.5V117.251Z" fill="#121212"/>
+<path d="M216.02 117.251H178.5V154.771H216.02V117.251ZM216.02 117.251H232.1" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="160.1" y="189.42" width="24.12" height="24.12" rx="12.06" fill="white"/>
+</svg>
+</g></svg>

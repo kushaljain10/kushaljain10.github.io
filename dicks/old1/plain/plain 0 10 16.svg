@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.22 42.8799H231.82V103.18L111.22 103.18V42.8799Z" fill="#121212"/>
+<path d="M223.78 90.4497H243.88V119.26H223.78V90.4497Z" fill="#121212"/>
+<path d="M119.26 90.4497H99.1603V119.26H119.26V90.4497Z" fill="#121212"/>
+<rect x="111.22" y="103.18" width="8.04" height="69.68" fill="#121212"/>
+<rect x="223.78" y="103.18" width="8.04" height="69.68" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251Z" fill="#121212"/>
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251ZM122.06 117.251H111.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 117.251H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 129.311H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M178.34 117.251H221.22V154.771H186.38L178.34 130.986V117.251Z" fill="#121212"/>
+<path d="M221.22 117.251H178.34V130.986L186.38 154.771H221.22V117.251ZM221.22 117.251H231.94" stroke="#FFB74A" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M195.44 194.277L142.654 184.97C142.654 184.97 138.001 211.363 164.412 216.02C190.824 220.677 195.44 194.277 195.44 194.277Z" fill="white"/>
+</svg>
+</g></svg>

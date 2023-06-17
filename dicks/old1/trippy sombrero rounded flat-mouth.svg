@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1428)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<mask id="mask0_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="84" y="340" width="344" height="160">
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+</mask>
+<g mask="url(#mask0_75_1428)">
+<circle cx="256" cy="336.328" r="279" fill="#C2FD52"/>
+<circle cx="256" cy="336.328" r="245.048" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="216.262" fill="#AD00FF"/>
+<circle cx="256" cy="336.328" r="182.31" fill="#00A8FF"/>
+<circle cx="256" cy="336.328" r="154.262" fill="#C2FD52"/>
+<circle cx="256" cy="336.328" r="126.952" fill="#D22D27"/>
+<circle cx="256.001" cy="336.329" r="102.595" fill="#FFB74A"/>
+<circle cx="256.001" cy="336.329" r="74.5476" fill="#AD00FF"/>
+<circle cx="256.277" cy="336.605" r="45.9826" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="21.901" fill="#C2FD52"/>
+</g>
+<mask id="mask1_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="196" y="96" width="120" height="376">
+<rect x="196" y="96" width="120" height="376" fill="#F15824"/>
+</mask>
+<g mask="url(#mask1_75_1428)">
+<circle cx="256" cy="269.672" r="279" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="245.048" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="216.262" fill="#AD00FF"/>
+<circle cx="256" cy="269.672" r="182.31" fill="#00A8FF"/>
+<circle cx="256" cy="269.672" r="154.262" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="126.952" fill="#D22D27"/>
+<circle cx="256.001" cy="269.672" r="102.595" fill="#FFB74A"/>
+<circle cx="256.001" cy="269.673" r="74.5476" fill="#AD00FF"/>
+<circle cx="256.277" cy="269.948" r="45.9826" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="21.901" fill="#C2FD52"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1428">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.38 71.0596H231.98V71.0596C231.98 37.7568 204.983 10.7596 171.68 10.7596V10.7596C138.377 10.7596 111.38 37.7568 111.38 71.0596V71.0596Z" fill="#D22D27"/>
+<path d="M45.72 108.58H297.64L308.36 71.0596H35L45.72 108.58Z" fill="#FFB74A"/>
+<path d="M88.5998 108.58L74.7811 81.7798L61.7998 108.58H88.5998Z" fill="#D22D27"/>
+<path d="M136.84 108.58L123.021 81.7798L110.04 108.58H136.84Z" fill="#D22D27"/>
+<path d="M185.08 108.58L171.262 81.7798L158.28 108.58H185.08Z" fill="#D22D27"/>
+<path d="M233.32 108.58L219.501 81.7798L206.52 108.58H233.32Z" fill="#D22D27"/>
+<path d="M281.56 108.58L267.741 81.7798L254.76 108.58H281.56Z" fill="#D22D27"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M128.84 136.69C128.84 126.329 137.239 117.93 147.6 117.93V117.93V117.93C157.961 117.93 166.36 126.329 166.36 136.69V136.69C166.36 147.051 157.961 155.45 147.6 155.45V155.45C137.239 155.45 128.84 147.051 128.84 136.69V136.69V136.69Z" fill="#121212" fill-opacity="0.4"/>
+<path d="M128.84 136.69V136.69C128.84 147.051 137.239 155.45 147.6 155.45V155.45C157.961 155.45 166.36 147.051 166.36 136.69V136.69C166.36 126.329 157.961 117.93 147.6 117.93V117.93V117.93C137.239 117.93 128.84 126.329 128.84 136.69V136.69ZM128.84 136.69L110.08 118.6" stroke="#121212" stroke-width="4.02"/>
+<path d="M166.36 136.02H177.08" stroke="#121212" stroke-width="4.02"/>
+<path d="M177.08 136.69C177.08 126.329 185.479 117.93 195.84 117.93V117.93V117.93C206.201 117.93 214.6 126.329 214.6 136.69V136.69V136.69C214.6 147.051 206.201 155.45 195.84 155.45V155.45C185.479 155.45 177.08 147.051 177.08 136.69V136.69Z" fill="#121212" fill-opacity="0.4"/>
+<path d="M214.6 136.69V136.69C214.6 126.329 206.201 117.93 195.84 117.93V117.93V117.93C185.479 117.93 177.08 126.329 177.08 136.69V136.69C177.08 147.051 185.479 155.45 195.84 155.45V155.45C206.201 155.45 214.6 147.051 214.6 136.69V136.69ZM214.6 136.69L233.36 118.6" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M154.577 202.82H187.6" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

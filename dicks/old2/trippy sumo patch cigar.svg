@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1428)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<mask id="mask0_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="84" y="340" width="344" height="160">
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+</mask>
+<g mask="url(#mask0_75_1428)">
+<circle cx="256" cy="336.328" r="327" fill="#C2FD52"/>
+<circle cx="255.999" cy="336.327" r="287.206" fill="#FF00B1"/>
+<circle cx="256" cy="336.329" r="253.468" fill="#AD00FF"/>
+<circle cx="256" cy="336.328" r="213.675" fill="#00A8FF"/>
+<circle cx="256" cy="336.328" r="180.802" fill="#C2FD52"/>
+<circle cx="256.001" cy="336.329" r="148.794" fill="#D22D27"/>
+<circle cx="256.001" cy="336.329" r="120.246" fill="#FFB74A"/>
+<circle cx="256.001" cy="336.329" r="87.373" fill="#AD00FF"/>
+<circle cx="256.324" cy="336.652" r="53.8936" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="25.6689" fill="#C2FD52"/>
+</g>
+<mask id="mask1_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="196" y="96" width="120" height="376">
+<rect x="196" y="96" width="120" height="376" fill="#F15824"/>
+</mask>
+<g mask="url(#mask1_75_1428)">
+<circle cx="256" cy="269.672" r="335" fill="#C2FD52"/>
+<circle cx="255.999" cy="269.671" r="294.233" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="259.669" fill="#AD00FF"/>
+<circle cx="256" cy="269.672" r="218.902" fill="#00A8FF"/>
+<circle cx="256" cy="269.672" r="185.225" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="152.434" fill="#D22D27"/>
+<circle cx="256" cy="269.672" r="123.188" fill="#FFB74A"/>
+<circle cx="256.001" cy="269.673" r="89.5106" fill="#AD00FF"/>
+<circle cx="256.332" cy="270.004" r="55.2121" fill="#FF00B1"/>
+<path d="M262 96H250V132H262V96Z" fill="#E3E3E3"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1428">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="172.08" cy="71.0197" r="26.8" fill="#121212"/>
+<path d="M111.78 71.0195H232.38V119.26L218.31 92.4595L172.08 105.86L125.85 92.4595L111.78 119.26V71.0195Z" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.86 117.251H165.38V154.771H127.86V117.251Z" fill="#121212"/>
+<path d="M127.86 117.251H165.38M127.86 117.251V154.771H165.38V117.251M127.86 117.251H111.78M165.38 117.251H232.38" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M154.817 202.82H187.84" stroke="#121212" stroke-width="4.02"/>
+<path d="M241.917 234.286L232.239 247.128L190.596 215.747L173.381 202.806L200.273 202.905L241.917 234.286Z" fill="#77492D"/>
+<path d="M241.917 234.286L243.522 235.496L244.732 233.891L243.126 232.681L241.917 234.286ZM232.239 247.128L231.03 248.733L232.635 249.943L233.845 248.338L232.239 247.128ZM190.596 215.747L191.805 214.142L191.803 214.141L190.596 215.747ZM200.273 202.905L201.482 201.3L200.949 200.898L200.28 200.895L200.273 202.905ZM173.381 202.806L173.388 200.796C172.522 200.792 171.751 201.344 171.476 202.165C171.2 202.986 171.481 203.892 172.173 204.412L173.381 202.806ZM240.311 233.076L230.634 245.919L233.845 248.338L243.522 235.496L240.311 233.076ZM233.449 245.523L191.805 214.142L189.386 217.353L231.03 248.733L233.449 245.523ZM199.063 204.51L240.707 235.891L243.126 232.681L201.482 201.3L199.063 204.51ZM191.803 214.141L174.589 201.199L172.173 204.412L189.388 217.354L191.803 214.141ZM173.373 204.816L200.265 204.915L200.28 200.895L173.388 200.796L173.373 204.816Z" fill="#121212"/>
+<rect x="242.233" y="234.524" width="16.08" height="8.1263" transform="rotate(127 242.233 234.524)" fill="#D22D27" stroke="#121212" stroke-width="4.02"/>
+<rect x="220.6" y="218.223" width="16.08" height="16.2526" transform="rotate(127 220.6 218.223)" fill="#FF9900" stroke="#121212" stroke-width="4.02"/>
+<path d="M251.49 245.7C270.585 250.39 291.02 242.685 295.71 214.545C300.4 186.405 258.19 165.97 278.96 135.15" stroke="white" stroke-width="4.02"/>
+</svg>
+</g></svg>

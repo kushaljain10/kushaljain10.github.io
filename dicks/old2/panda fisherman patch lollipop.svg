@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1465)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#2D2D2D"/>
+<path d="M316 176H196V472H316V176Z" fill="#E3E3E3"/>
+<path d="M316 176H196V96H316V176Z" fill="#2D2D2D"/>
+<path d="M262 96H250V132H262V96Z" fill="#E3E3E3"/>
+</g>
+<defs>
+<clipPath id="clip0_75_1465">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M112.18 81.7803H232.78V30.8603H112.18V81.7803Z" fill="#121212"/>
+<path d="M90.7402 108.581H254.22L232.78 81.7806H112.18L90.7402 108.581Z" fill="#2D2D2D"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.86 117.251H165.38V154.771H127.86V117.251Z" fill="#121212"/>
+<path d="M127.86 117.251H165.38M127.86 117.251V154.771H165.38V117.251M127.86 117.251H111.78M165.38 117.251H232.38" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M155.297 202.82H188.32" stroke="#121212" stroke-width="4.02"/>
+<path d="M182.29 218.23C189.691 218.23 195.69 212.231 195.69 204.83H168.89C168.89 212.231 174.89 218.23 182.29 218.23Z" fill="#FF00B1"/>
+<path d="M182.29 214.21C187.471 214.21 191.67 210.011 191.67 204.83H172.91C172.91 210.011 177.11 214.21 182.29 214.21Z" fill="#AD00FF"/>
+<path d="M182.29 210.19C185.25 210.19 187.65 207.79 187.65 204.83H176.93C176.93 207.79 179.33 210.19 182.29 210.19Z" fill="#FFB039"/>
+<path d="M168.89 202.82H166.88V204.83C166.88 213.341 173.779 220.24 182.29 220.24C190.801 220.24 197.7 213.341 197.7 204.83V202.82H195.69H168.89Z" stroke="#1D1D1D" stroke-width="4.02"/>
+<path d="M191.154 214.88L221.82 247.71" stroke="#1D1D1D" stroke-width="4.02"/>
+</svg>
+</g></svg>

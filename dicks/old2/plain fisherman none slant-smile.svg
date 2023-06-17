@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M112.18 81.7803H232.78V30.8603H112.18V81.7803Z" fill="#121212"/>
+<path d="M90.7402 108.581H254.22L232.78 81.7806H112.18L90.7402 108.581Z" fill="#2D2D2D"/>
+</svg>
+</g><g id="layer3" transform="translate(256, 227)"><svg></svg></g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M195.44 194.277L142.654 184.97C142.654 184.97 138.001 211.363 164.412 216.02C190.824 220.677 195.44 194.277 195.44 194.277Z" fill="white"/>
+</svg>
+</g></svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="120.6" height="32.16" transform="matrix(1 0 0 -1 111.54 104.06)" fill="#D22D27"/>
+<rect x="212.844" y="77.2598" width="2.85866" height="21.44" fill="#FF9490"/>
+<rect x="215.702" y="86.5503" width="7.86132" height="2.85866" fill="#FF9490"/>
+<rect x="210.7" y="92.9824" width="12.864" height="2.85866" fill="#FF9490"/>
+<rect x="210.7" y="80.1187" width="12.864" height="2.85866" fill="#FF9490"/>
+<rect x="223.564" y="82.9771" width="2.85866" height="3.57332" fill="#FF9490"/>
+<rect x="217.27" y="77.2598" width="2.85866" height="2.85866" fill="#FF9490"/>
+<rect x="217.31" y="95.8413" width="2.85866" height="2.85866" fill="#FF9490"/>
+<rect x="223.564" y="89.4092" width="2.85866" height="3.57332" fill="#FF9490"/>
+<rect width="120.6" height="8.04" transform="matrix(1 0 0 -1 111.54 112.1)" fill="#FF9490"/>
+<path d="M91.105 107.745L111.54 71.8999H180.215L120.92 126.17L91.105 107.745Z" fill="#D22D27"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.82 119.26H162.74L168.1 124.62L157.38 154.77L111.82 141.37V119.26Z" fill="#121212"/>
+<path d="M232.42 119.26H181.5L176.14 124.62L186.86 154.77L232.42 141.37V119.26Z" fill="#121212"/>
+<rect x="162.74" y="119.26" width="18.76" height="8.04" fill="#121212"/>
+</svg>
+</g><g id="layer4" transform="translate(256, 312)"><svg></svg></g></svg>

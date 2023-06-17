@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+<path d="M262 96H250V132H262V96Z" fill="#F15824">
+<animate attributeName="fill" values="#F15824; #F15824; #fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#F15824" keyTimes="0; 0.74; 0.76; 0.78;0.8;0.82;0.84;0.86;0.88;0.9;0.92;0.94;0.96;0.98;1" dur="5s" repeatCount="indefinite" />
+</path>
+</g>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M129.98 159.46L119.26 89.78V41.54H111.22V89.78V159.46H129.98Z" fill="#121212"/>
+<path d="M213.06 159.46L223.78 89.78V41.54H231.82V89.78V159.46H213.06Z" fill="#121212"/>
+<rect x="158.12" y="41.54" width="26.8" height="8.04" fill="#121212"/>
+<rect x="71.02" y="97.8198" width="201" height="10.72" fill="#8B634A"/>
+<rect x="261.3" y="81.7397" width="10.72" height="16.08" fill="#8B634A"/>
+<rect x="71.02" y="81.7397" width="10.72" height="16.08" fill="#8B634A"/>
+<rect x="111.22" y="17.4199" width="120.6" height="80.4" fill="#8B634A"/>
+<rect x="111.22" y="71.02" width="120.6" height="26.8" fill="#77492D"/>
+</g></svg>
+</g><g id="layer3" transform="translate(256, 227)"><svg></svg></g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M165.1 194.372C165.1 194.372 173.692 190.767 175.82 194.372C177.933 197.95 170.795 203.752 170.795 203.752C170.795 203.752 179.593 201.017 181.515 204.757C183.672 208.954 173.14 213.467 173.14 213.467" stroke="#121212" stroke-width="4.02"/>
+</g></svg>
+</g></svg>

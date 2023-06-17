@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M226.74 81.7803L245.767 89.2843L253.271 108.311L234.244 100.807L226.74 81.7803Z" fill="#004A1C"/>
+<path d="M226.74 89.5508L245.767 82.0468L253.271 63.0201L234.244 70.5241L226.74 89.5508Z" fill="#004A1C"/>
+<rect x="111.5" y="60.3398" width="120.6" height="48.24" fill="#006727"/>
+</svg>
+</g><g id="layer3" transform="translate(256, 227)"><svg></svg></g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M153.68 189.42H191.2" stroke="#121212" stroke-width="4.02"/>
+<path d="M180.145 202.317V189.42H165.07V202.317C165.07 206.48 168.445 209.855 172.608 209.855C176.77 209.855 180.145 206.48 180.145 202.317Z" fill="#D22D27" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>BLRxZo FIFA</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIP 666</title>
     <style>
-      #iframe-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-      }
-      #rotated-iframe {
-  transform: rotate(270deg);
-  top: 100vh;
-  transform-origin: top left;
-  position: relative;
-  height: 100vw;
-  width: 100vh;
-}
-.card-body {
-  background-color: #333 !important;
-}
-      /* #rotated-iframe {
-    position: absolute;
-    top: -53vh;
-    left: 25vw;
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
-    outline: none;
-    border: none;
-} */
-    </style>
-  </head>
-  <body>
-    <div id="iframe-container">
-      <iframe id="rotated-iframe" scrolling="no" src="https://www.tournifyapp.com/live/blrxzo/standings"></iframe>
+        body {
+          padding: 0;
+          margin: 0;
+          max-width: 100vw;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(11, 1fr);
+        }
+        @media only screen and (max-width: 768px) {
+          .grid {
+          grid-template-columns: repeat(8, 1fr);
+          max-width: 100%;
+        }
+        }
+      </style>
+</head>
+<body>
+    <div class="grid" id="grid">
     </div>
+  
+    <script>
+      const filePath = './dicks.csv'; // Replace with the actual file path
+  
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', filePath, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const csvData = xhr.responseText;
+      const rows = csvData.split('\n');
+      const traitValues = [];
+  
+      for (let i = rows.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [rows[i], rows[j]] = [rows[j], rows[i]];
+    }
+  
+      for (let i = 0; i < rows.length; i++) {
+        const row = rows[i].split(',');
+        traitValues.push(row);
+      }
+  
+      traitValues.forEach(currDick => {
+        const img = new Image();
+        img.style = "max-width: 100%";
+        img.src = './dicks/' + currDick[0] + ' ' + currDick[1] + ' ' + currDick[2] + ' ' + currDick[3] + '.svg';
+        document.getElementById('grid').appendChild(img);
+      });
+    } else if (xhr.readyState === 4 && xhr.status !== 200) {
+      console.error('Error reading CSV file:', xhr.status);
+    }
+  };
+  
+  xhr.send();
+    </script>
   </body>
-  <script>
-    window.onload = function() {
-      const iframe = document.getElementById('rotated-iframe');
-      iframe.style.filter = 'invert(100%)';
-};
-  </script>
-</html>
+  </html>

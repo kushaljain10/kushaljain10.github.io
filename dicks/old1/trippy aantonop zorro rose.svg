@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1428)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<mask id="mask0_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="84" y="340" width="344" height="160">
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+</mask>
+<g mask="url(#mask0_75_1428)">
+<circle cx="256" cy="336.328" r="279" fill="#C2FD52"/>
+<circle cx="256" cy="336.328" r="245.048" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="216.262" fill="#AD00FF"/>
+<circle cx="256" cy="336.328" r="182.31" fill="#00A8FF"/>
+<circle cx="256" cy="336.328" r="154.262" fill="#C2FD52"/>
+<circle cx="256" cy="336.328" r="126.952" fill="#D22D27"/>
+<circle cx="256.001" cy="336.329" r="102.595" fill="#FFB74A"/>
+<circle cx="256.001" cy="336.329" r="74.5476" fill="#AD00FF"/>
+<circle cx="256.277" cy="336.605" r="45.9826" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="21.901" fill="#C2FD52"/>
+</g>
+<mask id="mask1_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="196" y="96" width="120" height="376">
+<rect x="196" y="96" width="120" height="376" fill="#F15824"/>
+</mask>
+<g mask="url(#mask1_75_1428)">
+<circle cx="256" cy="269.672" r="279" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="245.048" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="216.262" fill="#AD00FF"/>
+<circle cx="256" cy="269.672" r="182.31" fill="#00A8FF"/>
+<circle cx="256" cy="269.672" r="154.262" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="126.952" fill="#D22D27"/>
+<circle cx="256.001" cy="269.672" r="102.595" fill="#FFB74A"/>
+<circle cx="256.001" cy="269.673" r="74.5476" fill="#AD00FF"/>
+<circle cx="256.277" cy="269.948" r="45.9826" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="21.901" fill="#C2FD52"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1428">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.9 71.02H232.5V119.26L223.12 111.89C223.12 111.89 224.905 103.213 223.12 98.155C219.885 88.9846 212.074 84.42 202.35 84.42C187.275 84.42 172.2 103.85 172.2 103.85C172.2 103.85 154.11 84.42 142.05 84.42C132.651 84.42 125.418 89.293 122.285 98.155C120.497 103.212 122.285 111.89 122.285 111.89L111.9 119.26V71.02Z" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M112.18 113.9H232.78V151.42L186.55 159.46L172.48 148.74L158.41 159.46L112.18 151.42V113.9ZM163.77 136.68C163.77 144.451 157.471 150.75 149.7 150.75C141.929 150.75 135.63 144.451 135.63 136.68C135.63 128.91 141.929 122.61 149.7 122.61C157.471 122.61 163.77 128.91 163.77 136.68ZM195.26 150.75C203.031 150.75 209.33 144.451 209.33 136.68C209.33 128.91 203.031 122.61 195.26 122.61C187.489 122.61 181.19 128.91 181.19 136.68C181.19 144.451 187.489 150.75 195.26 150.75Z" fill="#121212"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M145.16 190.76H198.76L196.08 202.15L193.4 212.87H150.52L147.84 202.15L145.16 190.76Z" fill="white"/>
+<path d="M147.84 202.15L150.52 212.87H193.4L196.08 202.15M147.84 202.15L145.16 190.76H198.76L196.08 202.15M147.84 202.15H196.08" stroke="#121212" stroke-width="4.02"/>
+<path d="M208.81 202.149L208.81 185.064M208.81 202.149L208.81 218.229M208.81 202.149H129.415M121.04 202.149H129.415M129.415 202.149L135.11 191.429M129.415 202.149L135.11 212.199" stroke="#42B16C" stroke-width="4.02"/>
+<rect x="242.98" y="188.749" width="26.8" height="32.16" transform="rotate(90 242.98 188.749)" fill="#D22D27"/>
+<path d="M242.98 207.509V215.549H210.82V196.789L242.98 207.509Z" fill="#7B0000"/>
+</svg>
+</g></svg>

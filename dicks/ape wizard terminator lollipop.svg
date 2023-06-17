@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1459)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#8B634A"/>
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M316 176H196V472H316V176Z" fill="#AE7B5C"/>
+<path d="M316 176H196V96H316V176Z" fill="#8B634A"/>
+<path d="M262 96H250V132H262V96Z" fill="#AE7B5C">
+<animate attributeName="fill" values="#AE7B5C; #AE7B5C; #fff; #AE7B5C;#fff; #AE7B5C;#fff; #AE7B5C;#fff; #AE7B5C;#fff; #AE7B5C;#fff; #AE7B5C;#AE7B5C" keyTimes="0; 0.74; 0.76; 0.78;0.8;0.82;0.84;0.86;0.88;0.9;0.92;0.94;0.96;0.98;1" dur="5s" repeatCount="indefinite" />
+</path>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1459">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M231.82 97.8198H111.22V71.0198L180.23 10.3848H231.82L201.67 25.1248V53.2648L231.82 71.0198V97.8198Z" fill="#AD00FF"/>
+<rect x="71.02" y="97.8198" width="201" height="10.72" fill="#AD00FF"/>
+<rect x="111.22" y="87.0996" width="120.6" height="10.72" fill="#FFB039"/>
+<path d="M186.93 18.7598L188.735 24.3153H194.577L189.851 27.7488L191.656 33.3043L186.93 29.8708L182.204 33.3043L184.009 27.7488L179.284 24.3153H185.125L186.93 18.7598Z" fill="#FFB039"/>
+<path d="M158.12 38.1899L159.925 43.7454H165.767L161.041 47.1789L162.846 52.7344L158.12 49.3009L153.395 52.7344L155.2 47.1789L150.474 43.7454H156.315L158.12 38.1899Z" fill="#FFB039"/>
+<path d="M179.56 54.9399L181.365 60.4954H187.207L182.481 63.9289L184.286 69.4844L179.56 66.0509L174.834 69.4844L176.639 63.9289L171.914 60.4954H177.755L179.56 54.9399Z" fill="#FFB039"/>
+<path d="M138.69 66.3296L140.495 71.8851H146.337L141.611 75.3186L143.416 80.8741L138.69 77.4406L133.964 80.8741L135.769 75.3186L131.044 71.8851H136.885L138.69 66.3296Z" fill="#FFB039"/>
+<path d="M212.39 66.3301L214.195 71.8856H220.037L215.311 75.3191L217.116 80.8746L212.39 77.4411L207.665 80.8746L209.47 75.3191L204.744 71.8856H210.585L212.39 66.3301Z" fill="#FFB039"/>
+</g></svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M111.82 119.26H162.74L168.1 124.62L157.38 154.77L111.82 141.37V119.26Z" fill="#121212"/>
+<path d="M232.42 119.26H181.5L176.14 124.62L186.86 154.77L232.42 141.37V119.26Z" fill="#121212"/>
+<rect x="162.74" y="119.26" width="18.76" height="8.04" fill="#121212"/>
+</g>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M154.576 202.339H187.6" stroke="#121212" stroke-width="4.02"/>
+<path d="M182 205L221 247" stroke="#1D1D1D" stroke-width="4.02">
+<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;0.1;0.5;0.6;1" values="0 180 205;90 180 205;90 180 205; 0 180 205; 0 180 205;" />
+</path>
+<path d="M181.57 217.75C188.971 217.75 194.97 211.75 194.97 204.35H168.17C168.17 211.75 174.169 217.75 181.57 217.75Z" fill="#FF00B1"/>
+<path d="M181.569 213.73C186.75 213.73 190.949 209.53 190.949 204.35H172.189C172.189 209.53 176.389 213.73 181.569 213.73Z" fill="#AD00FF"/>
+<path d="M181.569 209.71C184.529 209.71 186.929 207.31 186.929 204.35H176.209C176.209 207.31 178.609 209.71 181.569 209.71Z" fill="#FFB039"/>
+<path d="M168.17 202.34H166.16V204.35C166.16 212.86 173.059 219.76 181.57 219.76C190.081 219.76 196.98 212.86 196.98 204.35V202.34H194.97H168.17Z" stroke="#1D1D1D" stroke-width="4.02"/>
+</g></svg>
+</g></svg>

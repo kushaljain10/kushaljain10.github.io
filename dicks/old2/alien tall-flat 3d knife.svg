@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1422)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#36CF00"/>
+<path d="M316 176H196V472H316V176Z" fill="#3BE200"/>
+<path d="M316 176H196V96H316V176Z" fill="#36CF00"/>
+<path d="M262 96H250V132H262V96Z" fill="#3BE200"/>
+</g>
+<defs>
+<clipPath id="clip0_75_1422">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.7 42.8799H232.3V103.18L111.7 103.18V42.8799Z" fill="#121212"/>
+<rect x="111.7" y="103.18" width="8.04" height="69.68" fill="#121212"/>
+<rect x="224.26" y="103.18" width="8.04" height="69.68" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M128.22 117.251H165.74V154.771H128.22V117.251Z" fill="#FF0000" fill-opacity="0.4"/>
+<path d="M128.22 117.251H165.74V154.771H128.22V117.251ZM128.22 117.251H112.14" stroke="#121212" stroke-width="4.02"/>
+<path d="M166.41 123.281H179.14" stroke="#121212" stroke-width="4.02"/>
+<path d="M179.14 117.251H216.66V154.771H179.14V117.251Z" fill="#0075FF" fill-opacity="0.4"/>
+<path d="M216.66 117.251H179.14V154.771H216.66V117.251ZM216.66 117.251H232.74" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M145.52 190.76H199.12L196.44 202.15L193.76 212.87H150.88L148.2 202.15L145.52 190.76Z" fill="white"/>
+<path d="M148.2 202.15L150.88 212.87H193.76L196.44 202.15M148.2 202.15L145.52 190.76H199.12L196.44 202.15M148.2 202.15H196.44" stroke="#121212" stroke-width="4.02"/>
+<rect width="16.08" height="42.88" transform="matrix(0 -1 -1 0 124.75 210.189)" fill="#2D2D2D"/>
+<path d="M134.656 218.229L126.646 218.229V202.149M134.656 186.069H126.646V202.149M126.646 202.149H214.53" stroke="#2D2D2D" stroke-width="4.02"/>
+<path d="M79.8601 212.869V202.149V191.429" stroke="#2D2D2D" stroke-width="4.02"/>
+</svg>
+</g></svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M171.521 50.96C146.729 50.96 126.631 71.0579 126.631 95.85H216.411C216.411 71.0579 196.313 50.96 171.521 50.96Z" fill="#ECECEC"/>
+<path d="M95.1406 71.0601H247.901L231.821 108.58H111.221L95.1406 71.0601Z" fill="white"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="111.54" y="127.3" width="56.28" height="8.04" fill="#121212"/>
+<rect x="119.58" y="127.3" width="8.04" height="8.04" fill="white"/>
+<rect x="175.86" y="127.3" width="56.28" height="8.04" fill="#121212"/>
+<rect x="183.9" y="135.34" width="40.2" height="8.04" fill="#121212"/>
+<rect x="191.94" y="143.38" width="24.12" height="8.04" fill="#121212"/>
+<rect x="119.58" y="135.34" width="40.2" height="8.04" fill="#121212"/>
+<rect x="127.62" y="143.38" width="24.12" height="8.04" fill="#121212"/>
+<rect x="111.54" y="119.26" width="120.6" height="8.04" fill="#121212"/>
+<rect x="127.62" y="135.34" width="8.04" height="8.04" fill="white"/>
+<rect x="135.66" y="143.38" width="8.04" height="8.04" fill="white"/>
+<rect x="183.9" y="127.3" width="8.04" height="8.04" fill="white"/>
+<rect x="191.94" y="135.34" width="8.04" height="8.04" fill="white"/>
+<rect x="199.98" y="143.38" width="8.04" height="8.04" fill="white"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M195.44 194.277L142.654 184.97C142.654 184.97 138.001 211.363 164.412 216.02C190.824 220.677 195.44 194.277 195.44 194.277Z" fill="white"/>
+</svg>
+</g></svg>

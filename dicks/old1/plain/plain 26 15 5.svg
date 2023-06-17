@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M111.58 57.6601L171.88 41.5801L232.18 57.6601V92.5001H111.58V57.6601Z" fill="#165B32"/>
+<path d="M171.88 53.6401L175.031 60.0238L182.075 61.0475L176.978 66.0165L178.181 73.0328L171.88 69.7201L165.579 73.0328L166.782 66.0165L161.685 61.0475L168.73 60.0238L171.88 53.6401Z" fill="#FEED59"/>
+<rect x="111.58" y="81.7798" width="120.6" height="10.72" fill="#FEED59"/>
+<path d="M111.58 92.5H232.18V103.22L171.88 116.62L111.58 103.22V92.5Z" fill="#0C4122"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="111.54" y="127.3" width="56.28" height="8.04" fill="#121212"/>
+<rect x="119.58" y="127.3" width="8.04" height="8.04" fill="white"/>
+<rect x="175.86" y="127.3" width="56.28" height="8.04" fill="#121212"/>
+<rect x="183.9" y="135.34" width="40.2" height="8.04" fill="#121212"/>
+<rect x="191.94" y="143.38" width="24.12" height="8.04" fill="#121212"/>
+<rect x="119.58" y="135.34" width="40.2" height="8.04" fill="#121212"/>
+<rect x="127.62" y="143.38" width="24.12" height="8.04" fill="#121212"/>
+<rect x="111.54" y="119.26" width="120.6" height="8.04" fill="#121212"/>
+<rect x="127.62" y="135.34" width="8.04" height="8.04" fill="white"/>
+<rect x="135.66" y="143.38" width="8.04" height="8.04" fill="white"/>
+<rect x="183.9" y="127.3" width="8.04" height="8.04" fill="white"/>
+<rect x="191.94" y="135.34" width="8.04" height="8.04" fill="white"/>
+<rect x="199.98" y="143.38" width="8.04" height="8.04" fill="white"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M155.097 202.82H188.12" stroke="#121212" stroke-width="4.02"/>
+<path d="M252.44 202.82C252.44 222.431 236.542 238.33 216.93 238.33C197.318 238.33 182.425 207.51 172.04 202.82C182.76 198.13 197.318 167.31 216.93 167.31C236.542 167.31 252.44 183.208 252.44 202.82Z" fill="#FF008A" fill-opacity="0.8" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

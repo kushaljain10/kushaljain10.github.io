@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M130.54 159.5L119.82 89.8201V41.5801H111.78V89.8201V159.5H130.54Z" fill="#121212"/>
+<path d="M213.62 159.5L224.34 89.8201V41.5801H232.38V89.8201V159.5H213.62Z" fill="#121212"/>
+<rect x="158.68" y="41.5801" width="26.8" height="8.04" fill="#121212"/>
+<rect x="71.5801" y="97.8599" width="201" height="10.72" fill="#8B634A"/>
+<rect x="261.86" y="81.7798" width="10.72" height="16.08" fill="#8B634A"/>
+<rect x="71.5801" y="81.7798" width="10.72" height="16.08" fill="#8B634A"/>
+<rect x="111.78" y="17.46" width="120.6" height="80.4" fill="#8B634A"/>
+<rect x="111.78" y="71.0601" width="120.6" height="26.8" fill="#77492D"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251Z" fill="#121212"/>
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251ZM122.06 117.251H111.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 117.251H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 129.311H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M178.34 117.251H221.22V154.771H186.38L178.34 130.986V117.251Z" fill="#121212"/>
+<path d="M221.22 117.251H178.34V130.986L186.38 154.771H221.22V117.251ZM221.22 117.251H231.94" stroke="#FFB74A" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M155.206 202.82H188.23L196 194.78" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

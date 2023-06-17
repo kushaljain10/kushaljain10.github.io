@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1422)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<path d="M428 340H84V500H428V340Z" fill="#36CF00"/>
+<path d="M316 176H196V472H316V176Z" fill="#3BE200"/>
+<path d="M316 176H196V96H316V176Z" fill="#36CF00"/>
+<path d="M262 96H250V132H262V96Z" fill="#3BE200"/>
+</g>
+<defs>
+<clipPath id="clip0_75_1422">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(256, 194)"><svg></svg></g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251Z" fill="#121212"/>
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251ZM122.06 117.251H111.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 117.251H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 129.311H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M178.34 117.251H221.22V154.771H186.38L178.34 130.986V117.251Z" fill="#121212"/>
+<path d="M221.22 117.251H178.34V130.986L186.38 154.771H221.22V117.251ZM221.22 117.251H231.94" stroke="#FFB74A" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M155.177 202.82H188.2" stroke="#121212" stroke-width="4.02"/>
+<rect width="10.72" height="10.72" transform="matrix(1 0 0 -1 175.47 213.539)" fill="#2D2D2D" stroke="#121212" stroke-width="4.02"/>
+<rect width="16.08" height="42.88" transform="matrix(1 0 0 -1 172.79 256.419)" fill="#2D2D2D" stroke="#121212" stroke-width="4.02"/>
+<rect width="16.08" height="8.04" transform="matrix(1 0 0 -1 172.79 221.579)" fill="white" stroke="#121212" stroke-width="4.02"/>
+<rect width="5.36" height="5.36" transform="matrix(1 0 0 -1 178.15 235.278)" fill="#D22D27"/>
+</svg>
+</g></svg>

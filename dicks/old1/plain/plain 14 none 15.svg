@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="111.9" y="97.8599" width="160.8" height="10.72" fill="#00892F"/>
+<rect x="111.9" y="49.6201" width="40.2" height="48.24" fill="#FEED59"/>
+<rect x="152.1" y="49.6201" width="40.2" height="48.24" fill="#D22D27"/>
+<rect x="192.3" y="49.6201" width="40.2" height="48.24" fill="#0032B4"/>
+<rect x="141.38" y="33.54" width="61.64" height="8.04" fill="#D22D27"/>
+<rect x="168.18" y="33.54" width="8.04" height="16.08" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(256, 227)"><svg></svg></g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M153.68 189.42H191.2" stroke="#121212" stroke-width="4.02"/>
+<path d="M180.145 202.317V189.42H165.07V202.317C165.07 206.48 168.445 209.855 172.608 209.855C176.77 209.855 180.145 206.48 180.145 202.317Z" fill="#D22D27" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

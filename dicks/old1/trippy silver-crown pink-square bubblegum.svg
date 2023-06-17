@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_75_1428)">
+<path d="M512 0H0V512H512V0Z" fill="#FF9900"/>
+<mask id="mask0_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="84" y="340" width="344" height="160">
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+</mask>
+<g mask="url(#mask0_75_1428)">
+<circle cx="256" cy="336.328" r="279" fill="#C2FD52"/>
+<circle cx="256" cy="336.328" r="245.048" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="216.262" fill="#AD00FF"/>
+<circle cx="256" cy="336.328" r="182.31" fill="#00A8FF"/>
+<circle cx="256" cy="336.328" r="154.262" fill="#C2FD52"/>
+<circle cx="256" cy="336.328" r="126.952" fill="#D22D27"/>
+<circle cx="256.001" cy="336.329" r="102.595" fill="#FFB74A"/>
+<circle cx="256.001" cy="336.329" r="74.5476" fill="#AD00FF"/>
+<circle cx="256.277" cy="336.605" r="45.9826" fill="#FF00B1"/>
+<circle cx="256" cy="336.328" r="21.901" fill="#C2FD52"/>
+</g>
+<mask id="mask1_75_1428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="196" y="96" width="120" height="376">
+<rect x="196" y="96" width="120" height="376" fill="#F15824"/>
+</mask>
+<g mask="url(#mask1_75_1428)">
+<circle cx="256" cy="269.672" r="279" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="245.048" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="216.262" fill="#AD00FF"/>
+<circle cx="256" cy="269.672" r="182.31" fill="#00A8FF"/>
+<circle cx="256" cy="269.672" r="154.262" fill="#C2FD52"/>
+<circle cx="256" cy="269.672" r="126.952" fill="#D22D27"/>
+<circle cx="256.001" cy="269.672" r="102.595" fill="#FFB74A"/>
+<circle cx="256.001" cy="269.673" r="74.5476" fill="#AD00FF"/>
+<circle cx="256.277" cy="269.948" r="45.9826" fill="#FF00B1"/>
+<circle cx="256" cy="269.672" r="21.901" fill="#C2FD52"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_75_1428">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M202.51 44.2603L180.4 69.0503H224.62L202.51 44.2603Z" fill="#C9BBC3"/>
+<path d="M141.54 44.2603L119.43 69.0503H163.65L141.54 44.2603Z" fill="#C9BBC3"/>
+<rect width="120.6" height="16.08" transform="matrix(1 0 0 -1 112.061 108.58)" fill="#C9BBC3"/>
+<path d="M112.061 92.5H232.661V68.38V35.215L202.511 68.38L171.691 35.215L142.211 68.38L112.061 35.215V68.38V92.5Z" fill="#D8D8D8"/>
+<path d="M160.3 75.3742L172.686 63.02L184.42 75.3742L172.686 87.14L160.3 75.3742Z" fill="#00A8FF"/>
+<path d="M225.29 75.2597L232.66 67.71V82.45L225.29 75.2597Z" fill="#D22D27"/>
+<path d="M119.43 75.2597L112.06 67.71V82.45L119.43 75.2597Z" fill="#D22D27"/>
+<circle cx="112.73" cy="32.2002" r="8.04" fill="#C9BBC3"/>
+<circle cx="172.36" cy="32.2002" r="8.04" fill="#C9BBC3"/>
+<circle cx="231.99" cy="32.2002" r="8.04" fill="#C9BBC3"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.3 117.251H164.82V154.771H127.3V117.251Z" fill="#FF00B1" fill-opacity="0.6"/>
+<path d="M127.3 117.251H164.82V154.771H127.3V117.251ZM127.3 117.251H111.22" stroke="#121212" stroke-width="4.02"/>
+<path d="M165.49 123.281H178.22" stroke="#121212" stroke-width="4.02"/>
+<path d="M178.22 117.251H215.74V154.771H178.22V117.251Z" fill="#FF00B1" fill-opacity="0.6"/>
+<path d="M215.74 117.251H178.22V154.771H215.74V117.251ZM215.74 117.251H231.82" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M155.097 202.82H188.12" stroke="#121212" stroke-width="4.02"/>
+<path d="M252.44 202.82C252.44 222.431 236.542 238.33 216.93 238.33C197.318 238.33 182.425 207.51 172.04 202.82C182.76 198.13 197.318 167.31 216.93 167.31C236.542 167.31 252.44 183.208 252.44 202.82Z" fill="#FF008A" fill-opacity="0.8" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

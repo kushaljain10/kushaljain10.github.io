@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M171.521 50.96C146.729 50.96 126.631 71.0579 126.631 95.85H216.411C216.411 71.0579 196.313 50.96 171.521 50.96Z" fill="#ECECEC"/>
+<path d="M95.1406 71.0601H247.901L231.821 108.58H111.221L95.1406 71.0601Z" fill="white"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.3 117.251H164.82V154.771H127.3V117.251Z" fill="#FF00B1" fill-opacity="0.6"/>
+<path d="M127.3 117.251H164.82V154.771H127.3V117.251ZM127.3 117.251H111.22" stroke="#121212" stroke-width="4.02"/>
+<path d="M165.49 123.281H178.22" stroke="#121212" stroke-width="4.02"/>
+<path d="M178.22 117.251H215.74V154.771H178.22V117.251Z" fill="#FF00B1" fill-opacity="0.6"/>
+<path d="M215.74 117.251H178.22V154.771H215.74V117.251ZM215.74 117.251H231.82" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M145.16 190.76H198.76L196.08 202.15L193.4 212.87H150.52L147.84 202.15L145.16 190.76Z" fill="white"/>
+<path d="M147.84 202.15L150.52 212.87H193.4L196.08 202.15M147.84 202.15L145.16 190.76H198.76L196.08 202.15M147.84 202.15H196.08" stroke="#121212" stroke-width="4.02"/>
+<path d="M208.81 202.149L208.81 185.064M208.81 202.149L208.81 218.229M208.81 202.149H129.415M121.04 202.149H129.415M129.415 202.149L135.11 191.429M129.415 202.149L135.11 212.199" stroke="#42B16C" stroke-width="4.02"/>
+<rect x="242.98" y="188.749" width="26.8" height="32.16" transform="rotate(90 242.98 188.749)" fill="#D22D27"/>
+<path d="M242.98 207.509V215.549H210.82V196.789L242.98 207.509Z" fill="#7B0000"/>
+</svg>
+</g></svg>

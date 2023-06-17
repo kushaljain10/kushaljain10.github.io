@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M121.98 110.59L146.1 81.7802L82.5143 29.7909L28.18 84.1252L68.5994 124.545L91.7909 101.353L72.9064 103.01L55.0158 85.1191L79.5325 60.6024L121.98 110.59Z" fill="#121212"/>
+<path d="M220.135 110.59L196.015 81.7802L259.601 29.7909L313.935 84.1252L273.516 124.545L250.324 101.353L269.209 103.01L287.099 85.1191L262.582 60.6024L220.135 110.59Z" fill="#121212"/>
+</svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251Z" fill="#121212"/>
+<path d="M122.06 117.251H164.94V130.651L156.9 154.771H122.06V117.251ZM122.06 117.251H111.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 117.251H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M165.61 129.311H178.34" stroke="#FFB74A" stroke-width="4.02"/>
+<path d="M178.34 117.251H221.22V154.771H186.38L178.34 130.986V117.251Z" fill="#121212"/>
+<path d="M221.22 117.251H178.34V130.986L186.38 154.771H221.22V117.251ZM221.22 117.251H231.94" stroke="#FFB74A" stroke-width="4.02"/>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M154.617 202.82H187.64" stroke="#121212" stroke-width="4.02"/>
+<path d="M229.85 213.54L186.3 202.82L237.89 234.645L246.6 217.225L251.29 207.845L236.215 200.81L231.693 209.855L229.85 213.54Z" fill="#77492D"/>
+<path d="M246.6 217.225L251.29 207.845L236.215 200.81L231.693 209.855M246.6 217.225L237.89 234.645L186.3 202.82L229.85 213.54L231.693 209.855M246.6 217.225L231.693 209.855" stroke="#121212" stroke-width="4.02"/>
+</svg>
+</g></svg>

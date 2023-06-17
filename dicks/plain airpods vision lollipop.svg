@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g id="layer1" transform="translate(0, 0)"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<rect x="84" y="340" width="344" height="160" fill="#DA420F"/>
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<rect x="196" y="176" width="120" height="296" fill="#F15824"/>
+<rect width="120" height="80" transform="matrix(1 0 0 -1 196 176)" fill="#DA420F"/>
+<path d="M262 96H250V132H262V96Z" fill="#F15824">
+<animate attributeName="fill" values="#F15824; #F15824; #fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#fff; #F15824;#F15824" keyTimes="0; 0.74; 0.76; 0.78;0.8;0.82;0.84;0.86;0.88;0.9;0.92;0.94;0.96;0.98;1" dur="5s" repeatCount="indefinite" />
+</path>
+</g>
+</svg>
+</g><g id="layer2" transform="translate(84, 22)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<circle cx="169.51" cy="54.9399" r="24.79" fill="#121212"/>
+<circle cx="153.43" cy="79.7299" r="24.79" fill="#121212"/>
+<circle cx="187.6" cy="79.7299" r="24.79" fill="#121212"/>
+<circle cx="126.63" cy="64.9897" r="24.79" fill="#121212"/>
+<circle cx="111.22" cy="94.4697" r="24.79" fill="#121212"/>
+<circle cx="231.82" cy="94.4702" r="24.79" fill="#121212"/>
+<circle cx="215.07" cy="64.9902" r="24.79" fill="#121212"/>
+<rect x="97.8201" y="134" width="13.4" height="13.4" fill="white"/>
+<rect width="13.4" height="13.4" transform="matrix(-1 0 0 1 245.22 134)" fill="white"/>
+<rect x="97.8201" y="147.4" width="8.04" height="21.44" fill="white"/>
+<rect width="8.04" height="21.44" transform="matrix(-1 0 0 1 245.22 147.4)" fill="white"/>
+</g></svg>
+</g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M145 97.6879C105.4 99.6879 99 123.688 101 144.688C112.5 191.188 153.5 175.188 160 166.188C163.611 161.188 167.5 157.188 173 157.188C178.5 157.188 181.5 162.188 184.5 166.188C200.5 182.688 240 181.188 244 144.688C247.2 115.488 228.333 102.855 218.5 100.188C210.5 98.5212 184.6 95.6879 145 97.6879Z" fill="#121212"/>
+<path d="M117.42 135.174C117.42 125.25 124.19 116.619 133.981 115.002C144.273 113.303 158.203 111.578 172.36 111.578C186.517 111.578 200.447 113.303 210.739 115.002C220.53 116.619 227.3 125.25 227.3 135.174C227.3 145.04 220.606 153.805 210.784 154.743C202.659 155.519 193.501 155.369 188.231 151.942C183.112 148.612 178.473 140.94 172.36 140.94C166.247 140.94 161.609 148.612 156.489 151.942C151.219 155.369 142.061 155.519 133.936 154.743C124.115 153.805 117.42 145.04 117.42 135.174Z" fill="#0732A0">
+<animate attributeName="fill" dur="4s" repeatCount="indefinite" keyTimes="0;0.25;0.5;0.75;1" values="#0732A0;#9129E3;#4378FF;#0732A0;#0732A0" />
+</path>
+</g>
+</svg>
+</g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
+<animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<path d="M154.576 202.339H187.6" stroke="#121212" stroke-width="4.02"/>
+<path d="M182 205L221 247" stroke="#1D1D1D" stroke-width="4.02">
+<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;0.1;0.5;0.6;1" values="0 180 205;90 180 205;90 180 205; 0 180 205; 0 180 205;" />
+</path>
+<path d="M181.57 217.75C188.971 217.75 194.97 211.75 194.97 204.35H168.17C168.17 211.75 174.169 217.75 181.57 217.75Z" fill="#FF00B1"/>
+<path d="M181.569 213.73C186.75 213.73 190.949 209.53 190.949 204.35H172.189C172.189 209.53 176.389 213.73 181.569 213.73Z" fill="#AD00FF"/>
+<path d="M181.569 209.71C184.529 209.71 186.929 207.31 186.929 204.35H176.209C176.209 207.31 178.609 209.71 181.569 209.71Z" fill="#FFB039"/>
+<path d="M168.17 202.34H166.16V204.35C166.16 212.86 173.059 219.76 181.57 219.76C190.081 219.76 196.98 212.86 196.98 204.35V202.34H194.97H168.17Z" stroke="#1D1D1D" stroke-width="4.02"/>
+</g></svg>
+</g></svg>
