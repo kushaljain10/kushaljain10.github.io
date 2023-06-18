@@ -29,19 +29,39 @@
 </g><g id="layer3" transform="translate(84, 55)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g>
 <animateTransform attributeName="transform" type="translate" dur="0.4s" repeatCount="indefinite" keyTimes="0;0.5;1" values="0 0;0 28;0 0" />
+<rect x="176" y="127" width="56" height="8" fill="#121212"/>
+<rect x="182" y="135" width="40" height="8" fill="#121212"/>
+<rect x="190" y="143" width="24" height="8" fill="#121212"/>
+<rect x="112" y="119" width="120" height="8" fill="#121212"/>
+<rect x="112" y="127" width="56" height="8" fill="#121212"/>
+<rect x="119" y="135" width="40" height="8" fill="#121212"/>
+<rect x="127" y="143" width="24" height="8" fill="#121212"/>
+<mask id="mask0_127_564" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="111" y="127" width="56" height="24">
 <rect x="111" y="127" width="56" height="8" fill="#121212"/>
+<rect x="119" y="135" width="40" height="8" fill="#121212"/>
+<rect x="127" y="143" width="24" height="8" fill="#121212"/>
+</mask>
+<g mask="url(#mask0_127_564)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-16 0;-16 0;48 0" />
 <rect x="119" y="127" width="8" height="8" fill="white"/>
+<rect x="127" y="135" width="8" height="8" fill="white"/>
+<rect x="135" y="143" width="8" height="8" fill="white"/>
+</g>
+</g>
+<mask id="mask1_127_564" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="174" y="127" width="56" height="24">
 <rect x="174" y="127" width="56" height="8" fill="#121212"/>
 <rect x="182" y="135" width="40" height="8" fill="#121212"/>
 <rect x="190" y="143" width="24" height="8" fill="#121212"/>
-<rect x="119" y="135" width="40" height="8" fill="#121212"/>
-<rect x="127" y="143" width="24" height="8" fill="#121212"/>
-<rect x="111" y="119" width="120" height="8" fill="#121212"/>
-<rect x="127" y="135" width="8" height="8" fill="white"/>
-<rect x="135" y="143" width="8" height="8" fill="white"/>
+</mask>
+<g mask="url(#mask1_127_564)">
+<g>
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-16 0;-16 0;48 0" />
 <rect x="182" y="127" width="8" height="8" fill="white"/>
 <rect x="190" y="135" width="8" height="8" fill="white"/>
 <rect x="198" y="143" width="8" height="8" fill="white"/>
+</g>
+</g>
 </g>
 </svg>
 </g><g id="layer4" transform="translate(84, 140)"><svg width="344" height="344" viewBox="0 0 344 344" fill="none" xmlns="http://www.w3.org/2000/svg"><g>

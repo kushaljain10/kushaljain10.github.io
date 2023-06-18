@@ -7,7 +7,7 @@
 <path d="M316 176H196V472H316V176Z" fill="#E3E3E3"/>
 <path d="M316 176H196V96H316V176Z" fill="#2D2D2D"/>
 <path d="M262 96H250V132H262V96Z" fill="#E3E3E3">
-<animate attributeName="fill" values="#E3E3E3; #E3E3E3; #fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#fff; #E3E3E3;#E3E3E3" keyTimes="0; 0.74; 0.76; 0.78;0.8;0.82;0.84;0.86;0.88;0.9;0.92;0.94;0.96;0.98;1" dur="5s" repeatCount="indefinite" />
+<animate attributeName="fill" values="#ddd; #ddd; #fff; #ddd;#fff; #ddd;#fff; #ddd;#fff; #ddd;#fff; #ddd;#fff; #ddd;#ddd" keyTimes="0; 0.74; 0.76; 0.78;0.8;0.82;0.84;0.86;0.88;0.9;0.92;0.94;0.96;0.98;1" dur="5s" repeatCount="indefinite" />
 </path>
 </g>
 </g>
