@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIP 666</title>
+    <style>
+        body {
+          padding: 0;
+          margin: 0;
+          max-width: 100vw;
+          overflow: hidden;
+          /* position: relative; */
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(9, 1fr);
+        }
+        @media only screen and (max-width: 768px) {
+          .grid {
+          grid-template-columns: repeat(8, 1fr);
+          max-width: 100%;
+        }
+        }
+        #qr {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 11vh;
+            height: 11vh;
+        }
+        #iframe-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #rotated-iframe {
+  transform: rotate(270deg);
+  top: 100vh;
+  transform-origin: top left;
+  position: relative;
+  height: 100vw;
+  width: 100vh;
+  overflow: hidden;
+}
+      </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <div id="rotated-iframe">
+            <div class="grid" id="grid">
+            </div>
+            <img src="qr-code.png" id="qr">
+        </div>
+    </div>
+  
+    <script>
+        window.onload = function() {
+      const iframe = document.getElementById('rotated-iframe');
+};
+      const filePath = './dicks.csv'; // Replace with the actual file path
+  
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', filePath, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const csvData = xhr.responseText;
+      const rows = csvData.split('\n');
+      const traitValues = [];
+  
+      for (let i = rows.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [rows[i], rows[j]] = [rows[j], rows[i]];
+    }
+  
+    //   for (let i = 0; i < rows.length; i++) {
+      for (let i = 0; i < 150; i++) {
+        const row = rows[i].split(',');
+        traitValues.push(row);
+      }
+  
+      traitValues.forEach(currDick => {
+        const img = new Image();
+        img.style = "max-width: 100%";
+        if(currDick[1] != undefined) {
+            img.src = './dicks/' + currDick[0] + ' ' + currDick[1] + ' ' + currDick[2] + ' ' + currDick[3] + '.svg';
+            document.getElementById('grid').appendChild(img);
+        }
+      });
+    } else if (xhr.readyState === 4 && xhr.status !== 200) {
+      console.error('Error reading CSV file:', xhr.status);
+    }
+  };
+  
+  xhr.send();
+
+  // Function to slowly scroll the webpage to the bottom and back to the top in a loop
+// function scrollLoop() {
+//   const scrollHeight = document.documentElement.scrollHeight;
+//   const clientHeight = document.documentElement.clientHeight;
+//   const scrollStep = 0.000025;
+//   let scrollCount = 0;
+//   let scrollPos = 0;
+
+//   function animateScroll() {
+//     const cosParameter = (scrollHeight / 2) - (scrollHeight / 2) * Math.cos(scrollCount * scrollStep);
+//     scrollPos += cosParameter;
+
+//     window.scrollTo(0, scrollPos);
+
+//     if (scrollPos < scrollHeight - clientHeight) {
+//       scrollCount += 1;
+//       window.requestAnimationFrame(animateScroll);
+//     } else {
+//       // Once scrolled to the bottom, start scrolling back to the top
+//       setTimeout(() => {
+//         scrollCount = 0;
+//         scrollPos = 0;
+//         scrollLoop();
+//       }, 3000); // Add a delay of 3 seconds before scrolling back to the top
+//     }
+//   }
+
+//   animateScroll();
+// }
+
+// // Start the scroll loop
+// scrollLoop();
+
+    </script>
+  </body>
+  </html>
