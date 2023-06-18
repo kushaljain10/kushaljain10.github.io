@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  </style>
+</head>
+<body>
+  <div class="grid" id="grid">
+  </div>
+
+  <script>
+    const filePath = './dicks.csv'; // Replace with the actual file path
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', filePath, true);
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    const csvData = xhr.responseText;
+    const rows = csvData.split('\n');
+    const traitValues = [];
+
+    for (let i = 0; i < rows.length; i++) {
+      const row = rows[i].split(',');
+      traitValues.push(row);
+    }
+
+    traitValues.forEach(currDick => {
+      const img = new Image();
+      img.src = './dicks/' + currDick[0] + ' ' + currDick[1] + ' ' + currDick[2] + ' ' + currDick[3] + '.svg';
+      document.getElementById('grid').appendChild(img);
+    });
+  } else if (xhr.readyState === 4 && xhr.status !== 200) {
+    console.error('Error reading CSV file:', xhr.status);
+  }
+};
+
+xhr.send();
+  </script>
+</body>
+</html>
