@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="212" y="194" width="20" height="20" rx="10" fill="#121212"/>
+    <rect x="280" y="194" width="20" height="20" rx="10" fill="#121212">
+        <animate attributeName="y" dur="4s" repeatCount="indefinite" keyTimes="0;0.475;0.5;0.575;0.6;1" values="194;194;203;203;194;194" />
+        <animate attributeName="height" dur="4s" repeatCount="indefinite" keyTimes="0;0.475;0.5;0.575;0.6;1" values="20;20;2;2;20;20" />
+        <animate attributeName="rx" dur="4s" repeatCount="indefinite" keyTimes="0;0.475;0.5;0.575;0.6;1" values="10;10;1;1;10;10" />
+    </rect>
+    <path id="path1" d="M206 162H238" stroke="#121212" stroke-width="6"/>
+    <g transform="translate(0,0)">
+        <path id="path2" d="M274 162H306" stroke="#121212" stroke-width="6">
+            <animateTransform attributeName="transform" type="translate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.475;0.5;0.575;0.6;1" values="0 0;0 0;0 5;0 5;0 0;0 0" />
+            <animateTransform attributeName="transform" type="rotate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.475;0.5;0.575;0.6;1" values="0 274 162;0 274 162;10 274 162;10 274 162;0 274 162;0 274 162" additive="sum" />
+        </path>
+    </g>
+</svg>

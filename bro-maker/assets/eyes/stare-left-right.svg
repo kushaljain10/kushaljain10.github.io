@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="212" y="194" width="20" height="20" rx="10" fill="#121212">
+        <animate attributeName="x" values="206;218;218;206;206" keyTimes="0;0.05;0.5;0.55;1" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <rect x="280" y="194" width="20" height="20" rx="10" fill="#121212">
+        <animate attributeName="x" values="274;286;286;274;274" keyTimes="0;0.05;0.5;0.55;1" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <path d="M206 197H238" stroke="#121212" stroke-width="6"/>
+    <path d="M274 197H306" stroke="#121212" stroke-width="6"/>
+</svg>

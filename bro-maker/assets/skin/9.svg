@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M134 178H166V242H146L134 178Z" fill="#B7009A"/>
+<path d="M378 178H346V242H366L378 178Z" fill="#B7009A"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#D800B5"/>
+<rect x="207" y="346" width="98" height="54" fill="#B7009A"/>
+<rect x="166" y="106" width="180" height="240" fill="#D800B5"/>
+<path d="M256 186L243.839 158L256 130L268.161 158L256 186Z" fill="white"/>
+<circle cx="256" cy="158" r="7.9196" transform="rotate(-90 256 158)" fill="#007089"/>
+<path d="M256 500L243.839 472L256 444L268.161 472L256 500Z" fill="white"/>
+<circle cx="256" cy="472" r="7.9196" fill="#007089"/>
+<path d="M292 484L320 471.839L348 484L320 496.161L292 484Z" fill="white"/>
+<circle cx="320" cy="484" r="7.9196" fill="#007089"/>
+<path d="M164 484L192 471.839L220 484L192 496.161L164 484Z" fill="white"/>
+<circle cx="192" cy="484" r="7.9196" fill="#007089"/>
+<path d="M76 484L104 471.839L132 484L104 496.161L76 484Z" fill="white"/>
+<circle cx="104" cy="484" r="7.9196" fill="#007089"/>
+<path d="M380 484L408 471.839L436 484L408 496.161L380 484Z" fill="white"/>
+<circle cx="408" cy="484" r="7.9196" fill="#007089"/>
+<path d="M184.061 416.936L200.022 442.958L229.933 449.057L213.972 423.035L184.061 416.936Z" fill="white"/>
+<circle cx="7.9196" cy="7.9196" r="7.9196" transform="matrix(1 0 0 -1 199.077 440.916)" fill="#007089"/>
+<path d="M104.061 416.936L120.022 442.958L149.933 449.057L133.972 423.035L104.061 416.936Z" fill="white"/>
+<circle cx="7.9196" cy="7.9196" r="7.9196" transform="matrix(1 0 0 -1 119.077 440.916)" fill="#007089"/>
+<path d="M327.933 416.936L311.972 442.958L282.06 449.057L298.021 423.035L327.933 416.936Z" fill="white"/>
+<circle cx="304.997" cy="432.996" r="7.9196" fill="#007089"/>
+<path d="M411.933 416.936L395.972 442.958L366.06 449.057L382.021 423.035L411.933 416.936Z" fill="white"/>
+<circle cx="388.997" cy="432.996" r="7.9196" fill="#007089"/>
+<path d="M228 372L256 359.839L284 372L256 384.161L228 372Z" fill="white"/>
+<circle cx="256" cy="372" r="7.9196" fill="#007089"/>
+<path d="M256 218L266 258H246" stroke="#121212" stroke-width="6"/>
+</svg>

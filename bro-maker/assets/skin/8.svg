@@ -1,0 +1,40 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_524_3793" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="134" y="178" width="244" height="64">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M166 178H134L146 242H166V178ZM346 178H378L366 242H346V178Z" fill="#E24713"/>
+</mask>
+<g mask="url(#mask0_524_3793)">
+<circle cx="256" cy="210" r="127" fill="#FFB74A"/>
+<circle cx="256" cy="210" r="104" fill="#FF00B1"/>
+</g>
+<mask id="mask1_524_3793" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="207" y="346" width="98" height="54">
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+</mask>
+<g mask="url(#mask1_524_3793)">
+<ellipse cx="256" cy="275.412" rx="119.91" ry="138.217" fill="#AD00FF"/>
+<ellipse cx="256" cy="275.5" rx="97" ry="111.5" fill="#FF00B1"/>
+<ellipse cx="256" cy="275.5" rx="73" ry="83.5" fill="#D22D27"/>
+</g>
+<mask id="mask2_524_3793" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="32" y="400" width="448" height="112">
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+</mask>
+<g mask="url(#mask2_524_3793)">
+<circle cx="256" cy="220" r="366" fill="#D22D27"/>
+<circle cx="256" cy="220" r="315" fill="#FFB74A"/>
+<circle cx="256" cy="220" r="277" fill="#AD00FF"/>
+<circle cx="256" cy="220" r="240" fill="#00A8FF"/>
+<circle cx="256" cy="220" r="204" fill="#C2FD52"/>
+</g>
+<mask id="mask3_524_3793" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="166" y="106" width="180" height="240">
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+</mask>
+<g mask="url(#mask3_524_3793)">
+<circle cx="256" cy="-20" r="378" fill="#C2FD52"/>
+<circle cx="256" cy="-20" r="332" fill="#FF00B1"/>
+<circle cx="256" cy="-20" r="293" fill="#AD00FF"/>
+<circle cx="256" cy="-20" r="247" fill="#00A8FF"/>
+<circle cx="256" cy="-20" r="209" fill="#C2FD52"/>
+<circle cx="256" cy="-20" r="172" fill="#D22D27"/>
+<circle cx="256" cy="-20" r="139" fill="#FFB74A"/>
+</g>
+<path d="M256 218L266 258H246" stroke="#121212" stroke-width="6"/>
+</svg>
