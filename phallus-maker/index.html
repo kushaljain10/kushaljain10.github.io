@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bitcoin Dick Maker</title>
+  <title>Phallus Maker</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-black">
+<body>
   <div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold mb-4">Bitcoin Bro Maker</h1>
+    <h1 class="text-3xl font-bold mb-4">Phallus Maker</h1>
 
     <div class="grid grid-cols-6">
         <div class="col-span-3">
             <form id="bro-form" class="bg-white p-4 rounded shadow-md mr-4">
               <div class="flex flex-wrap mb-4">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block mb-2 font-bold" for="dick">Dick:</label>
-                  <select onchange="generateDick()" id="dick" name="dick" class="block w-full p-2 border border-gray-300 rounded">
+                  <label class="block mb-2 font-bold" for="dick">Phallus:</label>
+                  <select onchange="generatePhallus()" id="dick" name="dick" class="block w-full p-2 border border-gray-300 rounded">
                   </select>
                   <label for="dick-fixed">Fixed?</label>
                   <input id="dick-fixed" type="checkbox">
@@ -26,7 +26,7 @@
                 
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label class="block mb-2 font-bold" for="eyewear">Eyewear:</label>
-                  <select onchange="generateDick()" id="eyewear" name="eyewear" class="block w-full p-2 border border-gray-300 rounded">
+                  <select onchange="generatePhallus()" id="eyewear" name="eyewear" class="block w-full p-2 border border-gray-300 rounded">
                   </select>
                   <label for="eyewear-fixed">Fixed?</label>
                   <input id="eyewear-fixed" type="checkbox">
@@ -36,7 +36,7 @@
               <div class="flex flex-wrap mb-4">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label class="block mb-2 font-bold" for="head">Head:</label>
-                <select onchange="generateDick()" id="head" name="head" class="block w-full p-2 border border-gray-300 rounded">
+                <select onchange="generatePhallus()" id="head" name="head" class="block w-full p-2 border border-gray-300 rounded">
                 </select>
                 <label for="head-fixed">Fixed?</label>
                 <input id="head-fixed" type="checkbox">
@@ -44,7 +44,7 @@
 
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label class="block mb-2 font-bold" for="face">Face:</label>
-                <select onchange="generateDick()" id="face" name="face" class="block w-full p-2 border border-gray-300 rounded">
+                <select onchange="generatePhallus()" id="face" name="face" class="block w-full p-2 border border-gray-300 rounded">
                 </select>
                 <label for="face-fixed">Fixed?</label>
                 <input id="face-fixed" type="checkbox">
@@ -52,8 +52,8 @@
 
               </div>
 
-              <button id="generate-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="generateDick()">Generate Dick</button>
-              <button id="random-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="randomDick()">Randomise</button>
+              <button id="generate-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="generatePhallus()">Generate Phallus</button>
+              <button id="random-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="randomPhallus()">Randomise</button>
             </form>
         </div>
         <div class="col-span-3" style="max-width: 500px;">
@@ -105,7 +105,7 @@
       });
   });
 
-    function randomDick() {
+    function randomPhallus() {
       traitNames.forEach(function(trait) {
         if(!document.getElementById(trait+'-fixed').checked) {
           const selectElement = document.getElementById(trait);
@@ -116,7 +116,7 @@
           document.getElementById(trait).options[randomIndex].setAttribute('selected', '');
         }
       })
-      generateDick();
+      generatePhallus();
     }
 
     const downloadLink = document.getElementById('download-btn');
@@ -124,13 +124,13 @@
       downloadLink.href = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(document.getElementById('result').innerHTML);
     });
 
-    function generateDick() {
+    function generatePhallus() {
       document.getElementById('download-btn').style.display = 'block';
       const formData = new FormData(document.getElementById('bro-form'));
       const params = new URLSearchParams(formData).toString();
 
   // Adjust the API endpoint URL accordingly
-  const apiUrl = 'https://expressjs-server-production-b440.up.railway.app/generate?' + params;
+  const apiUrl = 'https://expressjs-server-production-b440.up.railway.app/generate-phallus?' + params;
 
   fetch(apiUrl)
   .then(response => response.json())
