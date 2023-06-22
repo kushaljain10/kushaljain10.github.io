@@ -1,11 +1,11 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="222" cy="194" r="10" fill="#121212">
        
-        <animate attributeName="r" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="10;10;20;20;10;10" />
+        <animate attributeName="r" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="10;10;15;15;10;10" />
     </circle>
     <circle cx="290" cy="194" r="10" fill="#121212">
        
-        <animate attributeName="r" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="10;10;20;20;10;10" />
+        <animate attributeName="r" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="10;10;15;15;10;10" />
     </circle>
   
     <g transform="translate(0,0)">
