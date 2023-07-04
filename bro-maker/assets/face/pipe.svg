@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.711 302H280" stroke="#121212" stroke-width="6"/>
+<path d="M343 318L278 302L355 349.5L368 323.5L375 309.5L352.5 299L345.75 312.5L343 318Z" fill="#77492D"/>
+<path d="M368 323.5L375 309.5L352.5 299L345.75 312.5M368 323.5L355 349.5L278 302L343 318L345.75 312.5M368 323.5L345.75 312.5" stroke="#121212" stroke-width="6"/>
+<path d="M372.001 285C361.501 269.5 348.501 230.5 380.501 198.5C412.501 166.5 397.834 149.167 386.5 144.5C380.501 141 362.1 134.9 386.5 110.5" stroke="white" stroke-width="6">
+<animate attributeName="stroke" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="white;transparent;white" />
+</path>
+</svg>

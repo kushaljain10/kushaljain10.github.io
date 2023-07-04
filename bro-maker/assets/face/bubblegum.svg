@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.711 302H280" stroke="#121212" stroke-width="6"/>
+<g>
+<animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite" keyTimes="0;0.12;0.5;0.51;0.75;1" values="0 0;-130 -151;-130 -151;250 302;250 302;0 0" />
+<path d="M376 302C376 331.271 352.271 355 323 355C293.729 355 271.5 309 256 302C272 295 293.729 249 323 249C352.271 249 376 272.729 376 302Z" fill="#FF008A" fill-opacity="0.8" stroke="#121212" stroke-width="6">
+<animateTransform attributeName="transform" type="scale" dur="8s" repeatCount="indefinite" keyTimes="0;0.12;0.5;0.51;0.75;1" values="1;1.5;1.5;0;0;1" />
+</path>
+</g>
+</svg>

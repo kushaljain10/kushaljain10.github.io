@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_557_6632)">
+<rect x="212" y="194" width="20" height="20" rx="10" fill="#121212"/>
+<rect x="280" y="194" width="20" height="20" rx="10" fill="#121212"/>
+<path d="M206 162H238" stroke="#121212" stroke-width="6"/>
+<path d="M274 162H306" stroke="#121212" stroke-width="6"/>
+<path d="M291.14 203.33L525 273.488V290.659L290.101 206.487C289.441 206.25 289 205.624 289 204.922C289 203.809 290.073 203.01 291.14 203.33Z" fill="#F14D47" stroke="#D22D27" stroke-width="4">
+<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;0.1;0.2;0.4;0.5;0.6;1" values="0 290 200;10 290 200;10 290 200; -30 290 200; -30 290 200; 0 290 200; 0 290 200;" />
+</path>
+<path d="M223.046 203.185L550 361.753V384.632L221.743 205.717C221.285 205.468 221 204.988 221 204.466C221 203.415 222.1 202.726 223.046 203.185Z" fill="#F14D47" stroke="#D22D27" stroke-width="4">
+<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;0.1;0.2;0.4;0.5;0.6;1" values="0 220 200;10 220 200;10 220 200; -40 220 200; -40 220 200; 0 220 200; 0 220 200;" />
+</path>
+</g>
+<defs>
+<clipPath id="clip0_557_6632">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
