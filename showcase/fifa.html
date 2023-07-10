@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BLRxZo FIFA</title>
+    <style>
+      #iframe-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #rotated-iframe {
+  transform: rotate(270deg);
+  top: 100vh;
+  transform-origin: top left;
+  position: relative;
+  height: 100vw;
+  width: 100vh;
+}
+.card-body {
+  background-color: #333 !important;
+}
+      /* #rotated-iframe {
+    position: absolute;
+    top: -53vh;
+    left: 25vw;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    outline: none;
+    border: none;
+} */
+    </style>
+  </head>
+  <body>
+    <div id="iframe-container">
+      <iframe id="rotated-iframe" scrolling="no" src="https://www.tournifyapp.com/live/blrxzo/standings"></iframe>
+    </div>
+  </body>
+  <script>
+    window.onload = function() {
+      const iframe = document.getElementById('rotated-iframe');
+      iframe.style.filter = 'invert(100%)';
+};
+  </script>
+</html>
