@@ -12,7 +12,7 @@
         }
         .grid {
           display: grid;
-          grid-template-columns: repeat(11, 1fr);
+          grid-template-columns: repeat(8, 1fr);
         }
         @media only screen and (max-width: 768px) {
           .grid {
@@ -34,40 +34,47 @@
     </div>
   
     <script>
-      const filePath = './dicks.csv'; // Replace with the actual file path
+  //     const filePath = './dicks.csv'; // Replace with the actual file path
   
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', filePath, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      const csvData = xhr.responseText;
-      const rows = csvData.split('\n');
-      const traitValues = [];
+  // const xhr = new XMLHttpRequest();
+  // xhr.open('GET', filePath, true);
+  // xhr.onreadystatechange = function () {
+  //   if (xhr.readyState === 4 && xhr.status === 200) {
+  //     const csvData = xhr.responseText;
+  //     const rows = csvData.split('\n');
+  //     const traitValues = [];
   
-      for (let i = rows.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [rows[i], rows[j]] = [rows[j], rows[i]];
-    }
+  //     for (let i = rows.length - 1; i > 0; i--) {
+  //     const j = Math.floor(Math.random() * (i + 1));
+  //     [rows[i], rows[j]] = [rows[j], rows[i]];
+  //   }
   
-      for (let i = 0; i < rows.length; i++) {
-        const row = rows[i].split(',');
-        traitValues.push(row);
-      }
+  //     for (let i = 0; i < rows.length; i++) {
+  //       const row = rows[i].split(',');
+  //       traitValues.push(row);
+  //     }
   
-      traitValues.forEach(currDick => {
+  //     traitValues.forEach(currDick => {
+  //       const img = new Image();
+  //       img.style = "max-width: 100%";
+  //       if(currDick[1] != undefined) {
+  //           img.src = './dicks/' + currDick[0] + ' ' + currDick[1] + ' ' + currDick[2] + ' ' + currDick[3] + '.svg';
+  //           document.getElementById('grid').appendChild(img);
+  //       }
+  //     });
+  //   } else if (xhr.readyState === 4 && xhr.status !== 200) {
+  //     console.error('Error reading CSV file:', xhr.status);
+  //   }
+  // };
+  
+  // xhr.send();
+  for(let i=1; i<40; i++) {
         const img = new Image();
         img.style = "max-width: 100%";
-        if(currDick[1] != undefined) {
-            img.src = './dicks/' + currDick[0] + ' ' + currDick[1] + ' ' + currDick[2] + ' ' + currDick[3] + '.svg';
-            document.getElementById('grid').appendChild(img);
-        }
-      });
-    } else if (xhr.readyState === 4 && xhr.status !== 200) {
-      console.error('Error reading CSV file:', xhr.status);
-    }
-  };
-  
-  xhr.send();
+        img.src = './phallus/' + i + '.svg';
+        console.log(img.src);
+        document.getElementById('grid').appendChild(img);
+      }
 
 //   // Function to slowly scroll the webpage to the bottom and back to the top in a loop
 // function scrollLoop() {
