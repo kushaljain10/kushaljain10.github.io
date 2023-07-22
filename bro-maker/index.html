@@ -161,6 +161,12 @@
     });
 
     function generateBro() {
+      if (document.getElementById('eyes').value == 'laser-blue' ||  document.getElementById('eyes').value == 'laser-red') {
+        document.getElementById('eyewear').value = 'none';
+      }
+      if (document.getElementById('dress').value == '18' ||  document.getElementById('dress').value == '19') {
+        document.getElementById('head').value = 'none';
+      }
       document.getElementById('download-btn').style.display = 'block';
       const formData = new FormData(document.getElementById('bro-form'));
       const params = new URLSearchParams(formData).toString();
