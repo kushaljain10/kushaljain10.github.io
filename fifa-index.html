@@ -37,7 +37,7 @@
   </head>
   <body>
     <div id="iframe-container">
-      <iframe id="rotated-iframe" scrolling="no" src="https://www.tournifyapp.com/live/blrxzo/standings"></iframe>
+      <iframe id="rotated-iframe" scrolling="no" src="https://zoworld.retool.com/embedded/public/8d7ee2f5-5775-4481-9cd4-e5894d738727"></iframe>
     </div>
   </body>
   <script>
@@ -45,5 +45,11 @@
       const iframe = document.getElementById('rotated-iframe');
       iframe.style.filter = 'invert(100%)';
 };
+function refreshPage() {
+      setTimeout(function() {
+        location.reload();
+      }, 60000);
+    }
+    refreshPage();
   </script>
 </html>
