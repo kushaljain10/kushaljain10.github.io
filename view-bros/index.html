@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <script>
+            for (let i = 1; i <= 100; i++) {
+                document.write(`
+                    <div class="image-container" onmouseover="hoverImage(this, event)" onmouseout="unhoverImage(this, event)">
+                        <img src="../phallus/${i}.svg" alt="Image ${i}" class="image">
+                        <div class="overlay">
+                            <button onclick="window.location.href='phallus/${i}.svg';" class="download-btn">
+                                <i class="fas fa-download"></i>
+                            </button>
+                            <div class="image-name">${i}</div>
+                        </div>
+                    </div>
+                `);
+            }
+    
+            function hoverImage(container, event) {
+                if (event.ctrlKey || event.metaKey) {
+                    container.classList.add('hover');
+                }
+            }
+
+        function unhoverImage(container, event) {
+            container.classList.remove('hover');
+        }
+    </script>
+</div>
+    <div class="backdrop"></div>
+</body>
+</html>
