@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><g id="layer1"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#FF9900"/>
+<path d="M134 178H167V242H146L134 178Z" fill="#E24713"/>
+<path d="M378 178H345V242H366L378 178Z" fill="#E24713"/>
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+</svg>
+</g><g id="layer2"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M134 178H166V242H146L134 178Z" fill="#E24713"/>
+    <path d="M378 178H346V242H366L378 178Z" fill="#E24713"/>
+    <rect x="207" y="346" width="98" height="9" fill="#1D1D1D"/>
+    <rect x="207" y="355" width="98" height="9" fill="#2D2D2D"/>
+    <rect x="207" y="364" width="98" height="9" fill="#1D1D1D"/>
+    <rect x="207" y="373" width="98" height="9" fill="#2D2D2D"/>
+    <rect x="207" y="382" width="98" height="9" fill="#1D1D1D"/>
+    <rect x="207" y="391" width="98" height="9" fill="#2D2D2D"/>
+    <path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+    <path d="M64 400H120V488H76V512H32L64 400Z" fill="#2D2D2D"/>
+    <rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+    <path d="M166 172H246V236L166 278V172Z" fill="#2D2D2D"/>
+    <rect id="rect1" x="182" y="184" width="8" height="8" rx="4" fill="#D22D27">
+    <animate attributeName="fill" values="#D22D27;#FF0900;#FF0900;#D22D27;#D22D27;#FF0900;#FF0900;#D22D27;#D22D27;#FF0900;#FF0900;#D22D27;#D22D27" keyTimes="0;0.01;0.05;0.09;0.2;0.21;0.25;0.29;0.8;0.81;0.85;0.89;1" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect id="rect2" x="182" y="200" width="8" height="8" rx="4" fill="#D22D27">
+    <animate attributeName="fill" values="#D22D27;#C2FD52;#C2FD52;#D22D27;#D22D27;#C2FD52;#C2FD52;#D22D27;#D22D27;#C2FD52;#C2FD52;#D22D27;#D22D27" keyTimes="0;0.01;0.05;0.09;0.4;0.41;0.45;0.49;0.6;0.61;0.65;0.69;1" dur="3.2s" repeatCount="indefinite" />
+    </rect>
+    <circle id="circle1" cx="92" cy="436" r="12" fill="#D22D27">
+       <animate attributeName="fill" values="#D22D27;#FF0900;#FF0900;#D22D27;#D22D27;#FF0900;#FF0900;#D22D27;#D22D27;#FF0900;#FF0900;#D22D27;#D22D27" keyTimes="0;0.01;0.05;0.09;0.4;0.41;0.45;0.49;0.6;0.61;0.65;0.69;1" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <rect x="302" y="106" width="44" height="48" fill="#2D2D2D"/>
+    <rect x="166" y="242" width="12" height="104" fill="#2D2D2D"/>
+    <circle id="circle2" cx="148" cy="436" r="12" fill="#7B0000">
+       <animate attributeName="fill" values="#D22D27;#C2FD52;#C2FD52;#D22D27;#D22D27;#C2FD52;#C2FD52;#D22D27;#D22D27;#C2FD52;#C2FD52;#D22D27;#D22D27" keyTimes="0;0.01;0.05;0.09;0.2;0.21;0.25;0.29;0.8;0.81;0.85;0.89;1" dur="2.9s" repeatCount="indefinite" />
+    </circle>
+    <path d="M256 218L266 258H246" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer3"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M166 106L219.5 73V106L288.5 73V106L346 73V106V154L166 154V106Z" fill="#121212"/>
+<rect x="166" y="154" width="12" height="40" fill="#121212"/>
+<rect x="334" y="154" width="12" height="40" fill="#121212"/>
+<rect x="166" y="145" width="240" height="16" fill="#D22D27"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M346 73H166V121H190V145H346V73Z" fill="#D22D27"/>
+</svg>
+</g><g id="layer4"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M96 400H160C160 400 160 472 256 472C352 472 352 400 352 400H416V512H256H96L96 400Z" fill="#D22D27"/>
+<path d="M141 400C141 400 141 491 256 491C371 491 371 400 371 400" stroke="white" stroke-width="6"/>
+<path d="M112 400L112 512M400 400V512" stroke="white" stroke-width="6"/>
+</svg>
+</g><g id="layer5"><svg></svg></g><g id="layer6"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M246 289.391C246 289.391 258.823 284.011 262 289.391C265.153 294.732 254.5 303.391 254.5 303.391C254.5 303.391 267.632 299.309 270.5 304.891C273.719 311.156 258 317.891 258 317.891" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer7"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="212" y="194" width="20" height="20" rx="10" fill="#121212">
+        <animate attributeName="fill" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="#121212;#121212;#BA120C;#BA120C;#121212;#121212" />
+    </rect>
+    <rect x="280" y="194" width="20" height="20" rx="10" fill="#121212">
+        <animate attributeName="fill" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="#121212;#121212;#BA120C;#BA120C;#121212;#121212" />
+    </rect>
+    <g transform="translate(0,0)">
+        <path d="M206 162H238" stroke="#121212" stroke-width="6">
+            <animateTransform attributeName="transform" type="translate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="0 0;0 0;2 12;2 12;0 0;0 0" />
+            <animateTransform attributeName="transform" type="rotate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="0 222 162;0 222 162;30 222 162;30 222 162;0 222 162;0 222 162" additive="sum" />
+        </path>
+    </g>
+    <g transform="translate(0,0)">
+        <path d="M274 162H306" stroke="#121212" stroke-width="6">
+            <animateTransform attributeName="transform" type="translate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="0 0;0 0;-2 12;-2 12;0 0;0 0" />
+            <animateTransform attributeName="transform" type="rotate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="0 290 162;0 290 162;-30 290 162;-30 290 162;0 290 162;0 290 162" additive="sum" />
+        </path>
+    </g>
+</svg>
+</g><g id="layer8"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M235 250L256 234L277 250H346V226V210.5V195V178H269H166V195V210.5V226V250H235Z" fill="#121212"/>
+<circle cx="176" cy="190" r="4" fill="#0047FF"/>
+<circle cx="176" cy="206" r="4" fill="#0047FF"/>
+<circle cx="176" cy="222" r="4" fill="#0047FF"/>
+<circle cx="176" cy="238" r="4" fill="#0047FF"/>
+<circle cx="192" cy="206" r="4" fill="#0047FF"/>
+<circle cx="208" cy="222" r="4" fill="#0047FF"/>
+<circle cx="224" cy="206" r="4" fill="#0047FF"/>
+<circle cx="224" cy="222" r="4" fill="#0047FF"/>
+<circle cx="240" cy="190" r="4" fill="#0047FF"/>
+<circle cx="240" cy="206" r="4" fill="#0047FF"/>
+<circle cx="240" cy="222" r="4" fill="#0047FF"/>
+<circle cx="240" cy="238" r="4" fill="#0047FF"/>
+<circle cx="256" cy="190" r="4" fill="#0047FF"/>
+<circle cx="256" cy="206" r="4" fill="#0047FF"/>
+<circle cx="256" cy="222" r="4" fill="#0047FF"/>
+<circle cx="272" cy="190" r="4" fill="#0047FF"/>
+<circle cx="272" cy="206" r="4" fill="#0047FF"/>
+<circle cx="272" cy="222" r="4" fill="#0047FF"/>
+<circle cx="272" cy="238" r="4" fill="#0047FF"/>
+<circle cx="304" cy="206" r="4" fill="#0047FF"/>
+<circle cx="336" cy="190" r="4" fill="#0047FF"/>
+<circle cx="336" cy="206" r="4" fill="#0047FF"/>
+<circle cx="336" cy="222" r="4" fill="#0047FF"/>
+<circle cx="336" cy="238" r="4" fill="#0047FF"/>
+<circle cx="304" cy="222" r="4" fill="#0047FF"/>
+<g>
+<animate attributeName="fill" dur="8s" repeatCount="indefinite" keyTimes="0;0.05;0.075;0.1;0.12;0.15;0.5;0.55;1" values="#6C0400;#FF0900;#6C0400;#FF0900;#6C0400;#FF0900;#FF0900;#6C0400;#6C0400" />
+<circle cx="192" cy="190" r="4" fill="#79CBDC" />
+<circle cx="192" cy="222" r="4" fill="#79CBDC"/>
+<circle cx="192" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="208" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="208" cy="206" r="4" fill="#79CBDC"/>
+<circle cx="208" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="224" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="224" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="206" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="222" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="304" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="304" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="206" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="222" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="238" r="4" fill="#79CBDC"/>
+</g>
+</svg>
+</g></svg>

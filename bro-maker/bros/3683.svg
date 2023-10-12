@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><g id="layer1"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#7B0000"/>
+<path d="M134 178H167V242H146L134 178Z" fill="#E24713"/>
+<path d="M378 178H345V242H366L378 178Z" fill="#E24713"/>
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+</svg>
+</g><g id="layer2"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M134 178H166V242H146L134 178Z" fill="#CACACA"/>
+<path d="M378 178H346V242H366L378 178Z" fill="#CACACA"/>
+<rect x="207" y="346" width="98" height="54" fill="#CACACA"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#E3E3E3"/>
+<rect x="136" y="456" width="240" height="56" fill="white"/>
+<rect x="166" y="106" width="180" height="240" fill="#E3E3E3"/>
+<path d="M272 236H240L232 250L256 262L280 250L272 236Z" fill="#121212" stroke="#121212" stroke-width="6"/>
+<rect x="79" y="455" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="100" y="484" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="139" y="424" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="215" y="351" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="326" y="153" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="174" y="153" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="277" y="113" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="310" y="413" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="410" y="455" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="448" y="484" width="16" height="16" rx="8" fill="#1D1D1D"/>
+<rect x="79" y="409" width="24" height="24" rx="12" fill="#1D1D1D"/>
+<rect x="414" y="412" width="24" height="24" rx="12" fill="#1D1D1D"/>
+<rect x="197" y="415" width="24" height="24" rx="12" fill="#1D1D1D"/>
+<rect x="232" y="369" width="24" height="24" rx="12" fill="#1D1D1D"/>
+<rect x="174" y="115" width="24" height="24" rx="12" fill="#1D1D1D"/>
+<rect x="285" y="378" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="326" y="115" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="231" y="115" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="141" y="185" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="154" y="198" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="356" y="185" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="256" y="431" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="390" y="488" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="364" y="431" width="12" height="12" rx="6" fill="#1D1D1D"/>
+<rect x="52" y="492" width="12" height="12" rx="6" fill="#1D1D1D"/>
+</svg>
+</g><g id="layer3"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M158 136L176 140.75M194 145.5L176 140.75M194 145.5L183.5 156M194 145.5L223.75 140.75M351.5 145.5L335.75 147.633M176 140.75L171.5 127.5M223.75 140.75L208 130M223.75 140.75L238.625 138.375M238.625 138.375L253.5 136L270 141.28M238.625 138.375L227 156M270 141.28L262.5 123M270 141.28L286.75 146.64M286.75 146.64L303.5 152L320 149.766M286.75 146.64L273 156M320 149.766L312 161.5M320 149.766L335.75 147.633M335.75 147.633L314.5 127.5" stroke="#77492D" stroke-width="6"/>
+<path d="M351.5 136.5H307H291L265.75 146.75L240.5 157L193.5 132L160 154" stroke="#8B634A" stroke-width="6"/>
+</svg>
+</g><g id="layer4"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M64 400H188C188 400 190 452 256 452C322 452 324 400 324 400H448L480 512H32L64 400Z" fill="#42B06C"/>
+<path d="M256 452C190 452 188 400 188 400H166.5C166.5 400 172.5 473.5 256 473.5C339.5 473.5 345.5 400 345.5 400H324C324 400 322 452 256 452Z" fill="#94EDB6"/>
+</svg>
+</g><g id="layer5"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M204 270H308L324 290H188L204 270Z" fill="#121212"/>
+</svg>
+</g><g id="layer6"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.711 302H280" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer7"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M206 162H238" stroke="#121212" stroke-width="6"/>
+<path d="M206 202C206 202 212 194 222 194C232 194 238 202 238 202" stroke="#121212" stroke-width="6"/>
+<path d="M274 202C274 202 280 194 290 194C300 194 306 202 306 202" stroke="#121212" stroke-width="6"/>
+<path d="M274 162H306" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer8"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M182 175H246V195L234 231H182V175Z" fill="#121212"/>
+<path d="M182 175H246V195L234 231H182V175ZM182 175H166" stroke="#FFB74A" stroke-width="6"/>
+<path d="M247 175H266" stroke="#FFB74A" stroke-width="6"/>
+<path d="M247 193H266" stroke="#FFB74A" stroke-width="6"/>
+<path d="M266 175H330V231H278L266 195.5V175Z" fill="#121212"/>
+<path d="M330 175H266V195.5L278 231H330V175ZM330 175H346" stroke="#FFB74A" stroke-width="6"/>
+<mask id="mask0_143_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="185" y="178" width="58" height="50">
+<path d="M185 178H243V195L232 228H223.188H185V178Z" fill="#121212"/>
+</mask>
+<g mask="url(#mask0_143_2)">
+<path d="M195.545 178H206L193.455 228H183L195.545 178Z" fill="#D9D9D9">
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-32 0;-32 0;48 0" />
+</path>
+</g>
+<mask id="mask1_143_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="269" y="178" width="58" height="50">
+<path d="M327 178H269V195L280 228H288.812H327V178Z" fill="#121212"/>
+</mask>
+<g mask="url(#mask1_143_2)">
+<path d="M287.545 178H298L285.455 228H275L287.545 178Z" fill="#D9D9D9">
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-32 0;-32 0;48 0" />
+</path>
+</g>
+</svg>
+</g></svg>

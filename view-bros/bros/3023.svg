@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><g id="layer1"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#572828"/>
+<path d="M134 178H167V242H146L134 178Z" fill="#E24713"/>
+<path d="M378 178H345V242H366L378 178Z" fill="#E24713"/>
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+</svg>
+</g><g id="layer2"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M134 178H166V242H146L134 178Z" fill="#36CF00"/>
+<path d="M378 178H346V242H366L378 178Z" fill="#36CF00"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#3BE200"/>
+<rect x="207" y="346" width="98" height="54" fill="#36CF00"/>
+<rect x="166" y="106" width="180" height="240" fill="#3BE200"/>
+</svg>
+</g><g id="layer3"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M166 106H346C346 56.2944 305.706 16 256 16C206.294 16 166 56.2944 166 106Z" fill="#D22D27"/>
+<path d="M68 162H444L460 106H52L68 162Z" fill="#FFB74A"/>
+<path d="M132 162L111.375 122L92 162H132Z" fill="#D22D27"/>
+<path d="M204 162L183.375 122L164 162H204Z" fill="#D22D27"/>
+<path d="M276 162L255.375 122L236 162H276Z" fill="#D22D27"/>
+<path d="M348 162L327.375 122L308 162H348Z" fill="#D22D27"/>
+<path d="M420 162L399.375 122L380 162H420Z" fill="#D22D27"/>
+</svg>
+</g><g id="layer4"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_273_4114)">
+<path d="M64 400H160C160 400 160 472 256 472C352 472 352 400 352 400H448L480 512H32L64 400Z" fill="#121212"/>
+<path d="M150.5 400H207V533.5H185L133 443.5H164L150.5 400Z" fill="#2D2D2D"/>
+<path d="M361.5 400H305V533.5H327L379 443.5H348L361.5 400Z" fill="#2D2D2D"/>
+</g>
+<defs>
+<clipPath id="clip0_273_4114">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer5"><svg></svg></g><g id="layer6"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M216 284H296L292 301L288 317H224L220 301L216 284Z" fill="white"/>
+<path d="M220 301L224 317H288L292 301M220 301L216 284H296L292 301M220 301H292" stroke="#121212" stroke-width="6"/>
+<path d="M256.25 401.5C219 401.5 199 377.5 199 377.5L245.841 301H266.659L313.5 377.5C313.5 377.5 293.5 401.5 256.25 401.5Z" fill="#FFB74A" stroke="#121212" stroke-width="6"/>
+<path d="M256.25 401.5C219 401.5 199 377.5 199 377.5L206.654 365C206.654 365 224.5 384 256.25 384C285 384 305.846 365 305.846 365L313.5 377.5C313.5 377.5 293.5 401.5 256.25 401.5Z" fill="#FF9900" stroke="#121212" stroke-width="6"/>
+<circle cx="241" cy="359" r="12" fill="#D22D27"/>
+<circle cx="257" cy="321" r="10" fill="#D22D27"/>
+<circle cx="273" cy="351" r="10" fill="#D22D27"/>
+</svg>
+</g><g id="layer7"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="212" y="194" width="20" height="20" rx="10" fill="#121212">
+    <animate attributeName="rx" values="10;10;1;10;10;1;10;10;" keyTimes="0;0.275;0.3;0.325;0.725;0.75;0.775;1" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="height" values="20;20;2;20;20;2;20;20" keyTimes="0;0.275;0.3;0.325;0.725;0.75;0.775;1" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="y" values="194;194;203;194;194;203;194;194" keyTimes="0;0.275;0.3;0.325;0.725;0.75;0.775;1" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <rect x="280" y="194" width="20" height="20" rx="10" fill="#121212">
+    <animate attributeName="rx" values="10;10;1;10;10;1;10;10" keyTimes="0;0.275;0.3;0.325;0.725;0.75;0.775;1" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="height" values="20;20;2;20;20;2;20;20" keyTimes="0;0.275;0.3;0.325;0.725;0.75;0.775;1" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="y" values="194;194;203;194;194;203;194;194" keyTimes="0;0.275;0.3;0.325;0.725;0.75;0.775;1" dur="4s" repeatCount="indefinite" />
+  </rect>
+  <path d="M206 162H238" stroke="#121212" stroke-width="6"/>
+  <path d="M274 162H306" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer8"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M190 175H246V231H190V175Z" fill="#FFFFFF" fill-opacity="0.6"/>
+<path d="M190 175H246V231H190V175ZM190 175H166" stroke="#BBBBBB" stroke-width="6"/>
+<path d="M247 184H266" stroke="#BBBBBB" stroke-width="6"/>
+<path d="M266 175H322V231H266V175Z" fill="#FFFFFF" fill-opacity="0.6"/>
+<path d="M322 175H266V231H322V175ZM322 175H346" stroke="#BBBBBB" stroke-width="6"/>
+<mask id="mask0_139_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="269" y="178" width="50" height="50">
+<path d="M269 178H319V228H309.625H269V178Z" fill="#BBBBBB"/>
+</mask>
+<g mask="url(#mask0_139_2)">
+<path d="M279.545 178H290L277.455 228H267L279.545 178Z" fill="#DDD">
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-32 0;-32 0;48 0" />
+</path>
+</g>
+<mask id="mask1_139_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="193" y="178" width="50" height="50">
+<path d="M193 178H243V228H233.625H193V178Z" fill="#BBBBBB"/>
+</mask>
+<g mask="url(#mask1_139_2)">
+<path d="M203.545 178H214L201.455 228H191L203.545 178Z" fill="#DDD">
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-32 0;-32 0;48 0" />
+</path>
+</g>
+</svg>
+</g></svg>

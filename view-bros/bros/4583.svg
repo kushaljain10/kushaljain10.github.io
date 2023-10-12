@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><g id="layer1"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#007089"/>
+<path d="M134 178H167V242H146L134 178Z" fill="#E24713"/>
+<path d="M378 178H345V242H366L378 178Z" fill="#E24713"/>
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+</svg>
+</g><g id="layer2"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M134 178H166V242H146L134 178Z" fill="#E24713"/>
+<path d="M378 178H346V242H366L378 178Z" fill="#E24713"/>
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+<path d="M256 218L266 258H246" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer3"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M166 106L219.5 73V106L288.5 73V106L346 73V106V154L166 154V106Z" fill="#121212"/>
+<rect x="166" y="154" width="12" height="40" fill="#121212"/>
+<rect x="334" y="154" width="12" height="40" fill="#121212"/>
+<rect x="166" y="145" width="240" height="16" fill="#D22D27"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M346 73H166V121H190V145H346V73Z" fill="#D22D27"/>
+</svg>
+</g><g id="layer4"><svg></svg></g><g id="layer5"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="236" y="322" width="40" height="24" fill="#121212"/>
+<path d="M166 286H207V346H166V286Z" fill="#121212"/>
+<path d="M346 286H305V346H346V286Z" fill="#121212"/>
+</svg>
+</g><g id="layer6"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="238" y="298" width="36" height="4" rx="2" fill="white">
+  <animate attributeName="y" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="298;298;282;282;298;298" />
+  <animate attributeName="height" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="4;4;36;36;4;4" />
+  <animate attributeName="rx" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="2;2;18;18;2;2" />
+</rect>
+</svg>
+</g><g id="layer7"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="222" cy="194" r="10" fill="#121212">
+      </circle>
+    <circle cx="290" cy="194" r="10" fill="#121212">
+      </circle>
+  
+        <path d="M206 162H238" stroke="#121212" stroke-width="6">
+            <animateTransform attributeName="transform" type="translate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="0 0;0 0;0 24;0 24;0 0;0 0" />
+        </path>
+    <g transform="translate(0,0)">
+        <path d="M274 162H306" stroke="#121212" stroke-width="6">
+            <animateTransform attributeName="transform" type="translate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="0 0;0 0;2 -16;2 -16;0 0;0 0" />
+            <animateTransform attributeName="transform" type="rotate" begin="0s" dur="4s" repeatCount="indefinite" keyTimes="0;0.05;0.1;0.75;0.8;1" values="0 290 162;0 290 162;30 290 162;30 290 162;0 290 162;0 290 162" additive="sum" />
+        </path>
+    </g>
+</svg>
+</g><g id="layer8"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M235 250L256 234L277 250H346V226V210.5V195V178H269H166V195V210.5V226V250H235Z" fill="#121212"/>
+<circle cx="176" cy="190" r="4" fill="#0047FF"/>
+<circle cx="176" cy="206" r="4" fill="#0047FF"/>
+<circle cx="176" cy="222" r="4" fill="#0047FF"/>
+<circle cx="176" cy="238" r="4" fill="#0047FF"/>
+<circle cx="192" cy="206" r="4" fill="#0047FF"/>
+<circle cx="208" cy="222" r="4" fill="#0047FF"/>
+<circle cx="224" cy="206" r="4" fill="#0047FF"/>
+<circle cx="224" cy="222" r="4" fill="#0047FF"/>
+<circle cx="240" cy="190" r="4" fill="#0047FF"/>
+<circle cx="240" cy="206" r="4" fill="#0047FF"/>
+<circle cx="240" cy="222" r="4" fill="#0047FF"/>
+<circle cx="240" cy="238" r="4" fill="#0047FF"/>
+<circle cx="256" cy="190" r="4" fill="#0047FF"/>
+<circle cx="256" cy="206" r="4" fill="#0047FF"/>
+<circle cx="256" cy="222" r="4" fill="#0047FF"/>
+<circle cx="272" cy="190" r="4" fill="#0047FF"/>
+<circle cx="272" cy="206" r="4" fill="#0047FF"/>
+<circle cx="272" cy="222" r="4" fill="#0047FF"/>
+<circle cx="272" cy="238" r="4" fill="#0047FF"/>
+<circle cx="304" cy="206" r="4" fill="#0047FF"/>
+<circle cx="336" cy="190" r="4" fill="#0047FF"/>
+<circle cx="336" cy="206" r="4" fill="#0047FF"/>
+<circle cx="336" cy="222" r="4" fill="#0047FF"/>
+<circle cx="336" cy="238" r="4" fill="#0047FF"/>
+<circle cx="304" cy="222" r="4" fill="#0047FF"/>
+<g>
+<animate attributeName="fill" dur="8s" repeatCount="indefinite" keyTimes="0;0.05;0.075;0.1;0.12;0.15;0.5;0.55;1" values="#6C0400;#FF0900;#6C0400;#FF0900;#6C0400;#FF0900;#FF0900;#6C0400;#6C0400" />
+<circle cx="192" cy="190" r="4" fill="#79CBDC" />
+<circle cx="192" cy="222" r="4" fill="#79CBDC"/>
+<circle cx="192" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="208" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="208" cy="206" r="4" fill="#79CBDC"/>
+<circle cx="208" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="224" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="224" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="206" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="222" r="4" fill="#79CBDC"/>
+<circle cx="288" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="304" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="304" cy="238" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="190" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="206" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="222" r="4" fill="#79CBDC"/>
+<circle cx="320" cy="238" r="4" fill="#79CBDC"/>
+</g>
+</svg>
+</g></svg>

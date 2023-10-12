@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><g id="layer1"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#7B0000"/>
+<path d="M134 178H167V242H146L134 178Z" fill="#E24713"/>
+<path d="M378 178H345V242H366L378 178Z" fill="#E24713"/>
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+</svg>
+</g><g id="layer2"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M134 178H166V242H146L134 178Z" fill="#80573E"/>
+<path d="M378 178H346V242H366L378 178Z" fill="#80573E"/>
+<rect x="207" y="346" width="98" height="54" fill="#80573E"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#8B634A"/>
+<rect x="136" y="456" width="240" height="56" fill="#AE7B5C"/>
+<rect x="166" y="106" width="180" height="240" fill="#8B634A"/>
+<rect x="207" y="242" width="98" height="104" fill="#AE7B5C"/>
+<rect x="182" y="178" width="148" height="64" fill="#AE7B5C"/>
+<path d="M232 252L240 238H272L280 252" stroke="#121212" stroke-width="6"/>
+<path d="M260 266L272 258M252 266L240 258" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer3"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52 146L256 30L460 146V162H52V146Z" fill="#8B634A"/>
+<rect x="52" y="146" width="408" height="16" fill="#77492D"/>
+</svg>
+</g><g id="layer4"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_611_17134)">
+<path d="M207 512H305V439H257H207V512Z" fill="white"/>
+<path d="M207 439V400L257 439H207Z" fill="#C9C9C9"/>
+<path d="M305 439V400L257 439H305Z" fill="#C9C9C9"/>
+<path d="M241 439H273L265 455H249L241 439Z" fill="#001D55"/>
+<path d="M241 512H273L265 455H249L241 512Z" fill="#001D55"/>
+<path d="M64 400H192L252 512H32L64 400Z" fill="white"/>
+<path d="M176.5 400V512" stroke="#121221" stroke-width="6"/>
+<path d="M174 400H207L252 512H239.5L151 450.5L166 432L151 419.5L174 400Z" fill="#ECECEC"/>
+<path d="M448 400H326L258 512H480L448 400Z" fill="white"/>
+<path d="M340 400L340 494" stroke="#121221" stroke-width="6"/>
+<path d="M376 531.5V528C376 508.118 359.882 492 340 492V492C320.118 492 304 508.118 304 528V531.5" stroke="#121221" stroke-width="6"/>
+<path d="M344 400H305L258 512H278.5L367 455.5L352 432L367 419.5L344 400Z" fill="#ECECEC"/>
+<circle cx="177" cy="512" r="16" fill="#112211"/>
+</g>
+<defs>
+<clipPath id="clip0_611_17134">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer5"><svg></svg></g><g id="layer6"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M246 289.391C246 289.391 258.823 284.011 262 289.391C265.153 294.732 254.5 303.391 254.5 303.391C254.5 303.391 267.632 299.309 270.5 304.891C273.719 311.156 258 317.891 258 317.891" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer7"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_557_6632)">
+<rect x="212" y="194" width="20" height="20" rx="10" fill="#121212"/>
+<rect x="280" y="194" width="20" height="20" rx="10" fill="#121212"/>
+<path d="M206 162H238" stroke="#121212" stroke-width="6"/>
+<path d="M274 162H306" stroke="#121212" stroke-width="6"/>
+<path d="M291.14 203.33L525 273.488V290.659L290.101 206.487C289.441 206.25 289 205.624 289 204.922C289 203.809 290.073 203.01 291.14 203.33Z" fill="#8CDDEE" stroke="#00A8FF" stroke-width="4">
+<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;0.1;0.2;0.4;0.5;0.6;1" values="0 290 200;10 290 200;10 290 200; -30 290 200; -30 290 200; 0 290 200; 0 290 200;" />
+</path>
+<path d="M223.046 203.185L550 361.753V384.632L221.743 205.717C221.285 205.468 221 204.988 221 204.466C221 203.415 222.1 202.726 223.046 203.185Z" fill="#8CDDEE" stroke="#00A8FF" stroke-width="4">
+<animateTransform attributeName="transform" type="rotate" dur="4s" repeatCount="indefinite" keyTimes="0;0.1;0.2;0.4;0.5;0.6;1" values="0 220 200;10 220 200;10 220 200; -40 220 200; -40 220 200; 0 220 200; 0 220 200;" />
+</path>
+</g>
+<defs>
+<clipPath id="clip0_557_6632">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer8"><svg></svg></g></svg>
