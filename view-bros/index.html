@@ -1,43 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Image Gallery</title>
-</head>
-<body>
-    <div class="gallery">
-        <script>
-            for (let i = 1; i <= 100; i++) {
-                document.write(`
-                    <div class="image-container" onmouseover="hoverImage(this, event)" onmouseout="unhoverImage(this, event)">
-                        <img src="../phallus/${i}.svg" alt="Image ${i}" class="image">
-                        <div class="overlay">
-                            <button onclick="window.location.href='phallus/${i}.svg';" class="download-btn">
-                                <i class="fas fa-download"></i>
-                            </button>
-                            <div class="image-name">${i}</div>
-                        </div>
-                    </div>
-                `);
-            }
-    
-            function hoverImage(container, event) {
-                if (event.ctrlKey || event.metaKey) {
-                    container.classList.add('hover');
-                }
-            }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  </head>
+  <body>
+    <div class="loader" id="loader"></div>
+    <div class="header">
+      <div class="header">
+        <div class="filter-group">
+          <label for="backgroundFilter">Background</label>
+          <select id="backgroundFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="beardFilter">Beard</label>
+          <select id="beardFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="dressFilter">Dress</label>
+          <select id="dressFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="eyesFilter">Eyes</label>
+          <select id="eyesFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="eyewearFilter">Eyewear</label>
+          <select id="eyewearFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="faceFilter">Face</label>
+          <select id="faceFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="headFilter">Head</label>
+          <select id="headFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="skinFilter">Skin</label>
+          <select id="skinFilter"></select>
+        </div>
+        <div>
+          <button id="applyFiltersButton">Apply</button>
+          <br />
+          <span>Count: <span id="broCount"></span></span>
+        </div>
+      </div>
 
-        function unhoverImage(container, event) {
-            container.classList.remove('hover');
+      <button id="applyFiltersButton">Apply</button>
+    </div>
+    <div class="gallery" id="gallery">
+      <script>
+        for (let i = 1; i <= 5000; i++) {
+          const container = document.createElement("div");
+          container.className = "image-container";
+          container.dataset.broNumber = i; // Added data attribute to store bro number
+
+          const img = document.createElement("img");
+          img.src = `./bros/${i}.svg`;
+          img.alt = `Image ${i}`;
+          img.className = "image";
+          img.onerror = function () {
+            container.style.display = "none";
+          };
+
+          const overlay = document.createElement("div");
+          overlay.className = "overlay";
+
+          const button = document.createElement("button");
+          button.className = "download-btn";
+          button.onclick = function () {
+            window.location.href = `./bros/${i}.svg`;
+          };
+
+          const icon = document.createElement("i");
+          icon.className = "fas fa-download";
+
+          const name = document.createElement("div");
+          name.className = "image-name";
+          name.textContent = i;
+
+          button.appendChild(icon);
+
+          overlay.appendChild(button);
+          overlay.appendChild(name);
+
+          container.appendChild(img);
+          container.appendChild(overlay);
+
+          container.onmouseover = function (event) {
+            if (event.ctrlKey || event.metaKey) {
+              container.classList.add("hover");
+            }
+          };
+
+          container.onmouseout = function (event) {
+            container.classList.remove("hover");
+          };
+
+          document.querySelector(".gallery").appendChild(container);
         }
-    </script>
-</div>
+      </script>
+    </div>
     <div class="backdrop"></div>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        Papa.parse("trait-list.csv", {
+          download: true,
+          complete: function (results) {
+            const traits = results.data;
+
+            traits.forEach((traitRow, index) => {
+              const selectElement = document.getElementById(
+                traitRow[0] + "Filter"
+              );
+
+              // Adding "All" option at the top of each dropdown
+              const allOptionElement = document.createElement("option");
+              allOptionElement.value = "";
+              allOptionElement.textContent = "All";
+              selectElement.appendChild(allOptionElement);
+
+              traitRow.slice(1).forEach((option) => {
+                if (option) {
+                  const optionElement = document.createElement("option");
+                  optionElement.value = option;
+                  optionElement.textContent = option;
+                  selectElement.appendChild(optionElement);
+                }
+              });
+            });
+          },
+          error: function (err) {
+            console.error("Error while parsing the CSV file: ", err.message);
+          },
+        });
+
+        const applyFiltersButton =
+          document.getElementById("applyFiltersButton");
+        applyFiltersButton.addEventListener("click", applyFilters); // Added this line to apply filters only when the "Apply" button is clicked
+
+        const filters = document.querySelectorAll(".header select");
+        // filters.forEach((filter) => {
+        //   filter.addEventListener("change", applyFilters);
+        // });
+
+        function applyFilters() {
+          document.getElementById("loader").style.display = "block";
+          const selectedTraits = {};
+          filters.forEach((filter) => {
+            const traitName = filter.id.replace("Filter", "").toLowerCase();
+            selectedTraits[traitName] = filter.value;
+          });
+
+          const gallery = document.getElementById("gallery");
+          const imageContainers =
+            gallery.getElementsByClassName("image-container");
+
+          Papa.parse("./bros/bros.csv", {
+            download: true,
+            header: true,
+            complete: function (results) {
+              const bros = results.data;
+              let broCount = 0;
+
+              for (const container of imageContainers) {
+                const broNumber = container.dataset.broNumber;
+                const bro = bros[broNumber - 1]; // Adjusting for 0 index
+
+                const matchesAllSelectedTraits = Object.keys(
+                  selectedTraits
+                ).every((trait) => {
+                  return (
+                    selectedTraits[trait] === "" ||
+                    selectedTraits[trait].toLowerCase() ===
+                      bro[trait].toLowerCase()
+                  );
+                });
+
+                if (matchesAllSelectedTraits) {
+                  container.style.display = "block";
+                  broCount++;
+                } else {
+                  container.style.display = "none";
+                }
+              }
+
+              document.getElementById("broCount").innerText = broCount;
+              document.getElementById("loader").style.display = "none"; // Hide loader when done
+            },
+            error: function (error) {
+              console.error(
+                "Error while fetching and parsing bros/bros.csv:",
+                error.message
+              );
+              document.getElementById("loader").style.display = "none"; // Hide loader on error
+            },
+          });
+        }
+
+        // Initial load
+        applyFilters();
+      });
+    </script>
+  </body>
 </html>

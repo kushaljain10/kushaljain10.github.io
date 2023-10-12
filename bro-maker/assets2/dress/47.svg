@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M64 400H448L480 512H32L64 400Z" fill="#454545"/>
+<path d="M448 400H336L171 512H480L448 400Z" fill="#121212"/>
+<path d="M370 400H336L171 512H208L370 400Z" fill="#202020"/>
+<path d="M64 400H176L341 512H32L64 400Z" fill="#121212"/>
+<path d="M142 400H176L341 512H304L142 400Z" fill="#202020"/>
+<path d="M207 364L305 360V390L207 382V364Z" fill="#202020"/>
+<path d="M207 346H305V360L207 368V346Z" fill="#454545"/>
+<path d="M207 378L305 386V400H207V378Z" fill="#121212"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M64 400H448L480 512H32L64 400Z" fill="#D22D27"/>
+<path d="M460 400H52L36 456H476L460 400Z" fill="#BF0700"/>
+<rect x="207" y="376" width="98" height="24" fill="#FFB74A"/>
+<circle cx="221" cy="388" r="6" fill="white"/>
+<circle cx="244" cy="388" r="6" fill="white"/>
+<circle cx="267" cy="388" r="6" fill="white"/>
+<circle cx="290" cy="388" r="6" fill="white"/>
+<path d="M37.1373 452H474.854L482.867 480H29.1445L37.1373 452Z" fill="#FFB74A"/>
+<rect x="244" y="400" width="24" height="112" fill="#FFB74A"/>
+<circle cx="256" cy="414" r="6" fill="white"/>
+<circle cx="256" cy="438" r="6" fill="white"/>
+<circle cx="256" cy="466" r="6" fill="white"/>
+<circle cx="60" cy="466" r="6" fill="white"/>
+<circle cx="296" cy="466" r="6" fill="white"/>
+<circle cx="99" cy="466" r="6" fill="white"/>
+<circle cx="334" cy="466" r="6" fill="white"/>
+<circle cx="138" cy="466" r="6" fill="white"/>
+<circle cx="372" cy="466" r="6" fill="white"/>
+<circle cx="177" cy="466" r="6" fill="white"/>
+<circle cx="410" cy="466" r="6" fill="white"/>
+<circle cx="216" cy="466" r="6" fill="white"/>
+<circle cx="448" cy="466" r="6" fill="white"/>
+</svg>

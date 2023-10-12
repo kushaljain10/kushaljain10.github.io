@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="180" height="80" transform="matrix(1 0 0 -1 166 166)" fill="#EBEBEB"/>
+<rect width="180" height="24" transform="matrix(1 0 0 -1 166 242)" fill="#EBEBEB"/>
+<path d="M244 166H268V270H256H244V166Z" fill="#EBEBEB"/>
+<path d="M166 166H190V306H166V241.423V166Z" fill="#EBEBEB"/>
+<path d="M346 166H322V306H346V241.423V166Z" fill="#EBEBEB"/>
+</svg>

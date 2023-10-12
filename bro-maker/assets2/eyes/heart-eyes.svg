@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M206 162H238" stroke="#121212" stroke-width="6"/>
+  <path d="M274 162H306" stroke="#121212" stroke-width="6"/>
+  <g transform="translate(222,206.429)">
+    <path d="M-10 -8.572L-3.571 -11.429L0 -8.513L3.571 -11.429L10 -8.572V-6.183V0L0 8.571L-10 0V-8.572Z" fill="#BA120C">
+      <animateTransform attributeName="transform" type="scale" additive="sum" values="0.9 0.9; 1.25 1.25; 0.9 0.9" begin="0s;2s" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+  <g transform="translate(290,205.429)">
+    <path d="M-10 -8.572L-3.571 -11.429L0 -8.513L3.571 -11.429L10 -8.572V-6.183V0L0 8.571L-10 0V-8.572Z" fill="#BA120C">
+      <animateTransform attributeName="transform" type="scale" additive="sum" values="0.9 0.9; 1.3 1.3; 0.9 0.9" begin="0s;2s" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>
