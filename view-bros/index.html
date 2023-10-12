@@ -56,7 +56,7 @@
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
       }
 
-      .image-container.hover {
+      /* .image-container.hover {
         z-index: 1;
       }
 
@@ -69,7 +69,7 @@
         opacity: 1;
         transform: translateY(-60px);
         transform: scale(1.5);
-      }
+      } */
 
       .download-btn {
         margin: 10px;
@@ -117,10 +117,10 @@
         transition: opacity 0.3s ease-in-out;
       }
 
-      .image-container.hover ~ .backdrop {
+      /* .image-container.hover ~ .backdrop {
         opacity: 1;
         z-index: 0;
-      }
+      } */
 
       .header {
         position: fixed;
@@ -305,15 +305,15 @@
           container.appendChild(img);
           container.appendChild(overlay);
 
-          container.onmouseover = function (event) {
-            if (event.ctrlKey || event.metaKey) {
-              container.classList.add("hover");
-            }
-          };
+          // container.onmouseover = function (event) {
+          //   if (event.ctrlKey || event.metaKey) {
+          //     container.classList.add("hover");
+          //   }
+          // };
 
-          container.onmouseout = function (event) {
-            container.classList.remove("hover");
-          };
+          // container.onmouseout = function (event) {
+          //   container.classList.remove("hover");
+          // };
 
           document.querySelector(".gallery").appendChild(container);
         }
