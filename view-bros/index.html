@@ -217,9 +217,16 @@
           transform: rotate(360deg);
         }
       }
+      .checkboxContainer {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 2;
+      }
     </style>
     <title>Image Gallery</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   </head>
   <body>
     <div class="loader" id="loader"></div>
@@ -364,6 +371,8 @@
 
         function applyFilters() {
           document.getElementById("loader").style.display = "block";
+          url =
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEx8yI9A2n0Vj1l1L7yJAJCAXwGW5WmNv8hjbVrYDuBcrnZge1McTpqF4m6Ay9s_e9y_CfF7dO1Dtn/pub?gid=0&single=true&output=csv";
           const selectedTraits = {};
           filters.forEach((filter) => {
             const traitName = filter.id.replace("Filter", "").toLowerCase();
@@ -374,46 +383,91 @@
           const imageContainers =
             gallery.getElementsByClassName("image-container");
 
-          Papa.parse("./bros/bros.csv", {
-            download: true,
-            header: true,
-            complete: function (results) {
-              const bros = results.data;
-              let broCount = 0;
+          fetch(url)
+            .then((response) => response.text())
+            .then((data) => {
+              const rows = data.split("\n").slice(1); // Splitting rows and removing the header
+              const bros = rows.map((row) => {
+                const cells = row.split(","); // Splitting cells
+                // Creating an object from cells; adjust indices based on your CSV structure
+                return {
+                  number: cells[0],
+                  background: cells[1],
+                  beard: cells[2],
+                  dress: cells[3],
+                  eyes: cells[4],
+                  eyewear: cells[5],
+                  face: cells[6],
+                  head: cells[7],
+                  skin: cells[8],
+                  selected: cells[9], // Adjust based on actual index of 'selected' column
+                };
+              });
+              {
+                // const bros = results.data;
+                let broCount = 0;
 
-              for (const container of imageContainers) {
-                const broNumber = container.dataset.broNumber;
-                const bro = bros[broNumber - 1]; // Adjusting for 0 index
+                for (const container of imageContainers) {
+                  const broNumber = container.dataset.broNumber;
+                  const bro = bros[broNumber - 1]; // Adjusting for 0 index
 
-                const matchesAllSelectedTraits = Object.keys(
-                  selectedTraits
-                ).every((trait) => {
-                  return (
-                    selectedTraits[trait] === "" ||
-                    selectedTraits[trait].toLowerCase() ===
-                      bro[trait].toLowerCase()
-                  );
-                });
+                  const matchesAllSelectedTraits = Object.keys(
+                    selectedTraits
+                  ).every((trait) => {
+                    return (
+                      selectedTraits[trait] === "" ||
+                      selectedTraits[trait].toLowerCase() ===
+                        bro[trait].toLowerCase()
+                    );
+                  });
 
-                if (matchesAllSelectedTraits) {
-                  container.style.display = "block";
-                  broCount++;
-                } else {
-                  container.style.display = "none";
+                  if (matchesAllSelectedTraits) {
+                    container.style.display = "block";
+                    broCount++;
+                  } else {
+                    container.style.display = "none";
+                  }
+
+                  const checkboxContainer = document.createElement("div");
+                  checkboxContainer.className = "checkboxContainer";
+
+                  const checkbox = document.createElement("input");
+                  checkbox.type = "checkbox";
+                  checkbox.className = "selectedCheckbox";
+                  checkbox.checked = bro.selected.toLowerCase() === "yes\r";
+                  checkbox.onchange = function () {
+                    const isSelected = this.checked ? "yes" : "no";
+                    axios
+                      .post(
+                        "https://api.retool.com/v1/workflows/fca536fa-4491-4f87-bb72-416b6ffb3a46/startTrigger",
+                        {
+                          number: bro.number,
+                          isSelected: isSelected,
+                        },
+                        {
+                          params: {
+                            workflowApiKey:
+                              "retool_wk_aad7757db16049809a6037721a68e399",
+                            environment: "production",
+                          },
+                        }
+                      )
+                      .then((response) => {
+                        console.log("Updated successfully:", response.data);
+                      })
+                      .catch((error) => {
+                        console.error("Error updating the selection:", error);
+                      });
+                  };
+
+                  checkboxContainer.appendChild(checkbox);
+                  container.appendChild(checkboxContainer);
                 }
-              }
 
-              document.getElementById("broCount").innerText = broCount;
-              document.getElementById("loader").style.display = "none"; // Hide loader when done
-            },
-            error: function (error) {
-              console.error(
-                "Error while fetching and parsing bros/bros.csv:",
-                error.message
-              );
-              document.getElementById("loader").style.display = "none"; // Hide loader on error
-            },
-          });
+                document.getElementById("broCount").innerText = broCount;
+                document.getElementById("loader").style.display = "none"; // Hide loader when done
+              }
+            });
         }
 
         // Initial load
