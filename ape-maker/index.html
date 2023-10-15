@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customize Image</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ape Maker by Zo</h1>
+    </header>
+    <div class="container">
+      <div style="display: inline">
+        <select id="skinType" class="dropdown" style="display: none">
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Brown">Brown</option>
+          <option value="Cheetah">Cheetah</option>
+          <option value="Cream">Cream</option>
+          <option value="Dark Brown">Dark Brown</option>
+          <option value="Death Bot">Death Bot</option>
+          <option value="DMT">DMT</option>
+          <option value="Golden Brown">Golden Brown</option>
+          <option value="Gray">Gray</option>
+          <option value="Noise">Noise</option>
+          <option value="Pink">Pink</option>
+          <option value="Red">Red</option>
+          <option value="Robot">Robot</option>
+          <option value="Solid Gold">Solid Gold</option>
+          <option value="Tan">Tan</option>
+          <option value="Trippy">Trippy</option>
+          <option value="White">White</option>
+          <option value="Zombie">Zombie</option>
+        </select>
+
+        <select id="accessory" class="dropdown" style="display: none">
+          <option value="Plain White Coffee Mug">Plain White Coffee Mug</option>
+          <option value="Beer Mug">Beer Mug</option>
+          <option value="Champagne">Champagne</option>
+        </select>
+      </div>
+      <button id="downloadBtn" style="display: none">Download</button>
+      <img id="imagePreview" alt="Image Preview" />
+
+      <canvas id="canvas" style="display: none"></canvas>
+      <!-- <label id="fileInputTitle">Upload an Ape image</label>
+      <label id="fileReinputTitle">Upload another ape image</label> -->
+      <input type="file" id="fileInput" accept="image/*" />
+      <button onclick="uploadImage()">Upload an Ape</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
