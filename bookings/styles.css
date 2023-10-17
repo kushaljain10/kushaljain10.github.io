@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #2f3640;
+    padding: 20px 0;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+}
+
+.sidebar a {
+    display: block;
+    color: #dcdde1;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #40739e;
+    color: #f5f6fa;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #2d3436;
+}
+
+.bookings-section, .checked-in-section, .work-pass-section {
+    margin-bottom: 40px;
+}
+
+.booking-card, ul li {
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.booking-card:hover, ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+strong {
+    color: #2d3436;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+/* Add some spacing between cards and sections */
+.content > div:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Enhance the readability of text in the cards */
+.booking-card p, ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+
+/* Provide more differentiation for header texts */
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #34495e;
+}

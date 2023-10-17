@@ -30,10 +30,19 @@ body, html {
 
 .container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.intro-container {
+    margin-top: 10vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -64,11 +73,15 @@ label[for="fileInput"]:hover {
     max-height: 500px;
     margin-top: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+label {
+    margin: 10px 10px 0;
 }
 
 .dropdown {
-    margin: 10px;
+    margin: 0 10px 10px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -96,4 +109,136 @@ button:hover {
 
 label {
     margin-bottom: 10px;
+}
+
+/* .accessory-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30vw;
+    gap: 10px;
+}
+
+.accessory-grid img {
+    max-width: 100%;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.accessory-grid img.selected {
+    border: 2px solid blue;
+} */
+
+.accessory-grid {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    min-height: 60vh;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* overflow-x: scroll; */
+}
+
+.accessory-grid img {
+    height: auto;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    border: 2px solid transparent; /* Added a transparent border to avoid layout shift when a border is added to selected image */
+    max-width: 8em;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin: 5px 5px 0 5px;
+}
+
+.accessory-grid p {
+    font-size: 0.75rem;
+    color: #2e2e2e;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.accessory-grid img.selected {
+    border-color: #2e2e2e; /* Change border color as per your design */
+}
+
+/* Style for the new introduction section */
+.intro-section {
+    margin-bottom: 30px; /* adjust as needed */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* light grey background, change as per your design */
+    max-width: 50vw;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* dark text color, change as per your design */
+}
+
+.intro-section p {
+    margin-bottom: 20px;
+    color: #666; /* medium dark text, change as per your design */
+}
+
+.intro-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; /* dark text color, change as per your design */
+}
+
+.intro-section ul {
+    padding-left: 20px;
+    color: #666; /* medium dark text, change as per your design */
+    list-style-type: none;
+}
+
+.intro-section li {
+    margin-bottom: 5px;
+}
+
+.customisation {
+    width: 55vw;
+    display: none;
+}
+
+.preview {
+    width: 40vw;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 5vh 0;
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .container, .intro-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-section {
+        max-width: 90vw; /* Changed from 50vw to 90vw */
+        text-align: left;
+    }
+
+    .accessory-grid {
+        justify-content: center;
+    }
+
+    .accessory-grid img {
+        max-width: 100px; /* Adjust the size of the images as per requirement */
+    }
+
+    .customisation {
+        width: 90vw; /* Changed from 55vw to 90vw */
+    }
+
+    .preview {
+        width: 90vw; /* Changed from 40vw to 90vw */
+    }
 }

@@ -5,49 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customize Image</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <h1>Ape Maker by Zo</h1>
     </header>
-    <div class="container">
-      <div style="display: inline">
-        <select id="skinType" class="dropdown" style="display: none">
-          <option value="Black">Black</option>
-          <option value="Blue">Blue</option>
-          <option value="Brown">Brown</option>
-          <option value="Cheetah">Cheetah</option>
-          <option value="Cream">Cream</option>
-          <option value="Dark Brown">Dark Brown</option>
-          <option value="Death Bot">Death Bot</option>
-          <option value="DMT">DMT</option>
-          <option value="Golden Brown">Golden Brown</option>
-          <option value="Gray">Gray</option>
-          <option value="Noise">Noise</option>
-          <option value="Pink">Pink</option>
-          <option value="Red">Red</option>
-          <option value="Robot">Robot</option>
-          <option value="Solid Gold">Solid Gold</option>
-          <option value="Tan">Tan</option>
-          <option value="Trippy">Trippy</option>
-          <option value="White">White</option>
-          <option value="Zombie">Zombie</option>
-        </select>
+    <div class="intro-container" id="introContainer">
+      <button onclick="uploadImage()" id="uploadBtn">
+        <i class="fas fa-upload"></i> &nbsp; Upload Ape
+      </button>
+      <div id="introSection" class="intro-section">
+        <h2>Unleash Your Bored Ape’s Full Potential!</h2>
+        <p>
+          Welcome to Ape Maker by Zo, your go-to platform to customize your
+          unique Bored Ape! With our intuitive and user-friendly interface, you
+          can adorn your Ape with a myriad of cool and stylish accessories. Give
+          your Ape a personality as bold and unique as yours!
+        </p>
 
-        <select id="accessory" class="dropdown" style="display: none">
-          <option value="Plain White Coffee Mug">Plain White Coffee Mug</option>
-          <option value="Beer Mug">Beer Mug</option>
-          <option value="Champagne">Champagne</option>
-        </select>
+        <h3>How It Works</h3>
+        <ul>
+          <li>Step 1: Upload Your Ape 🦍</li>
+          <li>Step 2: Choose Accessory 🍷</li>
+          <li>Step 3: Customize and Preview 👀</li>
+          <li>Step 4: Download ⬇️</li>
+        </ul>
       </div>
-      <button id="downloadBtn" style="display: none">Download</button>
-      <img id="imagePreview" alt="Image Preview" />
+    </div>
+    <div class="container">
+      <div class="customisation" id="customisation">
+        <div style="display: inline">
+          <label for="skinType" id="skinTypeLabel" style="display: none"
+            >Skin Type</label
+          >
+          <select id="skinType" class="dropdown" style="display: none">
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="Brown">Brown</option>
+            <option value="Cheetah">Cheetah</option>
+            <option value="Cream">Cream</option>
+            <option value="Dark Brown">Dark Brown</option>
+            <option value="Death Bot">Death Bot</option>
+            <option value="DMT">DMT</option>
+            <option value="Golden Brown">Golden Brown</option>
+            <option value="Gray">Gray</option>
+            <option value="Noise">Noise</option>
+            <option value="Pink">Pink</option>
+            <option value="Red">Red</option>
+            <option value="Robot">Robot</option>
+            <option value="Solid Gold">Solid Gold</option>
+            <option value="Tan">Tan</option>
+            <option value="Trippy">Trippy</option>
+            <option value="White">White</option>
+            <option value="Zombie">Zombie</option>
+          </select>
+        </div>
+        <p style="font-size: 1rem; margin-left: 10px">Accessories</p>
+        <div id="accessoryGrid" class="accessory-grid"></div>
+        <input type="file" id="fileInput" accept="image/*" />
+      </div>
+      <div class="preview" id="preview">
+        <h2 style="font-family: 'Space Grotesk', sans-serif">Preview</h2>
+        <img id="imagePreview" alt="Image Preview" />
 
-      <canvas id="canvas" style="display: none"></canvas>
-      <!-- <label id="fileInputTitle">Upload an Ape image</label>
-      <label id="fileReinputTitle">Upload another ape image</label> -->
-      <input type="file" id="fileInput" accept="image/*" />
-      <button onclick="uploadImage()">Upload an Ape</button>
+        <canvas id="canvas" style="display: none"></canvas>
+        <div
+          style="display: flex; flex-direction: row; justify-content: center"
+        >
+          <button
+            onclick="uploadImage()"
+            id="uploadBtn2"
+            style="display: none; margin-right: 20px"
+          >
+            <i class="fas fa-upload"></i> &nbsp; Upload Another Ape
+          </button>
+          <button id="downloadBtn" style="display: none">
+            <i class="fas fa-download"></i> Download Ape
+          </button>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
