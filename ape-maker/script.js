@@ -16,8 +16,8 @@ document
     const reader = new FileReader();
     reader.onload = function (e) {
       preview.src = e.target.result;
-      skinTypeDropdown.style.display = "inline-block";
-      document.getElementById("skinTypeLabel").style.display = "block";
+      // skinTypeDropdown.style.display = "inline-block";
+      // document.getElementById("skinTypeLabel").style.display = "block";
       // accessoryDropdown.style.display = "inline-block";
       document.getElementById("preview").style.display = "flex";
       document.getElementById("customisation").style.display = "block";
@@ -39,7 +39,12 @@ document
   });
 
 async function addAccessory(accessory, skinType) {
-  const imgURL = `images/${skinType} - ${accessory}.png`; // Replace with actual path
+  var imgURL = "";
+  if (accessory == "none") {
+    imgURL = `images/none.png`; // Replace with actual path
+  } else {
+    imgURL = `images/${skinType} - ${accessory}.png`; // Replace with actual path
+  }
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
   const preview = document.getElementById("imagePreview");
@@ -123,6 +128,7 @@ function generateAccessoryGrid() {
   const accessoryGrid = document.getElementById("accessoryGrid");
   accessoryGrid.innerHTML = "";
   const selectedSkin = document.getElementById("skinType").value;
+  appendNone();
   accessoryTypes.forEach((accessory) => {
     const div = document.createElement("div");
     const img = document.createElement("img");
@@ -143,4 +149,124 @@ function generateAccessoryGrid() {
       firstImage.click();
     }
   }, 250);
+}
+
+function appendNone() {
+  const div = document.createElement("div");
+  const img = document.createElement("img");
+  img.src = `images/none.png`; // Replace with actual image paths
+  img.alt = "none";
+  img.title = "none";
+  img.onclick = () => selectAccessory("none");
+  div.appendChild(img);
+  accessoryGrid.appendChild(div);
+}
+
+async function readJsonFile(filePath) {
+  let response = await fetch(filePath);
+  if (response.ok) {
+    let jsonData = await response.json();
+    return jsonData;
+  } else {
+    console.error("Network response was not ok:", response.statusText);
+    return null;
+  }
+}
+
+function getFurTraitValue(id, jsonData) {
+  for (let item of jsonData) {
+    if (item.id === id.toString()) {
+      let ipfsUrl = item.metadata.image;
+      let attributes = item.metadata.attributes;
+      for (let attribute of attributes) {
+        if (attribute.trait_type === "Fur") {
+          return [attribute.value, ipfsUrl];
+        }
+      }
+    }
+  }
+  return null;
+}
+
+async function fetchImage(ipfsUrl) {
+  let response = await fetch(ipfsUrl);
+  if (response.ok) {
+    let blob = await response.blob();
+    let imageUrl = URL.createObjectURL(blob);
+    document.getElementById("imagePreview").src = imageUrl;
+  } else {
+    console.error("Network response was not ok:", response.statusText);
+  }
+}
+
+function selectApe() {
+  var apeNumber = document.getElementById("apeNumber").value;
+  if (apeNumber > 0) {
+    readJsonFile("apedata.json").then((jsonData) => {
+      let values = getFurTraitValue(apeNumber, jsonData);
+      let skinType = values[0];
+      let ipfsUrl = values[1];
+      ipfsUrl = ipfsUrl.replace("ipfs://", "");
+      fetchImage("https://ipfs.io/ipfs/" + ipfsUrl).then(() => {
+        document.getElementById("introContainer").style.display = "none";
+
+        const preview = document.getElementById("imagePreview");
+        const skinTypeDropdown = document.getElementById("skinType");
+
+        skinTypeDropdown.value = skinType;
+        generateAccessoryGrid();
+
+        const downloadBtn = document.getElementById("downloadBtn");
+        skinTypeDropdown.style.display = "inline-block";
+        document.getElementById("skinTypeLabel").style.display = "block";
+        document.getElementById("preview").style.display = "flex";
+        document.getElementById("customisation").style.display = "block";
+        document.getElementById("apeNumber2").value = apeNumber;
+        downloadBtn.style.display = "inline-block";
+        // document.getElementById("uploadBtn2").style.display = "inline-block";
+
+        document.getElementById("apeTitle").innerText = "BAYC #" + apeNumber;
+
+        // Hide the canvas when a new image is uploaded
+        const canvas = document.getElementById("canvas");
+        canvas.style.display = "none";
+        // preview.style.display = "block";
+      });
+    });
+  } else {
+    document.getElementById("apeNumberError").innerHTML =
+      "Please enter a valid Ape #";
+  }
+}
+
+function updateApe() {
+  var apeNumber = document.getElementById("apeNumber2").value;
+  if (apeNumber > 0) {
+    readJsonFile("apedata.json").then((jsonData) => {
+      let values = getFurTraitValue(apeNumber, jsonData);
+      let skinType = values[0];
+      let ipfsUrl = values[1];
+      ipfsUrl = ipfsUrl.replace("ipfs://", "");
+      fetchImage("https://ipfs.io/ipfs/" + ipfsUrl).then(() => {
+        document.getElementById("introContainer").style.display = "none";
+
+        const preview = document.getElementById("imagePreview");
+        const skinTypeDropdown = document.getElementById("skinType");
+
+        skinTypeDropdown.value = skinType;
+        generateAccessoryGrid();
+
+        const downloadBtn = document.getElementById("downloadBtn");
+        document.getElementById("apeNumber2").value = apeNumber;
+
+        const canvas = document.getElementById("canvas");
+        canvas.style.display = "none";
+
+        document.getElementById("apeTitle").innerText = "BAYC #" + apeNumber;
+      });
+    });
+  } else {
+    document.getElementById("apeNumber2Error").innerHTML =
+      "Please enter a valid Ape #";
+  }
 }

@@ -15,9 +15,31 @@
       <h1>Ape Maker by Zo</h1>
     </header>
     <div class="intro-container" id="introContainer">
-      <button onclick="uploadImage()" id="uploadBtn">
-        <i class="fas fa-upload"></i> &nbsp; Upload Ape
-      </button>
+      <div style="display: flex; flex-direction: column">
+        <div class="upload-options">
+          <!-- <button onclick="uploadImage()" id="uploadBtn">
+          <i class="fas fa-upload"></i> &nbsp; Upload Ape
+        </button> -->
+          <!-- <div class="or">or</div> -->
+          <input
+            type="number"
+            class="apeNumber"
+            id="apeNumber"
+            placeholder="Enter your Ape #"
+          />
+          <button onclick="selectApe()" id="selectBtn">Select Ape</button>
+        </div>
+        <span
+          id="apeNumberError"
+          style="
+            color: red;
+            margin: -10px 0 10px;
+            font-size: 0.9rem;
+            min-height: 16px;
+          "
+        ></span>
+      </div>
+
       <div id="introSection" class="intro-section">
         <h2>Unleash Your Bored Ape’s Full Potential!</h2>
         <p>
@@ -29,16 +51,17 @@
 
         <h3>How It Works</h3>
         <ul>
-          <li>Step 1: Upload Your Ape 🦍</li>
-          <li>Step 2: Choose Accessory 🍷</li>
-          <li>Step 3: Customize and Preview 👀</li>
-          <li>Step 4: Download ⬇️</li>
+          <li>Step 1: Enter your Ape's # 🦍</li>
+          <li>Step 2: Choose accessory 🍷</li>
+          <li>Step 3: Preview your Ape 👀</li>
+          <li>Step 4: Download the customized Ape ⬇️</li>
         </ul>
       </div>
     </div>
+
     <div class="container">
       <div class="customisation" id="customisation">
-        <div style="display: inline">
+        <div style="display: none">
           <label for="skinType" id="skinTypeLabel" style="display: none"
             >Skin Type</label
           >
@@ -69,23 +92,40 @@
         <input type="file" id="fileInput" accept="image/*" />
       </div>
       <div class="preview" id="preview">
-        <h2 style="font-family: 'Space Grotesk', sans-serif">Preview</h2>
+        <h2 id="apeTitle" style="font-family: 'Space Grotesk', sans-serif">
+          BAYC
+        </h2>
         <img id="imagePreview" alt="Image Preview" />
 
         <canvas id="canvas" style="display: none"></canvas>
         <div
           style="display: flex; flex-direction: row; justify-content: center"
         >
-          <button
-            onclick="uploadImage()"
-            id="uploadBtn2"
-            style="display: none; margin-right: 20px"
-          >
-            <i class="fas fa-upload"></i> &nbsp; Upload Another Ape
-          </button>
-          <button id="downloadBtn" style="display: none">
-            <i class="fas fa-download"></i> Download Ape
-          </button>
+          <div>
+            <div>
+              <input
+                type="number"
+                class="apeNumber"
+                id="apeNumber2"
+                placeholder="Enter Another Ape #"
+                style="margin-right: 10px"
+              />
+              <button
+                onclick="updateApe()"
+                id="selectBtn"
+                style="margin: 10px 10px 0 0"
+              >
+                Update Ape #
+              </button>
+              <button id="downloadBtn" style="display: none">
+                <i class="fas fa-download"></i> Download Ape
+              </button>
+            </div>
+            <span
+              id="apeNumber2Error"
+              style="color: red; margin-top: 5px; font-size: 0.9rem"
+            ></span>
+          </div>
         </div>
       </div>
     </div>
