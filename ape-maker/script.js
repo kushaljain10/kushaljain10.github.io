@@ -206,6 +206,7 @@ function selectApe() {
       let values = getFurTraitValue(apeNumber, jsonData);
       let skinType = values[0];
       let ipfsUrl = values[1];
+      console.log(skinType);
       ipfsUrl = ipfsUrl.replace("ipfs://", "");
       fetchImage("https://ipfs.io/ipfs/" + ipfsUrl).then(() => {
         document.getElementById("introContainer").style.display = "none";
