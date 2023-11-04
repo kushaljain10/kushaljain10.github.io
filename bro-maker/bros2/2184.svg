@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><g id="layer1"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" fill="#A7FF00"/>
+<path d="M134 178H167V242H146L134 178Z" fill="#E24713"/>
+<path d="M378 178H345V242H366L378 178Z" fill="#E24713"/>
+<rect x="207" y="346" width="98" height="54" fill="#E24713"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#F15824"/>
+<rect x="166" y="106" width="180" height="240" fill="#F15824"/>
+</svg>
+</g><g id="layer2"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M134 178H166V242H146L134 178Z" fill="#80573E"/>
+<path d="M378 178H346V242H366L378 178Z" fill="#80573E"/>
+<rect x="207" y="346" width="98" height="54" fill="#80573E"/>
+<path d="M64 400H448L480 512H32L64 400Z" fill="#8B634A"/>
+<rect x="136" y="456" width="240" height="56" fill="#AE7B5C"/>
+<rect x="166" y="106" width="180" height="240" fill="#8B634A"/>
+<rect x="207" y="242" width="98" height="104" fill="#AE7B5C"/>
+<rect x="182" y="178" width="148" height="64" fill="#AE7B5C"/>
+<path d="M232 252L240 238H272L280 252" stroke="#121212" stroke-width="6"/>
+<path d="M260 266L272 258M252 266L240 258" stroke="#121212" stroke-width="6"/>
+</svg>
+</g><g id="layer3"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="166" y="106" width="180" height="40" fill="#001D55"/>
+<path d="M166 106C166 86.1178 182.118 70 202 70H310C329.882 70 346 86.1178 346 106H166Z" fill="#001D55"/>
+<rect x="146" y="146" width="220" height="16" fill="#001235"/>
+<rect x="244" y="50" width="24" height="56" fill="#001235"/>
+<path d="M218 90L256.5 62L295 90L279 146H234L218 90Z" fill="#C2FD52"/>
+</svg>
+</g><g id="layer4"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_273_4120)">
+<path d="M64 400H160C160 400 160 472 256 472C352 472 352 400 352 400H448L480 512H32L64 400Z" fill="#121212"/>
+<path d="M150.5 400H207V533.5H185L133 443.5H164L150.5 400Z" fill="#2D2D2D"/>
+<path d="M361.5 400H305V533.5H327L379 443.5H348L361.5 400Z" fill="#2D2D2D"/>
+<path d="M207 512H305V439H257H207V512Z" fill="white"/>
+<path d="M207 439V400L257 439H207Z" fill="#D8D8D8"/>
+<path d="M305 439V400L257 439H305Z" fill="#D8D8D8"/>
+<path d="M241 439H273L265 463H249L241 439Z" fill="#121212"/>
+<path d="M241 512H273L265 463H249L241 512Z" fill="#121212"/>
+</g>
+<defs>
+<clipPath id="clip0_273_4120">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</g><g id="layer5"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="166" y="242" width="12" height="104" fill="#121212"/>
+<rect x="334" y="242" width="12" height="104" fill="#121212"/>
+<path d="M178 334H217L256 322L295 334H334V346H178V334Z" fill="#121212"/>
+</svg>
+</g><g id="layer6"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.711 302H280" stroke="#121212" stroke-width="6"/>
+<rect width="16" height="16" transform="matrix(1 0 0 -1 261 318)" fill="#2D2D2D" stroke="#121212" stroke-width="6"/>
+<rect width="24" height="64" transform="matrix(1 0 0 -1 257 382)" fill="#2D2D2D" stroke="#121212" stroke-width="6"/>
+<rect width="24" height="12" transform="matrix(1 0 0 -1 257 330)" fill="white" stroke="#121212" stroke-width="6"/>
+<rect width="8" height="8" transform="matrix(1 0 0 -1 265 350.446)" fill="#D22D27">
+<animate attributeName="fill" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="#6C0400;#FF0900;#6C0400" />
+</rect>
+</svg>
+</g><g id="layer7"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M206 162H238" stroke="#121212" stroke-width="6"/>
+  <path d="M274 162H306" stroke="#121212" stroke-width="6"/>
+  <g transform="translate(222,206.429)">
+    <path d="M-10 -8.572L-3.571 -11.429L0 -8.513L3.571 -11.429L10 -8.572V-6.183V0L0 8.571L-10 0V-8.572Z" fill="#BA120C">
+      <animateTransform attributeName="transform" type="scale" additive="sum" values="0.9 0.9; 1.25 1.25; 0.9 0.9" begin="0s;2s" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+  <g transform="translate(290,205.429)">
+    <path d="M-10 -8.572L-3.571 -11.429L0 -8.513L3.571 -11.429L10 -8.572V-6.183V0L0 8.571L-10 0V-8.572Z" fill="#BA120C">
+      <animateTransform attributeName="transform" type="scale" additive="sum" values="0.9 0.9; 1.3 1.3; 0.9 0.9" begin="0s;2s" dur="1s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>
+</g><g id="layer8"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M182 175H246V195L234 231H182V175Z" fill="#121212"/>
+<path d="M182 175H246V195L234 231H182V175ZM182 175H166" stroke="#FFB74A" stroke-width="6"/>
+<path d="M247 175H266" stroke="#FFB74A" stroke-width="6"/>
+<path d="M247 193H266" stroke="#FFB74A" stroke-width="6"/>
+<path d="M266 175H330V231H278L266 195.5V175Z" fill="#121212"/>
+<path d="M330 175H266V195.5L278 231H330V175ZM330 175H346" stroke="#FFB74A" stroke-width="6"/>
+<mask id="mask0_143_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="185" y="178" width="58" height="50">
+<path d="M185 178H243V195L232 228H223.188H185V178Z" fill="#121212"/>
+</mask>
+<g mask="url(#mask0_143_2)">
+<path d="M195.545 178H206L193.455 228H183L195.545 178Z" fill="#D9D9D9">
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-32 0;-32 0;48 0" />
+</path>
+</g>
+<mask id="mask1_143_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="269" y="178" width="58" height="50">
+<path d="M327 178H269V195L280 228H288.812H327V178Z" fill="#121212"/>
+</mask>
+<g mask="url(#mask1_143_2)">
+<path d="M287.545 178H298L285.455 228H275L287.545 178Z" fill="#D9D9D9">
+<animateTransform attributeName="transform" type="translate" dur="4s" repeatCount="indefinite" keyTimes="0;0.8;1" values="-32 0;-32 0;48 0" />
+</path>
+</g>
+</svg>
+</g></svg>
