@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Remover</title>
+  </head>
+  <body>
+    <input type="file" id="upload" accept="image/*" />
+    <input type="text" id="color" placeholder="Enter Hex Color Code" />
+    <button onclick="removeColor()">Remove Color</button>
+    <canvas id="canvas" style="display: none"></canvas>
+    <img id="output" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

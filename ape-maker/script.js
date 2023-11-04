@@ -1,3 +1,104 @@
+const bgColors = {
+  Purple: { color: "6f5e70", tolerance: 12 },
+  Yellow: { color: "e4e4a7", tolerance: 12 },
+  Orange: { color: "ef952e", tolerance: 50 },
+  Aquamarine: { color: "15e6b7", tolerance: 50 },
+  "Army Green": { color: "727234", tolerance: 12 },
+  Blue: { color: "a2e5f4", tolerance: 50 },
+  "New Punk Blue": { color: "3a677e", tolerance: 12 },
+  Gray: { color: "cbccce", tolerance: 12 },
+};
+
+function hexToRgb(hex) {
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result
+    ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
+    : null;
+}
+
+function colorMatch(r1, g1, b1, r2, g2, b2, tolerance) {
+  return (
+    Math.abs(r1 - r2) <= tolerance &&
+    Math.abs(g1 - g2) <= tolerance &&
+    Math.abs(b1 - b2) <= tolerance
+  );
+}
+
+function actuallyRemoveColor(img, ctx, colorInput, canvas, tolerance) {
+  const cropPercent = 1;
+  const cropWidth = img.width * (cropPercent / 100);
+  const cropHeight = img.height * (cropPercent / 100);
+  const newWidth = img.width - 2 * cropWidth;
+  const newHeight = img.height - 2 * cropHeight;
+
+  canvas.width = newWidth;
+  canvas.height = newHeight;
+
+  ctx.drawImage(
+    img,
+    cropWidth,
+    cropHeight,
+    newWidth,
+    newHeight,
+    0,
+    0,
+    newWidth,
+    newHeight
+  );
+
+  // canvas.width = img.width;
+  // canvas.height = img.height;
+
+  // ctx.drawImage(img, 0, 0);
+
+  const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imgData.data;
+  const color = hexToRgb(colorInput);
+
+  for (let i = 0; i < data.length; i += 4) {
+    if (
+      colorMatch(
+        data[i],
+        data[i + 1],
+        data[i + 2],
+        color.r,
+        color.g,
+        color.b,
+        tolerance
+      )
+    ) {
+      data[i + 3] = 0;
+    }
+  }
+
+  ctx.putImageData(imgData, 0, 0);
+  // document.getElementById("output").src = canvas.toDataURL();
+  return canvas.toDataURL();
+}
+
+function removeColor(ogImg, color) {
+  // const fileInput = document.getElementById("upload");
+  // const colorInput = document.getElementById("color").value;
+  const colorInput = bgColors[color].color;
+  const canvas = document.getElementById("canvas2");
+  const ctx = canvas.getContext("2d");
+  const img = new Image();
+  var output;
+  const tolerance = bgColors[color].tolerance;
+  // const tolerance = 12; // You can adjust this value to fit your needs
+
+  // img.onload = ;
+
+  // img.src = URL.createObjectURL(fileInput.files[0]);
+  img.src = ogImg;
+  output = actuallyRemoveColor(img, ctx, colorInput, canvas, tolerance);
+  return output;
+}
+
 document
   .getElementById("fileInput")
   .addEventListener("change", async function (e) {
@@ -5,7 +106,7 @@ document
     const file = e.target.files[0];
 
     const preview = document.getElementById("imagePreview");
-    const skinTypeDropdown = document.getElementById("skinType");
+    // const skinTypeDropdown = document.getElementById("skinType");
     // const accessoryDropdown = document.getElementById("accessory");
 
     generateAccessoryGrid();
@@ -15,10 +116,8 @@ document
     // Show image preview
     const reader = new FileReader();
     reader.onload = function (e) {
+      // preview.src = removeColor(e.target.result);
       preview.src = e.target.result;
-      // skinTypeDropdown.style.display = "inline-block";
-      // document.getElementById("skinTypeLabel").style.display = "block";
-      // accessoryDropdown.style.display = "inline-block";
       document.getElementById("preview").style.display = "flex";
       document.getElementById("customisation").style.display = "block";
       downloadBtn.style.display = "inline-block";
@@ -42,6 +141,8 @@ async function addAccessory(accessory, skinType) {
   var imgURL = "";
   if (accessory == "none") {
     imgURL = `images/none.png`; // Replace with actual path
+  } else if (accessory.slice(0, 6) == "custom") {
+    imgURL = `images/${accessory.slice(7)}.png`;
   } else {
     imgURL = `images/${skinType} - ${accessory}.png`; // Replace with actual path
   }
@@ -50,13 +151,47 @@ async function addAccessory(accessory, skinType) {
   const preview = document.getElementById("imagePreview");
 
   const uploadedImg = new Image();
-  uploadedImg.src = preview.src;
+  // uploadedImg.src = removeColor(preview.src);
+  // uploadedImg.src = preview.src;
+
+  var apeNumber = document.getElementById("apeNumber").value;
+  var backgroundColor = "";
+  if (apeNumber > 0) {
+    readJsonFile("apedata.json").then((jsonData) => {
+      backgroundColor = getBackgroundTraitValue(apeNumber, jsonData);
+      // uploadedImg.src = removeColor(preview.src, backgroundColor);
+      uploadedImg.src = preview.src;
+    });
+  }
+
   await new Promise((r) => (uploadedImg.onload = r));
 
   canvas.width = uploadedImg.width;
   canvas.height = uploadedImg.height;
   ctx.drawImage(uploadedImg, 0, 0);
 
+  //add tshirt
+  const tshirtImg = new Image();
+  tshirtImg.src = "images/apefest-india-tshirt.png";
+  await new Promise((r) => (tshirtImg.onload = r));
+
+  // Calculate the scale ratio
+  const tshirtScaleRatio = uploadedImg.width / tshirtImg.width;
+
+  // Calculate the y-coordinate to align the bottom of both images
+  const tshirtYCoordinate =
+    uploadedImg.height - tshirtImg.height * tshirtScaleRatio;
+
+  // Draw the accessory image scaled to the uploaded image's width and aligned at the bottom
+  ctx.drawImage(
+    tshirtImg,
+    0,
+    tshirtYCoordinate,
+    tshirtImg.width * tshirtScaleRatio,
+    tshirtImg.height * tshirtScaleRatio
+  );
+
+  //add accessory
   const accessoryImg = new Image();
   accessoryImg.src = imgURL;
   await new Promise((r) => (accessoryImg.onload = r));
@@ -111,6 +246,7 @@ function selectAccessory(accessory) {
 
 function generateAccessoryGrid() {
   const accessoryTypes = [
+    "none",
     "Plain White Coffee Mug",
     "Beer Mug",
     "Champagne",
@@ -120,19 +256,27 @@ function generateAccessoryGrid() {
     "Cigarette",
     "Marijuana Joint",
     "Pipe",
-    "Mars",
-    "Light Saber",
+    // "Mars",
+    // "Light Saber",
     "Peace Sign",
     "Vulcan Salute",
+    // "custom-apefest-india-tshirt",
   ];
   const accessoryGrid = document.getElementById("accessoryGrid");
   accessoryGrid.innerHTML = "";
   const selectedSkin = document.getElementById("skinType").value;
-  appendNone();
+  // appendNone();
   accessoryTypes.forEach((accessory) => {
     const div = document.createElement("div");
     const img = document.createElement("img");
-    img.src = `images/${selectedSkin + " - " + accessory}.png`; // Replace with actual image paths
+    if (accessory == "none") {
+      img.src = `images/none.png`; // Replace with actual path
+    } else if (accessory.slice(0, 6) == "custom") {
+      img.src = `images/${accessory.slice(7)}.png`;
+    } else {
+      img.src = `images/${selectedSkin} - ${accessory}.png`; // Replace with actual path
+    }
+    // img.src = `images/${selectedSkin + " - " + accessory}.png`; // Replace with actual image paths
     img.alt = accessory;
     img.title = accessory;
     img.onclick = () => selectAccessory(accessory);
@@ -141,8 +285,10 @@ function generateAccessoryGrid() {
     div.appendChild(img);
     // div.appendChild(p);
     accessoryGrid.appendChild(div);
-    accessoryGrid.style.display = "flex";
   });
+
+  accessoryGrid.style.display = "flex";
+
   setTimeout(() => {
     const firstImage = accessoryGrid.querySelector("img");
     if (firstImage) {
@@ -188,12 +334,27 @@ function getFurTraitValue(id, jsonData) {
   return null;
 }
 
+function getBackgroundTraitValue(id, jsonData) {
+  for (let item of jsonData) {
+    if (item.id === id.toString()) {
+      let attributes = item.metadata.attributes;
+      for (let attribute of attributes) {
+        if (attribute.trait_type === "Background") {
+          return attribute.value;
+        }
+      }
+    }
+  }
+  return null;
+}
+
 async function fetchImage(ipfsUrl) {
   let response = await fetch(ipfsUrl);
   if (response.ok) {
     let blob = await response.blob();
     let imageUrl = URL.createObjectURL(blob);
     document.getElementById("imagePreview").src = imageUrl;
+    // document.getElementById("imagePreview").src = "images/RCD-ape.png";
   } else {
     console.error("Network response was not ok:", response.statusText);
   }
@@ -206,7 +367,6 @@ function selectApe() {
       let values = getFurTraitValue(apeNumber, jsonData);
       let skinType = values[0];
       let ipfsUrl = values[1];
-      console.log(skinType);
       ipfsUrl = ipfsUrl.replace("ipfs://", "");
       fetchImage("https://ipfs.io/ipfs/" + ipfsUrl).then(() => {
         document.getElementById("introContainer").style.display = "none";
