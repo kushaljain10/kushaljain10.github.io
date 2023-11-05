@@ -246,12 +246,9 @@
               };
             });
             {
-              console.log(bros);
-              // const bros = results.data;
               let broCount = 0;
 
               for (const bro of bros) {
-                console.log(bro);
                 if (bro.selected.toLowerCase() === "yes") {
                   const container = document.createElement("div");
                   container.className = "image-container";
@@ -292,9 +289,6 @@
                   document.querySelector(".gallery").appendChild(container);
                 }
               }
-
-              document.getElementById("broCount").innerText = broCount;
-              // document.getElementById("loader").style.display = "none"; // Hide loader when done
             }
           });
       </script>
