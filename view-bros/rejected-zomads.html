@@ -249,7 +249,7 @@
               let broCount = 0;
 
               for (const bro of bros) {
-                if (bro.selected.toLowerCase() === "no") {
+                if (bro.selected.toLowerCase() === "no\r") {
                   const container = document.createElement("div");
                   container.className = "image-container";
                   container.dataset.broNumber = bro.number; // Added data attribute to store bro number
