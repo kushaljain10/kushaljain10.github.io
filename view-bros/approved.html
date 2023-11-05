@@ -229,67 +229,118 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   </head>
   <body>
-    <div class="gallery" id="gallery"></div>
-    <div class="backdrop"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const url =
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEx8yI9A2n0Vj1l1L7yJAJCAXwGW5WmNv8hjbVrYDuBcrnZge1McTpqF4m6Ay9s_e9y_CfF7dO1Dtn/pub?gid=355606158&single=true&output=csv"; // Replace with your Google Sheets URL
-
+    <!-- <div class="loader" id="loader"></div> -->
+    <div class="header">
+      <h2>Approved</h2>
+    </div>
+    <div class="gallery" id="gallery">
+      <script>
+        url =
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEx8yI9A2n0Vj1l1L7yJAJCAXwGW5WmNv8hjbVrYDuBcrnZge1McTpqF4m6Ay9s_e9y_CfF7dO1Dtn/pub?gid=355606158&single=true&output=csv";
         fetch(url)
           .then((response) => response.text())
-          .then((csvText) => {
-            const results = Papa.parse(csvText, { header: true }); // Parse CSV with headers
-            const data = results.data;
-            const gallery = document.getElementById("gallery");
-
-            // Clear existing images
-            gallery.innerHTML = "";
-
-            // Filter SVGs where selected value is "yes" and append them to the gallery
-            data.forEach((row) => {
-              if (row.selected.toLowerCase() === "yes") {
-                // Assuming 'selected' is the column name
-                const container = document.createElement("div");
-                container.className = "image-container";
-
-                const img = document.createElement("img");
-                img.src = `./bros/${row.number}.svg`; // Assuming 'name' is the column name
-                img.alt = `Image ${row.number}`;
-                img.className = "image";
-                img.onerror = function () {
-                  container.style.display = "none";
-                };
-
-                const overlay = document.createElement("div");
-                overlay.className = "overlay";
-
-                const button = document.createElement("button");
-                button.className = "download-btn";
-                button.onclick = function () {
-                  window.location.href = `./bros/${row.number}.svg`;
-                };
-
-                const icon = document.createElement("i");
-                icon.className = "fas fa-download";
-
-                const name = document.createElement("div");
-                name.className = "image-name";
-                name.textContent = row.name; // Display the name of the SVG
-
-                button.appendChild(icon);
-                overlay.appendChild(button);
-                overlay.appendChild(name);
-                container.appendChild(img);
-                container.appendChild(overlay);
-                gallery.appendChild(container);
-              }
+          .then((data) => {
+            const rows = data.split("\n").slice(1); // Splitting rows and removing the header
+            const bros = rows.map((row) => {
+              const cells = row.split(","); // Splitting cells
+              // Creating an object from cells; adjust indices based on your CSV structure
+              return {
+                number: cells[0],
+                selected: cells[9], // Adjust based on actual index of 'selected' column
+              };
             });
-          })
-          .catch((error) =>
-            console.error("Error fetching and parsing CSV:", error)
-          );
-      });
-    </script>
+            {
+              // const bros = results.data;
+              let broCount = 0;
+
+              for (bro in bros) {
+                if (bro.selected.toLowerCase() === "yes\r") {
+                  const container = document.createElement("div");
+                  container.className = "image-container";
+                  container.dataset.broNumber = i; // Added data attribute to store bro number
+
+                  const img = document.createElement("img");
+                  img.src = `./bros/${bro.number}.svg`;
+                  img.alt = `Image ${bro.number}`;
+                  img.className = "image";
+                  img.onerror = function () {
+                    container.style.display = "none";
+                  };
+
+                  const overlay = document.createElement("div");
+                  overlay.className = "overlay";
+
+                  const button = document.createElement("button");
+                  button.className = "download-btn";
+                  button.onclick = function () {
+                    window.location.href = `./bros/${bro.number}.svg`;
+                  };
+
+                  const icon = document.createElement("i");
+                  icon.className = "fas fa-download";
+
+                  const name = document.createElement("div");
+                  name.className = "image-name";
+                  name.textContent = i;
+
+                  button.appendChild(icon);
+
+                  overlay.appendChild(button);
+                  overlay.appendChild(name);
+
+                  container.appendChild(img);
+                  container.appendChild(overlay);
+
+                  document.querySelector(".gallery").appendChild(container);
+                }
+              }
+
+              document.getElementById("broCount").innerText = broCount;
+              // document.getElementById("loader").style.display = "none"; // Hide loader when done
+            }
+          });
+
+        for (let i = 1001; i <= 2000; i++) {
+          const container = document.createElement("div");
+          container.className = "image-container";
+          container.dataset.broNumber = i; // Added data attribute to store bro number
+
+          const img = document.createElement("img");
+          img.src = `./bros/${i}.svg`;
+          img.alt = `Image ${i}`;
+          img.className = "image";
+          img.onerror = function () {
+            container.style.display = "none";
+          };
+
+          const overlay = document.createElement("div");
+          overlay.className = "overlay";
+
+          const button = document.createElement("button");
+          button.className = "download-btn";
+          button.onclick = function () {
+            window.location.href = `./bros/${i}.svg`;
+          };
+
+          const icon = document.createElement("i");
+          icon.className = "fas fa-download";
+
+          const name = document.createElement("div");
+          name.className = "image-name";
+          name.textContent = i;
+
+          button.appendChild(icon);
+
+          overlay.appendChild(button);
+          overlay.appendChild(name);
+
+          container.appendChild(img);
+          container.appendChild(overlay);
+
+          document.querySelector(".gallery").appendChild(container);
+        }
+      </script>
+    </div>
+    <div class="backdrop"></div>
   </body>
 </html>
