@@ -294,46 +294,6 @@
               // document.getElementById("loader").style.display = "none"; // Hide loader when done
             }
           });
-
-        for (let i = 1001; i <= 2000; i++) {
-          const container = document.createElement("div");
-          container.className = "image-container";
-          container.dataset.broNumber = bro.number; // Added data attribute to store bro number
-
-          const img = document.createElement("img");
-          img.src = `./bros/${i}.svg`;
-          img.alt = `Image ${i}`;
-          img.className = "image";
-          img.onerror = function () {
-            container.style.display = "none";
-          };
-
-          const overlay = document.createElement("div");
-          overlay.className = "overlay";
-
-          const button = document.createElement("button");
-          button.className = "download-btn";
-          button.onclick = function () {
-            window.location.href = `./bros/${i}.svg`;
-          };
-
-          const icon = document.createElement("i");
-          icon.className = "fas fa-download";
-
-          const name = document.createElement("div");
-          name.className = "image-name";
-          name.textContent = bro.number;
-
-          button.appendChild(icon);
-
-          overlay.appendChild(button);
-          overlay.appendChild(name);
-
-          container.appendChild(img);
-          container.appendChild(overlay);
-
-          document.querySelector(".gallery").appendChild(container);
-        }
       </script>
     </div>
     <div class="backdrop"></div>
