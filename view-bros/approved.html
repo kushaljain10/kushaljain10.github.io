@@ -298,7 +298,7 @@
         for (let i = 1001; i <= 2000; i++) {
           const container = document.createElement("div");
           container.className = "image-container";
-          container.dataset.broNumber = i; // Added data attribute to store bro number
+          container.dataset.broNumber = bro.number; // Added data attribute to store bro number
 
           const img = document.createElement("img");
           img.src = `./bros/${i}.svg`;
