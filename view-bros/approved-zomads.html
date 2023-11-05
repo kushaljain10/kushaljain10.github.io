@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .image-container {
+        position: relative;
+        width: calc(16.666% - 10px);
+        z-index: 0;
+        transition: z-index 0.3s ease-in-out;
+      }
+
+      .image {
+        width: 100%;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        /* opacity: 0; */
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      /* .image-container.hover {
+        z-index: 1;
+      }
+
+      .image-container.hover .image {
+        transform: scale(1.5);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      }
+
+      .image-container.hover .overlay {
+        opacity: 1;
+        transform: translateY(-60px);
+        transform: scale(1.5);
+      } */
+
+      .download-btn {
+        margin: 10px;
+        /* padding: 10px; */
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        width: 24px;
+        height: 24px;
+        color: white;
+      }
+
+      .image-name {
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        color: white;
+        /* background-color: rgba(0,0,0,0.3); */
+        padding: 5px;
+        border-radius: 500px;
+        height: 14px;
+        width: 14px;
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .image-container {
+          width: calc(50% - 10px);
+        }
+      }
+
+      .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      /* .image-container.hover ~ .backdrop {
+        opacity: 1;
+        z-index: 0;
+      } */
+
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: center;
+      }
+
+      .gallery {
+        margin-top: 60px; /* Add space for the header */
+      }
+
+      .filter-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      label {
+        margin-bottom: 5px;
+        color: #333;
+        font-size: 16px;
+      }
+
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        color: #333;
+      }
+
+      select:focus {
+        border-color: #666;
+        outline: none;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 3px #666;
+      }
+
+      #applyFiltersButton {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
+      }
+
+      #applyFiltersButton:hover {
+        background-color: #555;
+      }
+
+      #applyFiltersButton:active {
+        background-color: #111;
+      }
+
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        display: none; /* Initially hidden */
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .checkboxContainer {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 2;
+      }
+    </style>
+    <title>Image Gallery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Approved Zomads</h2>
+    </div>
+    <span>Hello</span>
+    <div class="gallery" id="gallery">
+      <script>
+        url =
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEx8yI9A2n0Vj1l1L7yJAJCAXwGW5WmNv8hjbVrYDuBcrnZge1McTpqF4m6Ay9s_e9y_CfF7dO1Dtn/pub?gid=355606158&single=true&output=csv";
+        fetch(url)
+          .then((response) => response.text())
+          .then((data) => {
+            const rows = data.split("\n").slice(1); // Splitting rows and removing the header
+            const bros = rows.map((row) => {
+              const cells = row.split(","); // Splitting cells
+              // Creating an object from cells; adjust indices based on your CSV structure
+              return {
+                number: cells[0],
+                selected: cells[9], // Adjust based on actual index of 'selected' column
+              };
+            });
+            {
+              // const bros = results.data;
+              let broCount = 0;
+
+              for (bro in bros) {
+                if (bro.selected.toLowerCase() === "yes\r") {
+                  const container = document.createElement("div");
+                  container.className = "image-container";
+                  container.dataset.broNumber = i; // Added data attribute to store bro number
+
+                  const img = document.createElement("img");
+                  img.src = `./bros/${bro.number}.svg`;
+                  img.alt = `Image ${bro.number}`;
+                  img.className = "image";
+                  img.onerror = function () {
+                    container.style.display = "none";
+                  };
+
+                  const overlay = document.createElement("div");
+                  overlay.className = "overlay";
+
+                  const button = document.createElement("button");
+                  button.className = "download-btn";
+                  button.onclick = function () {
+                    window.location.href = `./bros/${bro.number}.svg`;
+                  };
+
+                  const icon = document.createElement("i");
+                  icon.className = "fas fa-download";
+
+                  const name = document.createElement("div");
+                  name.className = "image-name";
+                  name.textContent = bro.number;
+
+                  button.appendChild(icon);
+
+                  overlay.appendChild(button);
+                  overlay.appendChild(name);
+
+                  container.appendChild(img);
+                  container.appendChild(overlay);
+
+                  document.querySelector(".gallery").appendChild(container);
+                }
+              }
+
+              document.getElementById("broCount").innerText = broCount;
+              // document.getElementById("loader").style.display = "none"; // Hide loader when done
+            }
+          });
+      </script>
+    </div>
+    <div class="backdrop"></div>
+  </body>
+</html>
