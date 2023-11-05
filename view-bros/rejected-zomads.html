@@ -226,7 +226,7 @@
   </head>
   <body>
     <div class="header">
-      <h2>Approved</h2>
+      <h2>Approved Zomads</h2>
     </div>
     <span>Hello</span>
     <div class="gallery" id="gallery">
@@ -246,14 +246,13 @@
               };
             });
             {
-              // const bros = results.data;
               let broCount = 0;
 
-              for (bro in bros) {
-                if (bro.selected.toLowerCase() === "yes\r") {
+              for (const bro of bros) {
+                if (bro.selected.toLowerCase() === "no") {
                   const container = document.createElement("div");
                   container.className = "image-container";
-                  container.dataset.broNumber = i; // Added data attribute to store bro number
+                  container.dataset.broNumber = bro.number; // Added data attribute to store bro number
 
                   const img = document.createElement("img");
                   img.src = `./bros/${bro.number}.svg`;
@@ -290,9 +289,6 @@
                   document.querySelector(".gallery").appendChild(container);
                 }
               }
-
-              document.getElementById("broCount").innerText = broCount;
-              // document.getElementById("loader").style.display = "none"; // Hide loader when done
             }
           });
       </script>
