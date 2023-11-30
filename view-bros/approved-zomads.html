@@ -232,7 +232,7 @@
     <div class="gallery" id="gallery">
       <script>
         url =
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEx8yI9A2n0Vj1l1L7yJAJCAXwGW5WmNv8hjbVrYDuBcrnZge1McTpqF4m6Ay9s_e9y_CfF7dO1Dtn/pub?gid=355606158&single=true&output=csv";
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEx8yI9A2n0Vj1l1L7yJAJCAXwGW5WmNv8hjbVrYDuBcrnZge1McTpqF4m6Ay9s_e9y_CfF7dO1Dtn/pub?gid=1315020543&single=true&output=csv";
         fetch(url)
           .then((response) => response.text())
           .then((data) => {
@@ -249,45 +249,45 @@
               let broCount = 0;
 
               for (const bro of bros) {
-                if (bro.selected.toLowerCase() === "yes\r") {
-                  const container = document.createElement("div");
-                  container.className = "image-container";
-                  container.dataset.broNumber = bro.number; // Added data attribute to store bro number
+                // if (bro.selected.toLowerCase() === "yes\r") {
+                const container = document.createElement("div");
+                container.className = "image-container";
+                container.dataset.broNumber = bro.number; // Added data attribute to store bro number
 
-                  const img = document.createElement("img");
-                  img.src = `./bros/${bro.number}.svg`;
-                  img.alt = `Image ${bro.number}`;
-                  img.className = "image";
-                  img.onerror = function () {
-                    container.style.display = "none";
-                  };
+                const img = document.createElement("img");
+                img.src = `./bros/${bro.number}.svg`;
+                img.alt = `Image ${bro.number}`;
+                img.className = "image";
+                img.onerror = function () {
+                  container.style.display = "none";
+                };
 
-                  const overlay = document.createElement("div");
-                  overlay.className = "overlay";
+                const overlay = document.createElement("div");
+                overlay.className = "overlay";
 
-                  const button = document.createElement("button");
-                  button.className = "download-btn";
-                  button.onclick = function () {
-                    window.location.href = `./bros/${bro.number}.svg`;
-                  };
+                const button = document.createElement("button");
+                button.className = "download-btn";
+                button.onclick = function () {
+                  window.location.href = `./bros/${bro.number}.svg`;
+                };
 
-                  const icon = document.createElement("i");
-                  icon.className = "fas fa-download";
+                const icon = document.createElement("i");
+                icon.className = "fas fa-download";
 
-                  const name = document.createElement("div");
-                  name.className = "image-name";
-                  name.textContent = bro.number;
+                const name = document.createElement("div");
+                name.className = "image-name";
+                name.textContent = bro.number;
 
-                  button.appendChild(icon);
+                button.appendChild(icon);
 
-                  overlay.appendChild(button);
-                  overlay.appendChild(name);
+                overlay.appendChild(button);
+                overlay.appendChild(name);
 
-                  container.appendChild(img);
-                  container.appendChild(overlay);
+                container.appendChild(img);
+                container.appendChild(overlay);
 
-                  document.querySelector(".gallery").appendChild(container);
-                }
+                document.querySelector(".gallery").appendChild(container);
+                // }
               }
             }
           });
