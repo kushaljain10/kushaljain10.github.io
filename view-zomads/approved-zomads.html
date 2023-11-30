@@ -237,7 +237,7 @@
           .then((response) => response.text())
           .then((data) => {
             const rows = data.split("\n").slice(1); // Splitting rows and removing the header
-            const bros = rows.map((row) => {
+            const zomads = rows.map((row) => {
               const cells = row.split(","); // Splitting cells
               // Creating an object from cells; adjust indices based on your CSV structure
               return {
@@ -246,17 +246,17 @@
               };
             });
             {
-              let broCount = 0;
+              let zomadCount = 0;
 
-              for (const bro of bros) {
-                // if (bro.selected.toLowerCase() === "yes\r") {
+              for (const zomad of zomads) {
+                // if (zomad.selected.toLowerCase() === "yes\r") {
                 const container = document.createElement("div");
                 container.className = "image-container";
-                container.dataset.broNumber = bro.number; // Added data attribute to store bro number
+                container.dataset.zomadNumber = zomad.number; // Added data attribute to store zomad number
 
                 const img = document.createElement("img");
-                img.src = `./bros/${bro.number}.svg`;
-                img.alt = `Image ${bro.number}`;
+                img.src = `./zomads_final/${zomad.number}.svg`;
+                img.alt = `Image ${zomad.number}`;
                 img.className = "image";
                 img.onerror = function () {
                   container.style.display = "none";
@@ -268,7 +268,7 @@
                 const button = document.createElement("button");
                 button.className = "download-btn";
                 button.onclick = function () {
-                  window.location.href = `./bros/${bro.number}.svg`;
+                  window.location.href = `./zomads_final/${zomad.number}.svg`;
                 };
 
                 const icon = document.createElement("i");
@@ -276,7 +276,7 @@
 
                 const name = document.createElement("div");
                 name.className = "image-name";
-                name.textContent = bro.number;
+                name.textContent = zomad.number;
 
                 button.appendChild(icon);
 
