@@ -189,15 +189,15 @@
       function populateSelect(selectId, options) {
         const select = document.getElementById(selectId);
         options.forEach((option, index) => {
-          const optionElement = document.createElement("option");
-          var parts = option.split(","); // Split the string on comma
-          if (parts[0] != "name") {
+          if (index != 0) {
+            const optionElement = document.createElement("option");
+            var parts = option.split(","); // Split the string on comma
             optionElement.value = parts[0];
             optionElement.text = parts[0];
+            // optionElement.text = option;
+            // optionElement.value = option;
+            select.add(optionElement);
           }
-          // optionElement.text = option;
-          // optionElement.value = option;
-          select.add(optionElement);
         });
         document
           .getElementById(selectId)
