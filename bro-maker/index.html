@@ -190,9 +190,10 @@
         const select = document.getElementById(selectId);
         options.forEach((option, index) => {
           const optionElement = document.createElement("option");
-          optionElement.text = option;
           var parts = option.split(","); // Split the string on comma
           optionElement.value = parts[0];
+          optionElement.text = parts[0];
+          // optionElement.text = option;
           // optionElement.value = option;
           select.add(optionElement);
         });
