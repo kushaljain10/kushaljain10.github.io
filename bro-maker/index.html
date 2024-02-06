@@ -191,8 +191,10 @@
         options.forEach((option, index) => {
           const optionElement = document.createElement("option");
           var parts = option.split(","); // Split the string on comma
-          optionElement.value = parts[0];
-          optionElement.text = parts[0];
+          if (parts[0] != "name") {
+            optionElement.value = parts[0];
+            optionElement.text = parts[0];
+          }
           // optionElement.text = option;
           // optionElement.value = option;
           select.add(optionElement);
