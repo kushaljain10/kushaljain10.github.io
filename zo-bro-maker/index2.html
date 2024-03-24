@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zo Bros & Baes Maker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container mx-auto p-4">
+      <input type="checkbox" id="switch" onclick="toggleContainer()" />
+      <label for="switch" class="text-lg font-bold mb-4 cursor-pointer"
+        >Switch</label
+      >
+
+      <div id="container1">
+        <h1 class="text-3xl font-bold mb-4">Zo Bro Maker</h1>
+
+        <div class="grid grid-cols-6">
+          <div class="col-span-3">
+            <form id="bro-form" class="bg-white p-4 rounded shadow-md mr-4">
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="background"
+                    >Background:</label
+                  >
+                  <select
+                    onchange="generateBro()"
+                    id="background"
+                    name="background"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="background-fixed">Fixed?</label>
+                  <input id="background-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="skin">Skin:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="skin"
+                    name="skin"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="skin-fixed">Fixed?</label>
+                  <input id="skin-fixed" type="checkbox" />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="dress">Dress:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="dress"
+                    name="dress"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="dress-fixed">Fixed?</label>
+                  <input id="dress-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="mouth">Mouth:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="mouth"
+                    name="mouth"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="mouth-fixed">Fixed?</label>
+                  <input id="mouth-fixed" type="checkbox" />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="head">Head:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="head"
+                    name="head"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="head-fixed">Fixed?</label>
+                  <input id="head-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="eyes">Eyes:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="eyes"
+                    name="eyes"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="eyes-fixed">Fixed?</label>
+                  <input id="eyes-fixed" type="checkbox" />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="eyewear"
+                    >Eyewear:</label
+                  >
+                  <select
+                    onchange="generateBro()"
+                    id="eyewear"
+                    name="eyewear"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="eyewear-fixed">Fixed?</label>
+                  <input id="eyewear-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="beard">Beard:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="beard"
+                    name="beard"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="beard-fixed">Fixed?</label>
+                  <input id="beard-fixed" type="checkbox" />
+                </div>
+              </div>
+              <button
+                id="generate-btn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+                onclick="generateBro()"
+              >
+                Generate Bro
+              </button>
+              <button
+                id="random-btn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+                onclick="randomBro()"
+              >
+                Randomise
+              </button>
+            </form>
+          </div>
+          <div class="col-span-3" style="max-width: 500px">
+            <div id="result" class="mb-4"></div>
+            <div>
+              <a
+                id="download-btn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                style="
+                  margin-top: 10px;
+                  display: none;
+                  margin: 0 auto;
+                  width: 150px;
+                  text-align: center;
+                "
+                onclick="download()"
+                download="bro.svg"
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="container2" style="display: none">
+        <h1 class="text-3xl font-bold mb-4">Zo Bae Maker</h1>
+
+        <div class="grid grid-cols-6">
+          <div class="col-span-3">
+            <form id="bro-form" class="bg-white p-4 rounded shadow-md mr-4">
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="background"
+                    >Background:</label
+                  >
+                  <select
+                    onchange="generateBro()"
+                    id="background"
+                    name="background"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="background-fixed">Fixed?</label>
+                  <input id="background-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="skin">Skin:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="skin"
+                    name="skin"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="skin-fixed">Fixed?</label>
+                  <input id="skin-fixed" type="checkbox" />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="dress">Dress:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="dress"
+                    name="dress"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="dress-fixed">Fixed?</label>
+                  <input id="dress-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="mouth">Mouth:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="mouth"
+                    name="mouth"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="mouth-fixed">Fixed?</label>
+                  <input id="mouth-fixed" type="checkbox" />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="head">Head:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="head"
+                    name="head"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="head-fixed">Fixed?</label>
+                  <input id="head-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="eyes">Eyes:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="eyes"
+                    name="eyes"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="eyes-fixed">Fixed?</label>
+                  <input id="eyes-fixed" type="checkbox" />
+                </div>
+              </div>
+
+              <div class="flex flex-wrap mb-4">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="eyewear"
+                    >Eyewear:</label
+                  >
+                  <select
+                    onchange="generateBro()"
+                    id="eyewear"
+                    name="eyewear"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="eyewear-fixed">Fixed?</label>
+                  <input id="eyewear-fixed" type="checkbox" />
+                </div>
+
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label class="block mb-2 font-bold" for="beard">Beard:</label>
+                  <select
+                    onchange="generateBro()"
+                    id="beard"
+                    name="beard"
+                    class="block w-full p-2 border border-gray-300 rounded"
+                  ></select>
+                  <label for="beard-fixed">Fixed?</label>
+                  <input id="beard-fixed" type="checkbox" />
+                </div>
+              </div>
+              <button
+                id="generate-btn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+                onclick="generateBro()"
+              >
+                Generate Bro
+              </button>
+              <button
+                id="random-btn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+                onclick="randomBro()"
+              >
+                Randomise
+              </button>
+            </form>
+          </div>
+          <div class="col-span-3" style="max-width: 500px">
+            <div id="result" class="mb-4"></div>
+            <div>
+              <a
+                id="download-btn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                style="
+                  margin-top: 10px;
+                  display: none;
+                  margin: 0 auto;
+                  width: 150px;
+                  text-align: center;
+                "
+                onclick="download()"
+                download="bro.svg"
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleContainer() {
+        const switchBtn = document.getElementById("switch");
+        const container1 = document.getElementById("container1");
+        const container2 = document.getElementById("container2");
+
+        if (switchBtn.checked) {
+          container1.style.display = "none";
+          container2.style.display = "block";
+        } else {
+          container1.style.display = "block";
+          container2.style.display = "none";
+        }
+      }
+
+      // Assuming you have an array of folder names
+      const broTraitNames = [
+        "background",
+        "beard",
+        "dress",
+        "eyes",
+        "eyewear",
+        "head",
+        "mouth",
+        "skin",
+      ];
+
+      const baeTraitNames = [
+        "background",
+        "dress",
+        "earrings",
+        "eyes",
+        "eyewear",
+        "head",
+        "mouth",
+        "neck",
+        "skin",
+      ];
+
+      // Function to read a CSV file and return its contents as an array
+      function readCSV(file) {
+        // Replace this with your own CSV reading logic
+        // Here's a simplified example assuming the CSV is already loaded as a string
+        const csvString = file;
+        const lines = csvString.split("\n");
+        return lines.map((line) => line.trim());
+      }
+
+      // Function to populate a select element with options
+      function populateSelect(selectId, options) {
+        const select = document.getElementById(selectId);
+        options.forEach((option, index) => {
+          if (index != 0) {
+            const optionElement = document.createElement("option");
+            var parts = option.split(","); // Split the string on comma
+            optionElement.value = parts[0];
+            optionElement.text = parts[0];
+            // optionElement.text = option;
+            // optionElement.value = option;
+            select.add(optionElement);
+          }
+        });
+        document
+          .getElementById(selectId)
+          .options[0].setAttribute("selected", "");
+      }
+
+      window.onload = traitNames.forEach((folderName) => {
+        // Replace 'csvFiles/folderName.csv' with the actual file path
+        fetch(`assets/Baes/${folderName}/list.csv`)
+          .then((response) => response.text())
+          .then((csvData) => {
+            const options = readCSV(csvData);
+            populateSelect(folderName, options);
+          })
+          .catch((error) => {
+            console.error(`Error loading CSV file for ${folderName}:`, error);
+          });
+        generateBro();
+      });
+
+      function randomBro() {
+        traitNames.forEach(function (trait) {
+          if (!document.getElementById(trait + "-fixed").checked) {
+            const selectElement = document.getElementById(trait);
+            const options = selectElement.options;
+
+            const randomIndex = Math.floor(Math.random() * options.length);
+
+            document
+              .getElementById(trait)
+              .options[randomIndex].setAttribute("selected", "");
+          }
+        });
+        generateBro();
+      }
+
+      const downloadLink = document.getElementById("download-btn");
+      downloadLink.addEventListener("click", () => {
+        downloadLink.href =
+          "data:image/svg+xml;charset=utf-8," +
+          encodeURIComponent(document.getElementById("result").innerHTML);
+      });
+
+      function generateBro() {
+        if (
+          document.getElementById("eyes").value == "laser-blue" ||
+          document.getElementById("eyes").value == "laser-red"
+        ) {
+          document.getElementById("eyewear").value = "none";
+        }
+        if (
+          document.getElementById("dress").value == "18" ||
+          document.getElementById("dress").value == "19"
+        ) {
+          document.getElementById("head").value = "none";
+        }
+        document.getElementById("download-btn").style.display = "block";
+        const formData = new FormData(document.getElementById("bro-form"));
+        const params = new URLSearchParams(formData).toString();
+
+        // Adjust the API endpoint URL accordingly
+        const apiUrl = "http://localhost:3000/generate-bro?" + params;
+
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            // Handle the response data
+            document.getElementById("result").innerHTML = data.bro;
+          })
+          .catch((error) => {
+            // Handle any errors that occurred during the request
+            console.error(error);
+          });
+      }
+
+      function generateBae() {
+        if (
+          document.getElementById("eyes").value == "laser-blue" ||
+          document.getElementById("eyes").value == "laser-red"
+        ) {
+          document.getElementById("eyewear").value = "none";
+        }
+        document.getElementById("download-btn").style.display = "block";
+        const formData = new FormData(document.getElementById("bro-form"));
+        const params = new URLSearchParams(formData).toString();
+
+        // Adjust the API endpoint URL accordingly
+        const apiUrl = "http://localhost:3000/generate-bae?" + params;
+
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            // Handle the response data
+            document.getElementById("result").innerHTML = data.bro;
+          })
+          .catch((error) => {
+            // Handle any errors that occurred during the request
+            console.error(error);
+          });
+      }
+    </script>
+  </body>
+</html>
