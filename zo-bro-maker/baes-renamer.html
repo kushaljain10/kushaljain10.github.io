@@ -170,7 +170,7 @@
       }
 
       traitNames.forEach((traitName, index) => {
-        fetch("assets/Baes/" + traitName + "/list2.csv")
+        fetch("../zo-avatar-maker/assets/Baes/" + traitName + "/list2.csv")
           .then((response) => response.text())
           .then((csvData) => {
             // Parse CSV data
@@ -222,7 +222,9 @@
               trait.style.backgroundColor = "#fff";
               const traitImage = document.createElement("img");
               traitImage.src =
-                `assets/Baes/` + traitName + `/${data[i]["file_name"]}.svg`;
+                `../zo-avatar-maker/assets/Baes/` +
+                traitName +
+                `/${data[i]["file_name"]}.svg`;
               trait.appendChild(traitImage);
               row.appendChild(trait);
               // Add Trait File Name
