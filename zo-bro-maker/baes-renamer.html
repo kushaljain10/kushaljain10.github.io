@@ -170,8 +170,10 @@
       }
 
       traitNames.forEach((traitName, index) => {
-        fetch("zo-avatar-maker/assets/Baes/" + traitName + "/list2.csv")
-          .then((response) => response.text())
+        fetch(
+          "https://zo-avatar-maker-production.up.railway.app/get-bae-traits"
+        )
+          // .then((response) => response.text())
           .then((csvData) => {
             // Parse CSV data
             const rows = csvData.split("\n").filter((row) => row.trim() !== ""); // Remove empty rows
