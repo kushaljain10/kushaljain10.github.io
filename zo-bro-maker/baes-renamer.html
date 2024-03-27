@@ -110,13 +110,21 @@
         cursor: pointer;
         top: 120px;
       }
+      a {
+        text-decoration: none;
+      }
+      a.active {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <div class="header">
       <h3>
-        <a href="/baes-renamer.html">Baes Traits Reviewer</a>&nbsp;&nbsp; |
-        &nbsp;&nbsp;<a href="/bros-renamer.html">Bros Traits Reviewer</a>
+        <a class="active" href="/baes-renamer.html">Baes Traits Reviewer</a
+        >&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/bros-renamer.html"
+          >Bros Traits Reviewer</a
+        >
       </h3>
       <div class="tabs">
         <div class="tab" onclick="showTab(1)">Background</div>
@@ -169,151 +177,146 @@
         document.getElementById("tab" + tabIndex).style.display = "block";
       }
 
-      traitNames.forEach((traitName, index) => {
-        fetch(
-          "https://zo-avatar-maker-production.up.railway.app/get-bae-traits/" +
-            traitName
-        )
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error("Failed to fetch data");
-            }
-            return response.text();
-          })
-          // .then((response) => response.text())
-          .then((csvData) => {
-            // Parse CSV data
-            const rows = csvData.split("\n").filter((row) => row.trim() !== ""); // Remove empty rows
-            let headers = rows[0].split(",");
-            const data = [];
-            for (let i = 1; i < rows.length; i++) {
-              const row = rows[i].split(",");
-              const rowData = {};
-              for (let j = 0; j < headers.length; j++) {
-                rowData[headers[j]] = row[j];
+      Promise.all(
+        traitNames.map((traitName, index) => {
+          const requestOptions = {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ trait: traitName, type: "Baes" }),
+          };
+
+          return fetch(
+            "https://api.retool.com/v1/workflows/5dbe76bf-2e1c-4baa-a241-d865ccf46443/startTrigger?workflowApiKey=retool_wk_a279c12577674cea8261c14c7d54c4c9",
+            requestOptions
+          )
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Failed to fetch data");
               }
-              data.push(rowData);
-            }
-            // Generate table
-            // const container = document.getElementById("tab" + (index + 1));
-            const container = tabContents[index];
-            container.innerHTML =
-              '<button class="save-button" id="save-button-' +
-              traitName +
-              '">Save Changes</button>';
-            const table = document.createElement("table");
-            table.id = traitName + "-table";
-            // Add table headers
-            const headerRow = document.createElement("tr");
-            headers = [
-              "S.No.",
-              "Trait",
-              "Trait Current Name",
-              "Trait New Name",
-              "Selected?",
-            ];
-            for (const header of headers) {
-              const th = document.createElement("th");
-              th.textContent = header.trim();
-              headerRow.appendChild(th);
-            }
-            table.appendChild(headerRow);
-            // Add table rows
-            for (let i = 0; i < data.length; i++) {
-              const row = document.createElement("tr");
-              row.setAttribute("data-index", i);
-              // Add serial number
-              const serialNumber = document.createElement("td");
-              serialNumber.textContent = i + 1;
-              row.appendChild(serialNumber);
-              // Add Trait
-              const trait = document.createElement("td");
-              trait.style.backgroundColor = "#fff";
-              const traitImage = document.createElement("img");
-              traitImage.src =
-                `zo-avatar-maker/assets/Baes/` +
+              return response.json();
+            })
+            .then((traitData) => {
+              // Parse CSV data
+              const data = traitData;
+              const container = tabContents[index];
+              container.innerHTML =
+                '<button class="save-button" id="save-button-' +
                 traitName +
-                `/${data[i]["file_name"]}.svg`;
-              trait.appendChild(traitImage);
-              row.appendChild(trait);
-              // Add Trait File Name
-              const traitFileName = document.createElement("td");
-              traitFileName.textContent = data[i]["file_name"];
-              row.appendChild(traitFileName);
-              // Add Trait New Name input
-              const traitNewName = document.createElement("td");
-              const newNameInput = document.createElement("input");
-              newNameInput.type = "text";
-              newNameInput.value = data[i]["new_name"];
-              traitNewName.appendChild(newNameInput);
-              row.appendChild(traitNewName);
-              // Add Selected checkbox
-              const selected = document.createElement("td");
-              const selectedCheckbox = document.createElement("input");
-              selectedCheckbox.type = "checkbox";
-              selectedCheckbox.checked = data[i]["selected"] === "TRUE";
-              selected.appendChild(selectedCheckbox);
-              row.appendChild(selected);
-              table.appendChild(row);
-            }
-            container.appendChild(table);
-            // Add Save Changes button
-            const saveButton = document.getElementById(
-              "save-button-" + traitName
-            );
+                '">Save Changes</button>';
+              const table = document.createElement("table");
+              table.id = traitName + "-table";
+              // Add table headers
+              const headerRow = document.createElement("tr");
+              headers = [
+                "S.No.",
+                "Trait",
+                "Trait Current Name",
+                "Trait New Name",
+                "Selected?",
+              ];
+              for (const header of headers) {
+                const th = document.createElement("th");
+                th.textContent = header.trim();
+                headerRow.appendChild(th);
+              }
+              table.appendChild(headerRow);
+              // Add table rows
+              for (let i = 0; i < data.length; i++) {
+                const row = document.createElement("tr");
+                row.setAttribute("data-index", i);
+                // Add serial number
+                const serialNumber = document.createElement("td");
+                serialNumber.textContent = i + 1;
+                row.appendChild(serialNumber);
+                // Add Trait
+                const trait = document.createElement("td");
+                trait.style.backgroundColor = "#fff";
+                const traitImage = document.createElement("img");
+                traitImage.src =
+                  `assets/Baes/` + traitName + `/${data[i]["file_name"]}.svg`;
+                trait.appendChild(traitImage);
+                row.appendChild(trait);
+                // Add Trait File Name
+                const traitFileName = document.createElement("td");
+                traitFileName.textContent = data[i]["file_name"];
+                row.appendChild(traitFileName);
+                // Add Trait New Name input
+                const traitNewName = document.createElement("td");
+                const newNameInput = document.createElement("input");
+                newNameInput.type = "text";
+                newNameInput.value = data[i]["new_name"];
+                traitNewName.appendChild(newNameInput);
+                row.appendChild(traitNewName);
+                // Add Selected checkbox
+                const selected = document.createElement("td");
+                const selectedCheckbox = document.createElement("input");
+                selectedCheckbox.type = "checkbox";
+                selectedCheckbox.checked = data[i]["selected"] === "TRUE";
+                selected.appendChild(selectedCheckbox);
+                row.appendChild(selected);
+                table.appendChild(row);
+              }
+              container.appendChild(table);
+              // Add Save Changes button
+              const saveButton = document.getElementById(
+                "save-button-" + traitName
+              );
 
-            // Add Save Changes button event listener
-            saveButton.addEventListener("click", () => {
-              const updatedData = [];
-              const tableRows = table.querySelectorAll("tr[data-index]");
-              tableRows.forEach((row, i) => {
-                const index = parseInt(row.getAttribute("data-index"));
-                const newRow = {
-                  file_name: data[index]["file_name"],
-                  new_name: row.querySelector('input[type="text"]').value,
-                  selected: row.querySelector('input[type="checkbox"]').checked
-                    ? "TRUE"
-                    : "FALSE",
-                };
-                updatedData.push(newRow);
-              });
-
-              // Send updated data to server
-              fetch(
-                "https://zo-avatar-maker-production.up.railway.app/saveChanges",
-                {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify({
-                    updatedData: updatedData,
-                    trait: traitName,
-                    type: "Baes",
-                  }),
-                }
-              )
-                .then((response) => {
-                  if (response.ok) {
-                    console.log("Changes saved successfully");
-                    // alert("Changes saved successfully");
-                  } else {
-                    console.error("Error saving changes");
-                    //   alert("Error saving changes");
-                  }
-                })
-                .catch((error) => {
-                  console.error("Error saving changes:", error);
-                  // alert("Error saving changes");
+              // Add Save Changes button event listener
+              saveButton.addEventListener("click", () => {
+                const updatedData = [];
+                const tableRows = table.querySelectorAll("tr[data-index]");
+                tableRows.forEach((row, i) => {
+                  const index = parseInt(row.getAttribute("data-index"));
+                  const newRow = {
+                    file_name: data[index]["file_name"],
+                    new_name: row.querySelector('input[type="text"]').value,
+                    selected: row.querySelector('input[type="checkbox"]')
+                      .checked
+                      ? "TRUE"
+                      : "FALSE",
+                  };
+                  updatedData.push(newRow);
                 });
-            });
 
-            //   container.appendChild(saveButton);
-          })
-          .catch((error) => {
-            console.error("Error fetching data:", error);
-            tabContents[index].textContent = "Failed to load data";
-          });
+                // Send updated data to server
+                fetch(
+                  "https://api.retool.com/v1/workflows/42ddb7c8-8145-4eb1-8beb-50ad608b0995/startTrigger?workflowApiKey=retool_wk_0358b842b86546abac902a988adfa972",
+                  {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                      updatedData: updatedData,
+                      trait: traitName,
+                      type: "Baes",
+                    }),
+                  }
+                )
+                  .then((response) => {
+                    if (response.ok) {
+                      console.log("Changes saved successfully");
+                      alert("Changes saved successfully");
+                    } else {
+                      console.error("Error saving changes");
+                      //   alert("Error saving changes");
+                    }
+                  })
+                  .catch((error) => {
+                    console.error("Error saving changes:", error);
+                    // alert("Error saving changes");
+                  });
+              });
+            })
+            .catch((error) => {
+              console.error("Error fetching data:", error);
+              tabContents[index].textContent = "Failed to load data";
+            });
+        })
+      ).then(() => {
         showTab(1);
       });
     </script>

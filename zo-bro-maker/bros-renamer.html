@@ -110,13 +110,21 @@
         cursor: pointer;
         top: 120px;
       }
+      a {
+        text-decoration: none;
+      }
+      a.active {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <div class="header">
       <h3>
         <a href="/baes-renamer.html">Baes Traits Reviewer</a>&nbsp;&nbsp; |
-        &nbsp;&nbsp;<a href="/bros-renamer.html">Bros Traits Reviewer</a>
+        &nbsp;&nbsp;<a class="active" href="/bros-renamer.html"
+          >Bros Traits Reviewer</a
+        >
       </h3>
       <div class="tabs">
         <div class="tab" onclick="showTab(1)">Background</div>
@@ -167,23 +175,26 @@
       }
 
       traitNames.forEach((traitName, index) => {
-        fetch("../zo-avatar-maker/assets/Bros/" + traitName + "/list2.csv")
-          .then((response) => response.text())
-          .then((csvData) => {
-            // Parse CSV data
-            const rows = csvData.split("\n").filter((row) => row.trim() !== ""); // Remove empty rows
-            let headers = rows[0].split(",");
-            const data = [];
-            for (let i = 1; i < rows.length; i++) {
-              const row = rows[i].split(",");
-              const rowData = {};
-              for (let j = 0; j < headers.length; j++) {
-                rowData[headers[j]] = row[j];
-              }
-              data.push(rowData);
+        const requestOptions = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ trait: traitName, type: "Bros" }),
+        };
+        fetch(
+          "https://api.retool.com/v1/workflows/5dbe76bf-2e1c-4baa-a241-d865ccf46443/startTrigger?workflowApiKey=retool_wk_a279c12577674cea8261c14c7d54c4c9",
+          requestOptions
+        )
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Failed to fetch data");
             }
-            // Generate table
-            // const container = document.getElementById("tab" + (index + 1));
+            return response.json();
+          })
+          .then((traitData) => {
+            // Parse CSV data
+            const data = traitData;
             const container = tabContents[index];
             container.innerHTML =
               '<button class="save-button" id="save-button-' +
@@ -219,9 +230,7 @@
               trait.style.backgroundColor = "#fff";
               const traitImage = document.createElement("img");
               traitImage.src =
-                `../zo-avatar-maker/assets/Bros/` +
-                traitName +
-                `/${data[i]["file_name"]}.svg`;
+                `assets/Bros/` + traitName + `/${data[i]["file_name"]}.svg`;
               trait.appendChild(traitImage);
               row.appendChild(trait);
               // Add Trait File Name
@@ -268,7 +277,7 @@
 
               // Send updated data to server
               fetch(
-                "https://zo-avatar-maker-production.up.railway.app/saveChanges",
+                "https://api.retool.com/v1/workflows/42ddb7c8-8145-4eb1-8beb-50ad608b0995/startTrigger?workflowApiKey=retool_wk_0358b842b86546abac902a988adfa972",
                 {
                   method: "POST",
                   headers: {
@@ -284,7 +293,7 @@
                 .then((response) => {
                   if (response.ok) {
                     console.log("Changes saved successfully");
-                    // alert("Changes saved successfully");
+                    alert("Changes saved successfully");
                   } else {
                     console.error("Error saving changes");
                     //   alert("Error saving changes");
@@ -295,8 +304,6 @@
                   // alert("Error saving changes");
                 });
             });
-
-            //   container.appendChild(saveButton);
           })
           .catch((error) => {
             console.error("Error fetching data:", error);
