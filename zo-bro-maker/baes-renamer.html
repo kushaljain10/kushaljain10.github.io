@@ -171,7 +171,8 @@
 
       traitNames.forEach((traitName, index) => {
         fetch(
-          "https://zo-avatar-maker-production.up.railway.app/get-bae-traits"
+          "https://zo-avatar-maker-production.up.railway.app/get-bae-traits?traitName=" +
+            traitName
         )
           // .then((response) => response.text())
           .then((csvData) => {
