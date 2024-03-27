@@ -206,47 +206,59 @@
         "skin",
       ];
 
-      // Function to read a CSV file and return its contents as an array
-      function readCSV(file) {
-        // Replace this with your own CSV reading logic
-        // Here's a simplified example assuming the CSV is already loaded as a string
-        const csvString = file;
-        const lines = csvString.split("\n");
-        return lines.map((line) => line.trim());
-      }
+      window.onload = () => {
+        const fetchPromises = [];
+        // Function to read a CSV file and return its contents as an array
+        function readCSV(file) {
+          // Replace this with your own CSV reading logic
+          // Here's a simplified example assuming the CSV is already loaded as a string
+          const csvString = file;
+          const lines = csvString.split("\n");
+          return lines.map((line) => line.trim());
+        }
 
-      // Function to populate a select element with options
-      function populateSelect(selectId, options) {
-        const select = document.getElementById(selectId);
-        options.forEach((option, index) => {
-          if (index != 0) {
-            const optionElement = document.createElement("option");
-            var parts = option.split(","); // Split the string on comma
-            optionElement.value = parts[0];
-            optionElement.text = parts[0];
-            // optionElement.text = option;
-            // optionElement.value = option;
-            select.add(optionElement);
-          }
+        // Function to populate a select element with options
+        function populateSelect(selectId, options) {
+          const select = document.getElementById(selectId);
+          options.forEach((option, index) => {
+            if (index != 0) {
+              const optionElement = document.createElement("option");
+              var parts = option.split(","); // Split the string on comma
+              optionElement.value = parts[0];
+              optionElement.text = parts[0];
+              // optionElement.text = option;
+              // optionElement.value = option;
+              select.add(optionElement);
+            }
+          });
+          document
+            .getElementById(selectId)
+            .options[0].setAttribute("selected", "");
+        }
+
+        traitNames.forEach((folderName) => {
+          // Replace 'csvFiles/folderName.csv' with the actual file path
+          const fetchPromise = fetch(`assets/Baes/${folderName}/list.csv`)
+            .then((response) => response.text())
+            .then((csvData) => {
+              const options = readCSV(csvData);
+              populateSelect(folderName, options);
+            })
+            .catch((error) => {
+              console.error(`Error loading CSV file for ${folderName}:`, error);
+            });
+          fetchPromises.push(fetchPromise);
+          // generateBae();
         });
-        document
-          .getElementById(selectId)
-          .options[0].setAttribute("selected", "");
-      }
 
-      window.onload = traitNames.forEach((folderName) => {
-        // Replace 'csvFiles/folderName.csv' with the actual file path
-        fetch(`assets/Baes/${folderName}/list.csv`)
-          .then((response) => response.text())
-          .then((csvData) => {
-            const options = readCSV(csvData);
-            populateSelect(folderName, options);
+        Promise.all(fetchPromises)
+          .then(() => {
+            generateBae();
           })
           .catch((error) => {
-            console.error(`Error loading CSV file for ${folderName}:`, error);
+            console.error("Error fetching CSV files:", error);
           });
-        generateBae();
-      });
+      };
 
       function randomBae() {
         traitNames.forEach(function (trait) {
@@ -272,28 +284,67 @@
       });
 
       function generateBae() {
-        if (
-          document.getElementById("eyes").value == "7" ||
-          document.getElementById("eyes").value == "8"
-        ) {
-          document.getElementById("eyewear").value = "none";
-        }
-        document.getElementById("download-btn").style.display = "block";
-        const formData = new FormData(document.getElementById("bae-form"));
-        const params = new URLSearchParams(formData).toString();
+        const inputSVGs = [
+          "assets/Baes/background/" +
+            document.getElementById("background").value +
+            ".svg",
+          "assets/Baes/skin/" + document.getElementById("skin").value + ".svg",
+          "assets/Baes/dress/" +
+            document.getElementById("dress").value +
+            ".svg",
+          "assets/Baes/hair/" + document.getElementById("hair").value + ".svg",
+          "assets/Baes/earrings/" +
+            document.getElementById("earrings").value +
+            ".svg",
+          "assets/Baes/eyes/" + document.getElementById("eyes").value + ".svg",
+          "assets/Baes/eyewear/" +
+            document.getElementById("eyewear").value +
+            ".svg",
+          "assets/Baes/head/" + document.getElementById("head").value + ".svg",
+          "assets/Baes/mouth/" +
+            document.getElementById("mouth").value +
+            ".svg",
+          "assets/Baes/neck/" + document.getElementById("neck").value + ".svg",
+        ];
 
-        // Adjust the API endpoint URL accordingly
-        const apiUrl = "http://localhost:3000/generate-bae?" + params;
+        // Function to read SVG file contents
+        const readSVGFile = (filePath) => {
+          return fetch(filePath)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(
+                  `Failed to fetch SVG file (${response.status} ${response.statusText})`
+                );
+              }
+              return response.text();
+            })
+            .catch((error) => {
+              console.error(`Error loading SVG file for ${filePath}:`, error);
+              throw error; // Re-throw the error to propagate it
+            });
+        };
 
-        fetch(apiUrl)
-          .then((response) => response.json())
-          .then((data) => {
-            // Handle the response data
-            document.getElementById("result").innerHTML = data.bae;
+        // Array to store promises for reading SVG files
+        const promises = inputSVGs.map((filePath) => readSVGFile(filePath));
+
+        // Wait for all promises to resolve
+        Promise.all(promises)
+          .then((svgContents) => {
+            // Merged SVG content
+            let mergedSVG = "";
+            // Append SVG content of each layer
+            svgContents.forEach((svgContent, index) => {
+              mergedSVG += `<g id="layer${index + 1}">${svgContent}</g>`;
+            });
+            // Wrap merged SVG content in an SVG element
+            mergedSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">${mergedSVG}</svg>`;
+            // Set the generated SVG as the result
+            document.getElementById("result").innerHTML = mergedSVG;
+            // Show download button
+            document.getElementById("download-btn").style.display = "block";
           })
           .catch((error) => {
-            // Handle any errors that occurred during the request
-            console.error(error);
+            console.error("Error generating Bae:", error);
           });
       }
     </script>

@@ -32,6 +32,7 @@ export function generateBro(req, res) {
     "assets/Bros/eyes/" + req.query.eyes + ".svg",
     "assets/Bros/mouth/" + req.query.mouth + ".svg",
     "assets/Bros/eyewear/" + req.query.eyewear + ".svg",
+    "assets/Bros/hair/" + req.query.hair + ".svg",
     "assets/Bros/head/" + req.query.head + ".svg",
   ];
 
