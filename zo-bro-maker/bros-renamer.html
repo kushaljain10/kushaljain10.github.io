@@ -24,17 +24,17 @@
       .tab-content {
         display: none;
         padding: 20px;
-        background-color: #222;
+        padding-top: 120px;
+        background-color: #fff;
         border: 1px solid #ccc;
       }
       * {
         box-sizing: border-box;
         font-family: "Space Grotesk", sans-serif;
-        color: #fff;
+        color: #222;
       }
       body {
         margin: 0;
-        background-color: #222;
       }
       #container {
         padding-top: 100px;
@@ -52,7 +52,7 @@
       }
       th {
         background-color: #f2f2f2;
-        color: #333;
+        color: #222;
       }
       input[type="text"] {
         width: 100%;
@@ -80,47 +80,55 @@
       input {
         padding: 10px 5px;
         max-width: 90%;
-        background-color: #222;
-        border: 1px solid #fff;
-        color: #fff;
+        background-color: #fff;
+        border: 1px solid #222;
+        color: #222;
       }
       input[type="checkbox"] {
         height: 25px;
         width: 25px;
       }
       .header {
-        padding: 15px 20%;
-        position: fixed;
-        background-color: #222;
+        /* padding: 15px 20%; */
+        background-color: #f0f0f0;
         margin: 0;
         width: 100%;
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between; */
         /* text-align: center; */
+        position: fixed;
       }
-      .header button {
+      .header h3 {
+        text-align: center;
+      }
+      .save-button {
+        position: fixed;
         background-color: #fff;
         padding: 10px 15px;
         color: #222;
-      }
-      .header button {
         cursor: pointer;
+        top: 120px;
       }
     </style>
   </head>
   <body>
-    <div class="tabs">
-      <div class="tab" onclick="showTab(1)">1</div>
-      <div class="tab" onclick="showTab(2)">2</div>
-      <div class="tab" onclick="showTab(3)">3</div>
-      <div class="tab" onclick="showTab(4)">4</div>
-      <div class="tab" onclick="showTab(5)">5</div>
-      <div class="tab" onclick="showTab(6)">6</div>
-      <div class="tab" onclick="showTab(7)">7</div>
-      <div class="tab" onclick="showTab(8)">8</div>
-      <div class="tab" onclick="showTab(9)">9</div>
-      <div class="tab" onclick="showTab(10)">10</div>
+    <div class="header">
+      <h3>
+        <a href="/baes-renamer.html">Baes Traits Reviewer</a>&nbsp;&nbsp; |
+        &nbsp;&nbsp;<a href="/bros-renamer.html">Bros Traits Reviewer</a>
+      </h3>
+      <div class="tabs">
+        <div class="tab" onclick="showTab(1)">Background</div>
+        <div class="tab" onclick="showTab(2)">Skin</div>
+        <div class="tab" onclick="showTab(3)">Dress</div>
+        <div class="tab" onclick="showTab(4)">Beard</div>
+        <div class="tab" onclick="showTab(5)">Eyes</div>
+        <div class="tab" onclick="showTab(6)">Mouth</div>
+        <div class="tab" onclick="showTab(7)">Eyewear</div>
+        <div class="tab" onclick="showTab(8)">Hair</div>
+        <div class="tab" onclick="showTab(9)">Head</div>
+      </div>
     </div>
 
     <div class="tab-content" id="tab1"></div>
@@ -132,24 +140,34 @@
     <div class="tab-content" id="tab7"></div>
     <div class="tab-content" id="tab8"></div>
     <div class="tab-content" id="tab9"></div>
-    <div class="tab-content" id="tab10"></div>
 
     <script>
       const traitNames = [
         "background",
-        "dress",
-        "earrings",
-        "eyes",
-        "eyewear",
-        "head",
-        "hair",
-        "mouth",
-        "neck",
         "skin",
+        "dress",
+        "beard",
+        "eyes",
+        "mouth",
+        "eyewear",
+        "hair",
+        "head",
       ];
 
+      const tabContents = Array.from(document.querySelectorAll(".tab-content"));
+
+      function showTab(tabIndex) {
+        // Hide all tab contents
+        var tabContents = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < tabContents.length; i++) {
+          tabContents[i].style.display = "none";
+        }
+
+        document.getElementById("tab" + tabIndex).style.display = "block";
+      }
+
       traitNames.forEach((traitName, index) => {
-        fetch("assets/Baes/" + traitName + "/list.csv")
+        fetch("assets/Bros/" + traitName + "/list2.csv")
           .then((response) => response.text())
           .then((csvData) => {
             // Parse CSV data
@@ -165,8 +183,14 @@
               data.push(rowData);
             }
             // Generate table
-            const container = document.getElementById("tab" + (index + 1));
+            // const container = document.getElementById("tab" + (index + 1));
+            const container = tabContents[index];
+            container.innerHTML =
+              '<button class="save-button" id="save-button-' +
+              traitName +
+              '">Save Changes</button>';
             const table = document.createElement("table");
+            table.id = traitName + "-table";
             // Add table headers
             const headerRow = document.createElement("tr");
             headers = [
@@ -192,10 +216,10 @@
               row.appendChild(serialNumber);
               // Add Trait
               const trait = document.createElement("td");
+              trait.style.backgroundColor = "#fff";
               const traitImage = document.createElement("img");
-              console.log(data[i]);
               traitImage.src =
-                `assets/Baes/` + traitName + `/${data[i]["file_name"]}.svg`;
+                `assets/Bros/` + traitName + `/${data[i]["file_name"]}.svg`;
               trait.appendChild(traitImage);
               row.appendChild(trait);
               // Add Trait File Name
@@ -220,7 +244,9 @@
             }
             container.appendChild(table);
             // Add Save Changes button
-            const saveButton = document.getElementById("save-button");
+            const saveButton = document.getElementById(
+              "save-button-" + traitName
+            );
 
             // Add Save Changes button event listener
             saveButton.addEventListener("click", () => {
@@ -239,17 +265,24 @@
               });
 
               // Send updated data to server
-              fetch("http://localhost:3000/saveChanges", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ updatedData: updatedData }),
-              })
+              fetch(
+                "https://zo-avatar-maker-production.up.railway.app/saveChanges",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({
+                    updatedData: updatedData,
+                    trait: traitName,
+                    type: "Bros",
+                  }),
+                }
+              )
                 .then((response) => {
                   if (response.ok) {
                     console.log("Changes saved successfully");
-                    alert("Changes saved successfully");
+                    // alert("Changes saved successfully");
                   } else {
                     console.error("Error saving changes");
                     //   alert("Error saving changes");
@@ -263,17 +296,12 @@
 
             //   container.appendChild(saveButton);
           })
-          .catch((error) => console.error("Error fetching data:", error));
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+            tabContents[index].textContent = "Failed to load data";
+          });
+        showTab(1);
       });
-      function showTab(tabIndex) {
-        // Hide all tab contents
-        var tabContents = document.getElementsByClassName("tab-content");
-        for (var i = 0; i < tabContents.length; i++) {
-          tabContents[i].style.display = "none";
-        }
-
-        document.getElementById("tab" + tabIndex).style.display = "block";
-      }
     </script>
   </body>
 </html>

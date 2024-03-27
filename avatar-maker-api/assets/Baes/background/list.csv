@@ -1,22 +1,22 @@
-file_name,new_name,selected
-Blue,Kushal,TRUE
-Cherry,,TRUE
-Clay,,TRUE
-Coral,,TRUE
-Emerald,,TRUE
-Gold,,TRUE
-Green,,TRUE
-Grey,,TRUE
-Kai,,TRUE
-Mehendi,,TRUE
-Mud,,TRUE
-Orange,,TRUE
-Parrot Green,,TRUE
-Peach,,TRUE
-Pink,,TRUE
-Purple,,TRUE
-Red,,TRUE
-Sea Green,aq1,TRUE
-Sea,sea2,TRUE
-Violet,v2,TRUE
-Yellow,y5,TRUE
+name
+Blue
+Cherry
+Clay
+Coral
+Emerald
+Gold
+Green
+Grey
+Kai
+Mehendi
+Mud
+Orange
+Parrot Green
+Peach
+Pink
+Purple
+Red
+Sea Green
+Sea
+Violet
+Yellow

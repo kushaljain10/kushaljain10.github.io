@@ -35,7 +35,7 @@ app.post("/saveChanges", (req, res) => {
     updatedCSV += Object.values(row).join(",") + "\n";
   });
   fs.writeFile(
-    "assets/Baes/background/list.csv",
+    "assets/" + req.body.type + "/" + req.body.trait + "/list2.csv",
     headers + updatedCSV,
     (err) => {
       if (err) {
