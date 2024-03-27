@@ -18,14 +18,94 @@
         text-align: center;
         padding: 10px;
         cursor: pointer;
-        background-color: #f0f0f0;
+        /* background-color: #f0f0f0; */
         border: 1px solid #ccc;
       }
       .tab-content {
         display: none;
         padding: 20px;
-        background-color: #e0e0e0;
+        background-color: #222;
         border: 1px solid #ccc;
+      }
+      * {
+        box-sizing: border-box;
+        font-family: "Space Grotesk", sans-serif;
+        color: #fff;
+      }
+      body {
+        margin: 0;
+        background-color: #222;
+      }
+      #container {
+        padding-top: 100px;
+      }
+      table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        /* width: 100%; */
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      input[type="text"] {
+        width: 100%;
+      }
+      table tr td img,
+      table tr th img {
+        width: 100px;
+        height: 100px;
+      }
+      table tr th:nth-child(1) {
+        width: 50px;
+      }
+      table tr th:nth-child(2) {
+        width: 100px;
+      }
+      table tr th:nth-child(3) {
+        width: 200px;
+      }
+      table tr th:nth-child(4) {
+        width: 200px;
+      }
+      table tr th:nth-child(5) {
+        width: 100px;
+      }
+      input {
+        padding: 10px 5px;
+        max-width: 90%;
+        background-color: #222;
+        border: 1px solid #fff;
+        color: #fff;
+      }
+      input[type="checkbox"] {
+        height: 25px;
+        width: 25px;
+      }
+      .header {
+        padding: 15px 20%;
+        position: fixed;
+        background-color: #222;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* text-align: center; */
+      }
+      .header button {
+        background-color: #fff;
+        padding: 10px 15px;
+        color: #222;
+      }
+      .header button {
+        cursor: pointer;
       }
     </style>
   </head>
@@ -43,25 +123,155 @@
       <div class="tab" onclick="showTab(10)">10</div>
     </div>
 
-    <div class="tab-content" id="tab1">Content for tab 1</div>
-    <div class="tab-content" id="tab2">Content for tab 2</div>
-    <div class="tab-content" id="tab3">Content for tab 3</div>
-    <div class="tab-content" id="tab4">Content for tab 4</div>
-    <div class="tab-content" id="tab5">Content for tab 5</div>
-    <div class="tab-content" id="tab6">Content for tab 6</div>
-    <div class="tab-content" id="tab7">Content for tab 7</div>
-    <div class="tab-content" id="tab8">Content for tab 8</div>
-    <div class="tab-content" id="tab9">Content for tab 9</div>
-    <div class="tab-content" id="tab10">Content for tab 10</div>
+    <div class="tab-content" id="tab1"></div>
+    <div class="tab-content" id="tab2"></div>
+    <div class="tab-content" id="tab3"></div>
+    <div class="tab-content" id="tab4"></div>
+    <div class="tab-content" id="tab5"></div>
+    <div class="tab-content" id="tab6"></div>
+    <div class="tab-content" id="tab7"></div>
+    <div class="tab-content" id="tab8"></div>
+    <div class="tab-content" id="tab9"></div>
+    <div class="tab-content" id="tab10"></div>
 
     <script>
+      const traitNames = [
+        "background",
+        "dress",
+        "earrings",
+        "eyes",
+        "eyewear",
+        "head",
+        "hair",
+        "mouth",
+        "neck",
+        "skin",
+      ];
+
+      traitNames.forEach((traitName, index) => {
+        fetch("assets/Baes/" + traitName + "/list.csv")
+          .then((response) => response.text())
+          .then((csvData) => {
+            // Parse CSV data
+            const rows = csvData.split("\n").filter((row) => row.trim() !== ""); // Remove empty rows
+            let headers = rows[0].split(",");
+            const data = [];
+            for (let i = 1; i < rows.length; i++) {
+              const row = rows[i].split(",");
+              const rowData = {};
+              for (let j = 0; j < headers.length; j++) {
+                rowData[headers[j]] = row[j];
+              }
+              data.push(rowData);
+            }
+            // Generate table
+            const container = document.getElementById("tab" + (index + 1));
+            const table = document.createElement("table");
+            // Add table headers
+            const headerRow = document.createElement("tr");
+            headers = [
+              "S.No.",
+              "Trait",
+              "Trait Current Name",
+              "Trait New Name",
+              "Selected?",
+            ];
+            for (const header of headers) {
+              const th = document.createElement("th");
+              th.textContent = header.trim();
+              headerRow.appendChild(th);
+            }
+            table.appendChild(headerRow);
+            // Add table rows
+            for (let i = 0; i < data.length; i++) {
+              const row = document.createElement("tr");
+              row.setAttribute("data-index", i);
+              // Add serial number
+              const serialNumber = document.createElement("td");
+              serialNumber.textContent = i + 1;
+              row.appendChild(serialNumber);
+              // Add Trait
+              const trait = document.createElement("td");
+              const traitImage = document.createElement("img");
+              console.log(data[i]);
+              traitImage.src =
+                `assets/Baes/` + traitName + `/${data[i]["file_name"]}.svg`;
+              trait.appendChild(traitImage);
+              row.appendChild(trait);
+              // Add Trait File Name
+              const traitFileName = document.createElement("td");
+              traitFileName.textContent = data[i]["file_name"];
+              row.appendChild(traitFileName);
+              // Add Trait New Name input
+              const traitNewName = document.createElement("td");
+              const newNameInput = document.createElement("input");
+              newNameInput.type = "text";
+              newNameInput.value = data[i]["new_name"];
+              traitNewName.appendChild(newNameInput);
+              row.appendChild(traitNewName);
+              // Add Selected checkbox
+              const selected = document.createElement("td");
+              const selectedCheckbox = document.createElement("input");
+              selectedCheckbox.type = "checkbox";
+              selectedCheckbox.checked = data[i]["selected"] === "TRUE";
+              selected.appendChild(selectedCheckbox);
+              row.appendChild(selected);
+              table.appendChild(row);
+            }
+            container.appendChild(table);
+            // Add Save Changes button
+            const saveButton = document.getElementById("save-button");
+
+            // Add Save Changes button event listener
+            saveButton.addEventListener("click", () => {
+              const updatedData = [];
+              const tableRows = table.querySelectorAll("tr[data-index]");
+              tableRows.forEach((row, i) => {
+                const index = parseInt(row.getAttribute("data-index"));
+                const newRow = {
+                  file_name: data[index]["file_name"],
+                  new_name: row.querySelector('input[type="text"]').value,
+                  selected: row.querySelector('input[type="checkbox"]').checked
+                    ? "TRUE"
+                    : "FALSE",
+                };
+                updatedData.push(newRow);
+              });
+
+              // Send updated data to server
+              fetch("http://localhost:3000/saveChanges", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ updatedData: updatedData }),
+              })
+                .then((response) => {
+                  if (response.ok) {
+                    console.log("Changes saved successfully");
+                    alert("Changes saved successfully");
+                  } else {
+                    console.error("Error saving changes");
+                    //   alert("Error saving changes");
+                  }
+                })
+                .catch((error) => {
+                  console.error("Error saving changes:", error);
+                  // alert("Error saving changes");
+                });
+            });
+
+            //   container.appendChild(saveButton);
+          })
+          .catch((error) => console.error("Error fetching data:", error));
+      });
       function showTab(tabIndex) {
         // Hide all tab contents
         var tabContents = document.getElementsByClassName("tab-content");
         for (var i = 0; i < tabContents.length; i++) {
           tabContents[i].style.display = "none";
         }
-        // Show the selected tab content
+
         document.getElementById("tab" + tabIndex).style.display = "block";
       }
     </script>
