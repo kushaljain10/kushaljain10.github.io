@@ -13,7 +13,7 @@
   "dependencies": {
     "papaparse": "^5.4.1",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
+    "express": "^4.19.2",
     "fs": "^0.0.1-security",
     "http-server": "^14.1.1",
     "path": "^0.12.7",
