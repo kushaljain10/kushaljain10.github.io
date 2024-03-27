@@ -351,6 +351,10 @@
           "assets/Baes/neck/" + document.getElementById("neck").value + ".svg",
         ];
 
+        if (inputSVGs[5] == 7 || inputSVGs[5] == 8) {
+          inputSVGs[6] = "assets/Baes/head/none.svg";
+        }
+
         // Function to read SVG file contents
         const readSVGFile = (filePath) => {
           return fetch(filePath)

@@ -335,7 +335,9 @@
           "assets/Bros/hair/" + document.getElementById("hair").value + ".svg",
           "assets/Bros/head/" + document.getElementById("head").value + ".svg",
         ];
-
+        if (inputSVGs[4] == 7 || inputSVGs[5] == 8) {
+          inputSVGs[7] = "assets/Bros/head/none.svg";
+        }
         // Function to read SVG file contents
         const readSVGFile = (filePath) => {
           return fetch(filePath)
