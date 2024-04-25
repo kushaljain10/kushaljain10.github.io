@@ -212,6 +212,14 @@
             >
               Randomise
             </button>
+            <button
+              id="animate-btn"
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="animateRandomBae(3000, 150)"
+            >
+              Animated Randomise
+            </button>
           </form>
         </div>
         <div class="col-span-3" style="max-width: 500px">
@@ -304,20 +312,18 @@
           });
       };
 
-      function randomBae() {
+      function randomBae(displayImmediately = false) {
         traitNames.forEach(function (trait) {
           if (!document.getElementById(trait + "-fixed").checked) {
             const selectElement = document.getElementById(trait);
             const options = selectElement.options;
-
             const randomIndex = Math.floor(Math.random() * options.length);
-
-            document
-              .getElementById(trait)
-              .options[randomIndex].setAttribute("selected", "");
+            selectElement.selectedIndex = randomIndex;
           }
         });
-        generateBae();
+        if (displayImmediately) {
+          generateBae(); // Render the SVG immediately
+        }
       }
 
       const downloadLink = document.getElementById("download-btn");
@@ -394,6 +400,21 @@
           .catch((error) => {
             console.error("Error generating Bae:", error);
           });
+      }
+
+      let animationInterval = null;
+
+      function animateRandomBae(duration = 3000, interval = 150) {
+        if (animationInterval) clearInterval(animationInterval);
+
+        animationInterval = setInterval(() => {
+          randomBae(true); // Update SVG display during randomization
+        }, interval);
+
+        setTimeout(() => {
+          clearInterval(animationInterval); // Stop the animation
+          generateBae(); // Generate the final SVG
+        }, duration);
       }
     </script>
   </body>
