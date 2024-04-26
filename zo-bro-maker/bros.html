@@ -155,21 +155,6 @@
                 <label for="eyewear-fixed">Fixed?</label>
                 <input id="eyewear-fixed" type="checkbox" />
               </div>
-
-              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label class="block mb-2 font-bold" for="hair">Hair:</label>
-                <select
-                  onchange="generateBro()"
-                  id="hair"
-                  name="hair"
-                  class="block w-full p-2 border border-gray-300 rounded"
-                ></select>
-                <label for="hair-fixed">Fixed?</label>
-                <input id="hair-fixed" type="checkbox" />
-              </div>
-            </div>
-
-            <div class="flex flex-wrap mb-4">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label class="block mb-2 font-bold" for="beard">Beard:</label>
                 <select
@@ -195,7 +180,7 @@
               id="random-btn"
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
-              onclick="randomBro()"
+              onclick="randomBro(true)"
             >
               Randomise
             </button>
@@ -238,7 +223,6 @@
         "eyes",
         "eyewear",
         "head",
-        "hair",
         "mouth",
         "beard",
         "skin",
@@ -328,21 +312,30 @@
           "assets/Bros/dress/" +
             document.getElementById("dress").value +
             ".svg",
+          "assets/Bros/head/" + document.getElementById("head").value + ".svg",
           "assets/Bros/beard/" +
             document.getElementById("beard").value +
             ".svg",
-          "assets/Bros/eyes/" + document.getElementById("eyes").value + ".svg",
           "assets/Bros/mouth/" +
             document.getElementById("mouth").value +
             ".svg",
+          "assets/Bros/eyes/" + document.getElementById("eyes").value + ".svg",
           "assets/Bros/eyewear/" +
             document.getElementById("eyewear").value +
             ".svg",
-          "assets/Bros/hair/" + document.getElementById("hair").value + ".svg",
-          "assets/Bros/head/" + document.getElementById("head").value + ".svg",
         ];
-        if (inputSVGs[4] == 7 || inputSVGs[5] == 8) {
-          inputSVGs[7] = "assets/Bros/head/none.svg";
+        if (
+          inputSVGs[6] == "assets/Bros/eyes/6.svg" ||
+          inputSVGs[6] == "assets/Bros/eyes/7.svg"
+        ) {
+          inputSVGs[7] = "assets/Bros/eyewear/none.svg";
+        }
+        if (
+          inputSVGs[2] == "assets/Bros/dress/13.svg" ||
+          inputSVGs[2] == "assets/Bros/dress/12.svg"
+        ) {
+          inputSVGs[3] = "assets/Bros/dress/none.svg";
+          inputSVGs[4] = "assets/Bros/head/none.svg";
         }
         // Function to read SVG file contents
         const readSVGFile = (filePath) => {
@@ -387,7 +380,7 @@
 
       let animationInterval = null;
 
-      function animateRandomBro(duration = 3000, interval = 150) {
+      function animateRandomBro(duration = 6000, interval = 150) {
         if (animationInterval) clearInterval(animationInterval);
 
         animationInterval = setInterval(() => {
