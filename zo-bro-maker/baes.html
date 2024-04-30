@@ -350,15 +350,84 @@
           "assets/Baes/eyewear/" +
             document.getElementById("eyewear").value +
             ".svg",
-          "assets/Baes/head/" + document.getElementById("head").value + ".svg",
-          "assets/Baes/neck/" + document.getElementById("neck").value + ".svg",
           "assets/Baes/mouth/" +
             document.getElementById("mouth").value +
             ".svg",
+          "assets/Baes/head/" + document.getElementById("head").value + ".svg",
+          "assets/Baes/neck/" + document.getElementById("neck").value + ".svg",
         ];
 
-        if (inputSVGs[5] == 7 || inputSVGs[5] == 8) {
-          inputSVGs[6] = "assets/Baes/head/none.svg";
+        // if laser eyes, no eyewear
+        if (
+          inputSVGs[5] == "assets/Baes/eyes/6.svg" ||
+          inputSVGs[5] == "assets/Baes/eyes/7.svg"
+        ) {
+          inputSVGs[6] = "assets/Baes/eyewear/none.svg";
+          inputSVGs[8] = "assets/Baes/head/none.svg";
+        }
+        // if eyewear is red in colour (12 & 18), then background shouldn't be red
+        if (
+          inputSVGs[5] == "assets/Baes/eyewear/12.svg" ||
+          inputSVGs[5] == "assets/Baes/eyewear/18.svg"
+        ) {
+          while ((inputSVGs[0] = "assets/Baes/background/6.svg")) {
+            if (!document.getElementById("background-fixed").checked) {
+              const selectElement = document.getElementById(trait);
+              const options = selectElement.options;
+              const randomIndex = Math.floor(Math.random() * options.length);
+              selectElement.selectedIndex = randomIndex;
+              inputSVGs[0] =
+                "assets/Baes/background/" +
+                document.getElementById("background").value +
+                ".svg";
+            }
+          }
+        }
+        // if eyewear is 10, then background shouldn't be yellow
+        if (inputSVGs[5] == "assets/Baes/eyewear/10.svg") {
+          while ((inputSVGs[0] = "assets/Baes/background/21.svg")) {
+            if (!document.getElementById("background-fixed").checked) {
+              const selectElement = document.getElementById(trait);
+              const options = selectElement.options;
+              const randomIndex = Math.floor(Math.random() * options.length);
+              selectElement.selectedIndex = randomIndex;
+              inputSVGs[0] =
+                "assets/Baes/background/" +
+                document.getElementById("background").value +
+                ".svg";
+            }
+          }
+        }
+        // if hoodie, no headgear and neck asset
+        if (
+          inputSVGs[2] == "assets/Baes/dress/22.svg" ||
+          inputSVGs[2] == "assets/Baes/dress/23.svg"
+        ) {
+          inputSVGs[9] = "assets/Baes/neck/none.svg";
+          inputSVGs[8] = "assets/Baes/head/none.svg";
+          inputSVGs[3] = "assets/Baes/hair/none.svg";
+          inputSVGs[4] = "assets/Baes/earrings/none.svg";
+          inputSVGs[9] = "assets/Baes/neck/none.svg";
+        }
+        console.log(typeof document.getElementById("dress").value);
+        if (
+          [
+            "2",
+            "5",
+            "6",
+            "7",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "35",
+            "53",
+            "54",
+            "64",
+          ].includes(document.getElementById("dress").value)
+        ) {
+          inputSVGs[9] = "assets/Baes/neck/none.svg";
         }
 
         // Function to read SVG file contents
