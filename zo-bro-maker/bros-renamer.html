@@ -215,6 +215,7 @@
               "Trait",
               "Trait Current Name",
               "Trait New Name",
+              "Trait Rarity",
               "Selected?",
             ];
             for (const header of headers) {
@@ -250,6 +251,13 @@
               newNameInput.value = data[i]["new_name"];
               traitNewName.appendChild(newNameInput);
               row.appendChild(traitNewName);
+              // Add Trait Rarity input
+              const traitRarity = document.createElement("td");
+              const rarityInput = document.createElement("input");
+              rarityInput.type = "number";
+              rarityInput.value = data[i]["rarity"];
+              traitRarity.appendChild(rarityInput);
+              row.appendChild(traitRarity);
               // Add Selected checkbox
               const selected = document.createElement("td");
               const selectedCheckbox = document.createElement("input");
