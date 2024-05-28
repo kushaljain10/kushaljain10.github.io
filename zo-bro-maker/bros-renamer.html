@@ -221,6 +221,11 @@
             for (const header of headers) {
               const th = document.createElement("th");
               th.textContent = header.trim();
+              // if (header == "Trait Rarity") {
+              //   const rarityTotalElem = document.createElement("span");
+              //   rarityTotalElem.id = "rarity-total";
+              //   th.appendChild(rarityTotalElem);
+              // }
               headerRow.appendChild(th);
             }
             table.appendChild(headerRow);
@@ -267,6 +272,7 @@
               row.appendChild(selected);
               table.appendChild(row);
             }
+
             container.appendChild(table);
             // Add Save Changes button
             const saveButton = document.getElementById(
@@ -282,6 +288,9 @@
                 const newRow = {
                   file_name: data[index]["file_name"],
                   new_name: row.querySelector('input[type="text"]').value,
+                  rarity: parseInt(
+                    row.querySelector('input[type="number"]').value
+                  ),
                   selected: row.querySelector('input[type="checkbox"]').checked
                     ? "TRUE"
                     : "FALSE",
@@ -308,6 +317,7 @@
                   if (response.ok) {
                     console.log("Changes saved successfully");
                     alert("Changes saved successfully");
+                    // location.reload();
                   } else {
                     console.error("Error saving changes");
                     //   alert("Error saving changes");
