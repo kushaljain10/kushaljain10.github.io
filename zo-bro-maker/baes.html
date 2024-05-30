@@ -277,7 +277,7 @@
               const optionElement = document.createElement("option");
               var parts = option.split(","); // Split the string on comma
               optionElement.value = parts[0];
-              optionElement.text = parts[0];
+              optionElement.text = parts[1];
               // optionElement.text = option;
               // optionElement.value = option;
               select.add(optionElement);
@@ -290,7 +290,7 @@
 
         traitNames.forEach((folderName) => {
           // Replace 'csvFiles/folderName.csv' with the actual file path
-          const fetchPromise = fetch(`assets/Baes/${folderName}/list.csv`)
+          const fetchPromise = fetch(`assets/Baes/${folderName}/list2.csv`)
             .then((response) => response.text())
             .then((csvData) => {
               const options = readCSV(csvData);

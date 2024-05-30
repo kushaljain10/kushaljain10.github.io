@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zo App Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="header">
+        <h1>Zo App Analytics Dashboard</h1>
+        <input type="date" id="date-filter" onchange="updateDashboard()" />
+      </div>
+      <div class="metrics">
+        <div class="metric" id="total-installs">
+          <h2>Total Installs</h2>
+          <p>
+            <span id="total-installs-value"></span> (<span
+              id="total-installs-increase"
+            ></span
+            >)
+          </p>
+        </div>
+        <div class="metric" id="total-onboarded-users">
+          <h2>Total Onboarded Users</h2>
+          <p>
+            <span id="total-onboarded-users-value"></span> (<span
+              id="total-onboarded-users-increase"
+            ></span
+            >)
+          </p>
+        </div>
+        <div class="metric" id="total-new-installs">
+          <h2>Total New Installs</h2>
+          <p>
+            <span id="total-new-installs-value"></span> (<span
+              id="total-new-installs-increase"
+            ></span
+            >)
+          </p>
+        </div>
+      </div>
+      <div class="charts">
+        <div class="chart-container">
+          <canvas id="total-installs-pie"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="total-new-installs-pie"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="onboarded-users-pie"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="dau-zo-v1-line"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="dau-zo-v1-v2-line"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="mau-zo-v1-line"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="mau-zo-v1-v2-line"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
