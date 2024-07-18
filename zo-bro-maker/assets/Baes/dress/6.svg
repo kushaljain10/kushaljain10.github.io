@@ -1,22 +1,30 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1722_8923)">
-<path d="M390 397.5L360.438 397C360.438 397 300.88 474.901 265.938 498C213.707 532.528 116.938 577 116.938 577C116.938 577 376.274 628.608 405.938 519.5C418.139 474.625 390 397.5 390 397.5Z" fill="#AD00FF" stroke="#121212" stroke-width="6"/>
-<path d="M117 398L146.5 397C146.5 397 207.558 468.901 242.5 492C294.731 526.528 390 577 390 577C390 577 130.664 628.608 101 519.5C88.7996 474.625 117 398 117 398Z" fill="#AD00FF" stroke="#121212" stroke-width="6"/>
-<path d="M141 447C141 453.627 135.627 459 129 459C122.373 459 117 453.627 117 447" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M365 447C365 453.627 370.373 459 377 459C383.627 459 389 453.627 389 447" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M136 483C136 489.627 130.627 495 124 495C117.373 495 112 489.627 112 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M370 483C370 489.627 375.373 495 382 495C388.627 495 394 489.627 394 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M184 483C184 489.627 178.627 495 172 495C165.373 495 160 489.627 160 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M322 483C322 489.627 327.373 495 334 495C340.627 495 346 489.627 346 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M165 447C165 453.627 159.627 459 153 459C146.373 459 141 453.627 141 447" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M341 447C341 453.627 346.373 459 353 459C359.627 459 365 453.627 365 447" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M160 483C160 489.627 154.627 495 148 495C141.373 495 136 489.627 136 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M346 483C346 489.627 351.373 495 358 495C364.627 495 370 489.627 370 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M208 483C208 489.627 202.627 495 196 495C189.373 495 184 489.627 184 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M298 483C298 489.627 303.373 495 310 495C316.627 495 322 489.627 322 483" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<g clip-path="url(#clip0_3720_1056)">
+<path d="M49.3417 440.609C58.0999 414.553 82.518 397 110.006 397H184C184 397 193 456 256 456C319 456 328 397 328 397H401.994C429.482 397 453.9 414.553 462.658 440.609L488 516H24L49.3417 440.609Z" fill="#FFD600" stroke="#121212" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M256.326 451C190.326 451.752 190.326 397 190.326 397H158.576C158.576 397 143.779 428.092 158.577 442C172.484 455.072 207.451 452 207.451 452C207.451 452 209.789 465.479 218.326 477.5C233.365 498.676 275.998 496.131 292.326 477.5C302.308 466.111 304.202 452 304.202 452C304.202 452 338.322 454.664 352.077 442C367.016 428.245 352.077 397 352.077 397H320.327C320.327 397 322.327 450.248 256.326 451Z" fill="#FF0900" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 79 429)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 99 465)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 115 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 367 465)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 347 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 63 465)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 79 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 43 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 311 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 115 429)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 383 429)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 135 465)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 151 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 403 465)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 383 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 419 429)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 187 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 439 465)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 419 501)" fill="#FF0900"/>
+<circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 455 501)" fill="#FF0900"/>
 </g>
 <defs>
-<clipPath id="clip0_1722_8923">
+<clipPath id="clip0_3720_1056">
 <rect width="512" height="512" fill="white"/>
 </clipPath>
 </defs>
