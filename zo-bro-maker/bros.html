@@ -228,7 +228,7 @@
         function readCSV(file) {
           const csvString = file;
           const lines = csvString.split("\n");
-          return lines.map((line) => line.trim());
+          return lines.slice(1).map((line) => line.trim());
         }
 
         function populateSelect(selectId, options) {

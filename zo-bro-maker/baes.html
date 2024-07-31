@@ -10,15 +10,9 @@
     />
     <style>
       .header {
-        /* padding: 15px 20%; */
         background-color: #f0f0f0;
         padding: 20px 0;
         width: 100%;
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
-        /* text-align: center; */
-        /* position: fixed; */
       }
       .header h3 {
         text-align: center;
@@ -244,7 +238,6 @@
       </div>
     </div>
     <script>
-      // Assuming you have an array of folder names
       const traitNames = [
         "background",
         "dress",
@@ -260,36 +253,25 @@
 
       window.onload = () => {
         const fetchPromises = [];
-        // Function to read a CSV file and return its contents as an array
+
         function readCSV(file) {
-          // Replace this with your own CSV reading logic
-          // Here's a simplified example assuming the CSV is already loaded as a string
           const csvString = file;
           const lines = csvString.split("\n");
-          return lines.map((line) => line.trim());
+          return lines.slice(1).map((line) => line.trim());
         }
 
-        // Function to populate a select element with options
         function populateSelect(selectId, options) {
           const select = document.getElementById(selectId);
-          options.forEach((option, index) => {
-            if (index != 0) {
-              const optionElement = document.createElement("option");
-              var parts = option.split(","); // Split the string on comma
-              optionElement.value = parts[0];
-              optionElement.text = parts[1];
-              // optionElement.text = option;
-              // optionElement.value = option;
-              select.add(optionElement);
-            }
+          options.forEach((option) => {
+            const optionElement = document.createElement("option");
+            const parts = option.split(","); // Split the string on comma
+            optionElement.value = parts[0];
+            optionElement.text = parts[1];
+            select.add(optionElement);
           });
-          document
-            .getElementById(selectId)
-            .options[0].setAttribute("selected", "");
         }
 
         traitNames.forEach((folderName) => {
-          // Replace 'csvFiles/folderName.csv' with the actual file path
           const fetchPromise = fetch(`assets/Baes/${folderName}/list2.csv`)
             .then((response) => response.text())
             .then((csvData) => {
@@ -300,7 +282,6 @@
               console.error(`Error loading CSV file for ${folderName}:`, error);
             });
           fetchPromises.push(fetchPromise);
-          // generateBae();
         });
 
         Promise.all(fetchPromises)
@@ -322,7 +303,7 @@
           }
         });
         if (displayImmediately) {
-          generateBae(); // Render the SVG immediately
+          generateBae();
         }
       }
 
@@ -357,26 +338,25 @@
           "assets/Baes/neck/" + document.getElementById("neck").value + ".svg",
         ];
 
-        // if laser eyes, no eyewear
         if (
           inputSVGs[2] == "assets/Baes/eyes/6.svg" ||
           inputSVGs[2] == "assets/Baes/eyes/7.svg"
         ) {
           inputSVGs[5] = "assets/Baes/eyewear/none.svg";
         }
-        // if hoodie, no head, no neck
+
         if (inputSVGs[8] == "assets/Baes/dress/13.svg") {
           inputSVGs[7] = "assets/Baes/head/none.svg";
           inputSVGs[9] = "assets/Baes/neck/none.svg";
           inputSVGs[3] = "assets/Baes/hair/none.svg";
           inputSVGs[4] = "assets/Baes/earrings/none.svg";
         }
-        // if eyewear is red in colour (12 & 18), then background shouldn't be red
+
         if (
           inputSVGs[5] == "assets/Baes/eyewear/12.svg" ||
           inputSVGs[5] == "assets/Baes/eyewear/18.svg"
         ) {
-          while ((inputSVGs[0] = "assets/Baes/background/6.svg")) {
+          while (inputSVGs[0] == "assets/Baes/background/6.svg") {
             if (!document.getElementById("background-fixed").checked) {
               const selectElement = document.getElementById("background");
               const options = selectElement.options;
@@ -389,9 +369,9 @@
             }
           }
         }
-        // if eyewear is 10, then background shouldn't be yellow
+
         if (inputSVGs[5] == "assets/Baes/eyewear/10.svg") {
-          while ((inputSVGs[0] = "assets/Baes/background/0.svg")) {
+          while (inputSVGs[0] == "assets/Baes/background/0.svg") {
             if (!document.getElementById("background-fixed").checked) {
               const selectElement = document.getElementById("background");
               const options = selectElement.options;
@@ -404,7 +384,7 @@
             }
           }
         }
-        console.log(typeof document.getElementById("dress").value);
+
         if (
           [
             "2",
@@ -425,7 +405,6 @@
           inputSVGs[9] = "assets/Baes/neck/none.svg";
         }
 
-        // Function to read SVG file contents
         const readSVGFile = (filePath) => {
           return fetch(filePath)
             .then((response) => {
@@ -438,27 +417,20 @@
             })
             .catch((error) => {
               console.error(`Error loading SVG file for ${filePath}:`, error);
-              throw error; // Re-throw the error to propagate it
+              throw error;
             });
         };
 
-        // Array to store promises for reading SVG files
         const promises = inputSVGs.map((filePath) => readSVGFile(filePath));
 
-        // Wait for all promises to resolve
         Promise.all(promises)
           .then((svgContents) => {
-            // Merged SVG content
             let mergedSVG = "";
-            // Append SVG content of each layer
             svgContents.forEach((svgContent, index) => {
               mergedSVG += `<g id="layer${index + 1}">${svgContent}</g>`;
             });
-            // Wrap merged SVG content in an SVG element
             mergedSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">${mergedSVG}</svg>`;
-            // Set the generated SVG as the result
             document.getElementById("result").innerHTML = mergedSVG;
-            // Show download button
             document.getElementById("download-btn").style.display = "block";
           })
           .catch((error) => {
@@ -472,12 +444,12 @@
         if (animationInterval) clearInterval(animationInterval);
 
         animationInterval = setInterval(() => {
-          randomBae(true); // Update SVG display during randomization
+          randomBae(true);
         }, interval);
 
         setTimeout(() => {
-          clearInterval(animationInterval); // Stop the animation
-          generateBae(); // Generate the final SVG
+          clearInterval(animationInterval);
+          generateBae();
         }, duration);
       }
     </script>
