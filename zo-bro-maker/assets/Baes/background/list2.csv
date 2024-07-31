@@ -1,4 +1,5 @@
 file_name,new_name,selected,rarity
+0,Day,TRUE,
 1,Wonka,TRUE,
 2,Dew,TRUE,
 3,Cyan,TRUE,
@@ -19,4 +20,3 @@ file_name,new_name,selected,rarity
 18,Swamp,TRUE,
 19,Woods,TRUE,
 20,Golden,TRUE,
-21,Day,TRUE,

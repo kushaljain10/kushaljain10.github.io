@@ -1,6 +1,7 @@
 file_name,new_name,selected,rarity
-1,Wonka,TRUE,10
-2,Dew,TRUE,20
+0,Day,TRUE,
+1,Wonka,TRUE,
+2,Dew,TRUE,
 3,Cyan,TRUE,
 4,Superman,TRUE,
 5,Zostel,TRUE,
@@ -19,4 +20,3 @@ file_name,new_name,selected,rarity
 18,Swamp,TRUE,
 19,Woods,TRUE,
 20,Golden,TRUE,
-21,Day,TRUE,

@@ -1,4 +1,5 @@
 file_name,new_name,selected,rarity
+0,Miami,TRUE,
 1,Office,TRUE,
 2,Matrix,TRUE,
 3,3D,TRUE,
@@ -9,7 +10,7 @@ file_name,new_name,selected,rarity
 8,Vision,TRUE,
 9,X-Men,TRUE,
 10,Pimp,TRUE,
-11,Cyborg,TRUE,
+11,Cyborg (Remove),TRUE,
 12,Love,TRUE,
 13,DJ,TRUE,
 14,Tech,TRUE,
@@ -19,5 +20,4 @@ file_name,new_name,selected,rarity
 18,Noun,TRUE,
 19,Woke,TRUE,
 20,Starboy,TRUE,
-21,Miami,TRUE,
 none,none,TRUE,
