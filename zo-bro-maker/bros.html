@@ -10,15 +10,9 @@
     />
     <style>
       .header {
-        /* padding: 15px 20%; */
         background-color: #f0f0f0;
         padding: 20px 0;
         width: 100%;
-        /* display: flex;
-      flex-direction: row;
-      justify-content: space-between; */
-        /* text-align: center; */
-        /* position: fixed; */
       }
       .header h3 {
         text-align: center;
@@ -230,36 +224,25 @@
 
       window.onload = () => {
         const fetchPromises = [];
-        // Function to read a CSV file and return its contents as an array
+
         function readCSV(file) {
-          // Replace this with your own CSV reading logic
-          // Here's a simplified example assuming the CSV is already loaded as a string
           const csvString = file;
           const lines = csvString.split("\n");
           return lines.map((line) => line.trim());
         }
 
-        // Function to populate a select element with options
         function populateSelect(selectId, options) {
           const select = document.getElementById(selectId);
-          options.forEach((option, index) => {
-            if (index != 0) {
-              const optionElement = document.createElement("option");
-              var parts = option.split(","); // Split the string on comma
-              optionElement.value = parts[0];
-              optionElement.text = parts[1];
-              // optionElement.text = option;
-              // optionElement.value = option;
-              select.add(optionElement);
-            }
+          options.forEach((option) => {
+            const optionElement = document.createElement("option");
+            const parts = option.split(","); // Split the string on comma
+            optionElement.value = parts[0];
+            optionElement.text = parts[1];
+            select.add(optionElement);
           });
-          document
-            .getElementById(selectId)
-            .options[0].setAttribute("selected", "");
         }
 
         traitNames.forEach((folderName) => {
-          // Replace 'csvFiles/folderName.csv' with the actual file path
           const fetchPromise = fetch(`assets/Bros/${folderName}/list2.csv`)
             .then((response) => response.text())
             .then((csvData) => {
@@ -270,7 +253,6 @@
               console.error(`Error loading CSV file for ${folderName}:`, error);
             });
           fetchPromises.push(fetchPromise);
-          // generateBro();
         });
 
         Promise.all(fetchPromises)
@@ -292,7 +274,7 @@
           }
         });
         if (displayImmediately) {
-          generateBro(); // Render the SVG immediately
+          generateBro();
         }
       }
 
@@ -342,16 +324,16 @@
         }
         // if head is white helmet, no eyewear
         if (
-          inputSVGs[4] == "assets/Bros/dress/16.svg" ||
-          inputSVGs[4] == "assets/Bros/dress/18.svg"
+          inputSVGs[4] == "assets/Bros/head/16.svg" ||
+          inputSVGs[4] == "assets/Bros/head/18.svg"
         ) {
           inputSVGs[5] = "assets/Bros/beard/none.svg";
           inputSVGs[7] = "assets/Bros/eyewear/none.svg";
         }
         // if head is ninja, no mouth, no beard
-        if (inputSVGs[4] == "assets/Bros/dress/5.svg") {
+        if (inputSVGs[4] == "assets/Bros/head/5.svg") {
           inputSVGs[5] = "assets/Bros/beard/none.svg";
-          inputSVGs[6] = "assets/Bros/head/none.svg";
+          inputSVGs[6] = "assets/Bros/mouth/none.svg";
         }
         // if eyewear is red in colour then no red BG
         if (
@@ -359,7 +341,7 @@
           inputSVGs[7] == "assets/Bros/eyewear/18.svg" ||
           inputSVGs[7] == "assets/Bros/eyewear/20.svg"
         ) {
-          while ((inputSVGs[0] = "assets/Bros/background/5.svg")) {
+          while (inputSVGs[0] == "assets/Bros/background/5.svg") {
             if (!document.getElementById("background-fixed").checked) {
               const selectElement = document.getElementById("background");
               const options = selectElement.options;
@@ -374,7 +356,7 @@
         }
         // if eyewear is yellow in colour then no yellow bg
         if (inputSVGs[7] == "assets/Bros/eyewear/10.svg") {
-          while ((inputSVGs[0] = "assets/Bros/background/0.svg")) {
+          while (inputSVGs[0] == "assets/Bros/background/0.svg") {
             if (!document.getElementById("background-fixed").checked) {
               const selectElement = document.getElementById("background");
               const options = selectElement.options;
@@ -388,7 +370,6 @@
           }
         }
 
-        // Function to read SVG file contents
         const readSVGFile = (filePath) => {
           return fetch(filePath)
             .then((response) => {
@@ -401,27 +382,20 @@
             })
             .catch((error) => {
               console.error(`Error loading SVG file for ${filePath}:`, error);
-              throw error; // Re-throw the error to propagate it
+              throw error;
             });
         };
 
-        // Array to store promises for reading SVG files
         const promises = inputSVGs.map((filePath) => readSVGFile(filePath));
 
-        // Wait for all promises to resolve
         Promise.all(promises)
           .then((svgContents) => {
-            // Merged SVG content
             let mergedSVG = "";
-            // Append SVG content of each layer
             svgContents.forEach((svgContent, index) => {
               mergedSVG += `<g id="layer${index + 1}">${svgContent}</g>`;
             });
-            // Wrap merged SVG content in an SVG element
             mergedSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">${mergedSVG}</svg>`;
-            // Set the generated SVG as the result
             document.getElementById("result").innerHTML = mergedSVG;
-            // Show download button
             document.getElementById("download-btn").style.display = "block";
           })
           .catch((error) => {
@@ -435,12 +409,12 @@
         if (animationInterval) clearInterval(animationInterval);
 
         animationInterval = setInterval(() => {
-          randomBro(true); // Update SVG display during randomization
+          randomBro(true);
         }, interval);
 
         setTimeout(() => {
-          clearInterval(animationInterval); // Stop the animation
-          generateBro(); // Generate the final SVG
+          clearInterval(animationInterval);
+          generateBro();
         }, duration);
       }
     </script>
