@@ -359,11 +359,17 @@
 
         // if laser eyes, no eyewear
         if (
-          inputSVGs[5] == "assets/Baes/eyes/6.svg" ||
-          inputSVGs[5] == "assets/Baes/eyes/7.svg"
+          inputSVGs[2] == "assets/Baes/eyes/6.svg" ||
+          inputSVGs[2] == "assets/Baes/eyes/7.svg"
         ) {
-          inputSVGs[6] = "assets/Baes/eyewear/none.svg";
-          inputSVGs[8] = "assets/Baes/head/none.svg";
+          inputSVGs[5] = "assets/Baes/eyewear/none.svg";
+        }
+        // if hoodie, no head, no neck
+        if (inputSVGs[8] == "assets/Baes/dress/13.svg") {
+          inputSVGs[7] = "assets/Baes/head/none.svg";
+          inputSVGs[9] = "assets/Baes/neck/none.svg";
+          inputSVGs[3] = "assets/Baes/hair/none.svg";
+          inputSVGs[4] = "assets/Baes/earrings/none.svg";
         }
         // if eyewear is red in colour (12 & 18), then background shouldn't be red
         if (
@@ -372,7 +378,7 @@
         ) {
           while ((inputSVGs[0] = "assets/Baes/background/6.svg")) {
             if (!document.getElementById("background-fixed").checked) {
-              const selectElement = document.getElementById(trait);
+              const selectElement = document.getElementById("background");
               const options = selectElement.options;
               const randomIndex = Math.floor(Math.random() * options.length);
               selectElement.selectedIndex = randomIndex;
@@ -385,9 +391,9 @@
         }
         // if eyewear is 10, then background shouldn't be yellow
         if (inputSVGs[5] == "assets/Baes/eyewear/10.svg") {
-          while ((inputSVGs[0] = "assets/Baes/background/21.svg")) {
+          while ((inputSVGs[0] = "assets/Baes/background/0.svg")) {
             if (!document.getElementById("background-fixed").checked) {
-              const selectElement = document.getElementById(trait);
+              const selectElement = document.getElementById("background");
               const options = selectElement.options;
               const randomIndex = Math.floor(Math.random() * options.length);
               selectElement.selectedIndex = randomIndex;
@@ -397,17 +403,6 @@
                 ".svg";
             }
           }
-        }
-        // if hoodie, no headgear and neck asset
-        if (
-          inputSVGs[2] == "assets/Baes/dress/22.svg" ||
-          inputSVGs[2] == "assets/Baes/dress/23.svg"
-        ) {
-          inputSVGs[9] = "assets/Baes/neck/none.svg";
-          inputSVGs[8] = "assets/Baes/head/none.svg";
-          inputSVGs[3] = "assets/Baes/hair/none.svg";
-          inputSVGs[4] = "assets/Baes/earrings/none.svg";
-          inputSVGs[9] = "assets/Baes/neck/none.svg";
         }
         console.log(typeof document.getElementById("dress").value);
         if (
