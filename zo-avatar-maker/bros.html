@@ -376,9 +376,7 @@
         };
 
         const currentDress = inputSVGs[2].split("/").pop().split(".")[0];
-        console.log(currentDress);
         const currentBG = inputSVGs[0].split("/").pop().split(".")[0];
-        console.log(currentBG);
 
         for (const bg in bgDressExceptions) {
           if (bg == currentBG && bgDressExceptions[bg].includes(currentDress)) {
