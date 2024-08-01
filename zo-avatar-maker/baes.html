@@ -415,14 +415,14 @@
             bg == currentBG &&
             bgDressExceptionsBaes[bg].includes(currentDress)
           ) {
-            while (inputSVGs[0] == `assets/Bros/background/${bg}.svg`) {
+            while (inputSVGs[0] == `assets/Baes/background/${bg}.svg`) {
               if (!document.getElementById("background-fixed").checked) {
                 const selectElement = document.getElementById("background");
                 const options = selectElement.options;
                 const randomIndex = Math.floor(Math.random() * options.length);
                 selectElement.selectedIndex = randomIndex;
                 inputSVGs[0] =
-                  "assets/Bros/background/" +
+                  "assets/Baes/background/" +
                   document.getElementById("background").value +
                   ".svg";
               }
