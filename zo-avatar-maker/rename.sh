@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Change to the directory containing the SVG files
-cd ./assets/Bros/head || { echo "Failed to change directory"; exit 1; }
+cd ./assets/Bros/dress || { echo "Failed to change directory"; exit 1; }
 
 # Rename the files using a temporary name to avoid conflicts
-for i in {0..49}; do
+for i in {0..68}; do
   temp_name="temp_$i.svg"
   if [ -f "$i.svg" ]; then
     sudo mv "$i.svg" "$temp_name" || { echo "Failed to rename $i.svg to $temp_name"; exit 1; }
@@ -15,7 +15,7 @@ for i in {0..49}; do
 done
 
 # Rename the temporary files to the final names
-for i in {0..49}; do
+for i in {0..68}; do
   new_index=$((i + 1))
   temp_name="temp_$i.svg"
   if [ -f "$temp_name" ]; then
