@@ -37,14 +37,8 @@
   <body>
     <div class="header">
       <h3>
-        <a href="/zo-bro-maker/baes-renamer.html">Baes Traits Reviewer</a
-        >&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/zo-bro-maker/bros-renamer.html"
-          >Bros Traits Reviewer</a
-        >&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/zo-bro-maker/baes.html"
-          >Zo Bae Maker</a
-        >&nbsp;&nbsp; | &nbsp;&nbsp;<a
-          class="active"
-          href="/zo-bro-maker/bros.html"
+        <a href="/zo-avatar-maker/baes.html">Zo Bae Maker</a>&nbsp;&nbsp; |
+        &nbsp;&nbsp;<a class="active" href="/zo-avatar-maker/bros.html"
           >Zo Bro Maker</a
         >
       </h3>
@@ -372,7 +366,42 @@
             }
           }
         }
+        // For dresses and backgrounds to not match
+        const bgDressExceptions = {
+          0: ["2", "38"],
+          1: ["50"],
+          4: ["30", "32", "45", "47"],
+          6: ["3", "10", "17", "22", "41", "59"],
+          7: ["43"],
+        };
 
+        function checkAndChangeBackground(inputSVGs) {
+          const currentDress = inputSVGs[2].split("/").pop().split(".")[0];
+          const currentBG = inputSVGs[0].split("/").pop().split(".")[0];
+
+          for (const bg in bgDressExceptions) {
+            if (
+              bg == currentBG &&
+              bgDressExceptions[bg].includes(currentDress)
+            ) {
+              while (inputSVGs[0] == `assets/Bros/background/${bg}.svg`) {
+                if (!document.getElementById("background-fixed").checked) {
+                  const selectElement = document.getElementById("background");
+                  const options = selectElement.options;
+                  const randomIndex = Math.floor(
+                    Math.random() * options.length
+                  );
+                  selectElement.selectedIndex = randomIndex;
+                  inputSVGs[0] =
+                    "assets/Bros/background/" +
+                    document.getElementById("background").value +
+                    ".svg";
+                }
+              }
+            }
+          }
+        }
+        // end of conditions
         const readSVGFile = (filePath) => {
           return fetch(filePath)
             .then((response) => {

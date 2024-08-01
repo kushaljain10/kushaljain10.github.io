@@ -331,21 +331,21 @@
             ".svg",
           "assets/Baes/neck/" + document.getElementById("neck").value + ".svg",
         ];
-
+        // for no eyewear for laser eyes
         if (
           inputSVGs[2] == "assets/Baes/eyes/6.svg" ||
           inputSVGs[2] == "assets/Baes/eyes/7.svg"
         ) {
           inputSVGs[5] = "assets/Baes/eyewear/none.svg";
         }
-
+        // for no head, neck, hair and earrings for dress 13
         if (inputSVGs[8] == "assets/Baes/dress/13.svg") {
           inputSVGs[7] = "assets/Baes/head/none.svg";
           inputSVGs[9] = "assets/Baes/neck/none.svg";
           inputSVGs[3] = "assets/Baes/hair/none.svg";
           inputSVGs[4] = "assets/Baes/earrings/none.svg";
         }
-
+        // for no red bg for red glasses
         if (
           inputSVGs[5] == "assets/Baes/eyewear/12.svg" ||
           inputSVGs[5] == "assets/Baes/eyewear/18.svg"
@@ -363,7 +363,7 @@
             }
           }
         }
-
+        // for no yellow bg for yellow glasses
         if (inputSVGs[5] == "assets/Baes/eyewear/10.svg") {
           while (inputSVGs[0] == "assets/Baes/background/0.svg") {
             if (!document.getElementById("background-fixed").checked) {
@@ -378,7 +378,7 @@
             }
           }
         }
-
+        // for neckwear to be shown for certain dresses only
         if (
           ![
             "1",
@@ -396,6 +396,42 @@
           ].includes(document.getElementById("dress").value)
         ) {
           inputSVGs[9] = "assets/Baes/neck/none.svg";
+        }
+
+        // For dresses and bg colours not matching
+        const bgDressExceptionsBaes = {
+          3: ["0"],
+          4: ["19", "20", "29"],
+          6: ["13", "16", "33"],
+          7: ["3", "14", "34", "43"],
+          8: ["42"],
+        };
+
+        function checkAndChangeBackgroundForBaes(inputSVGs) {
+          const currentDress = inputSVGs[8].split("/").pop().split(".")[0];
+          const currentBG = inputSVGs[0].split("/").pop().split(".")[0];
+
+          for (const bg in bgDressExceptionsBaes) {
+            if (
+              bg == currentBG &&
+              bgDressExceptionsBaes[bg].includes(currentDress)
+            ) {
+              while (inputSVGs[0] == `assets/Bros/background/${bg}.svg`) {
+                if (!document.getElementById("background-fixed").checked) {
+                  const selectElement = document.getElementById("background");
+                  const options = selectElement.options;
+                  const randomIndex = Math.floor(
+                    Math.random() * options.length
+                  );
+                  selectElement.selectedIndex = randomIndex;
+                  inputSVGs[0] =
+                    "assets/Bros/background/" +
+                    document.getElementById("background").value +
+                    ".svg";
+                }
+              }
+            }
+          }
         }
 
         const readSVGFile = (filePath) => {
