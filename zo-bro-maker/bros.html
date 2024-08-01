@@ -375,28 +375,21 @@
           7: ["43"],
         };
 
-        function checkAndChangeBackground(inputSVGs) {
-          const currentDress = inputSVGs[2].split("/").pop().split(".")[0];
-          const currentBG = inputSVGs[0].split("/").pop().split(".")[0];
+        const currentDress = inputSVGs[2].split("/").pop().split(".")[0];
+        const currentBG = inputSVGs[0].split("/").pop().split(".")[0];
 
-          for (const bg in bgDressExceptions) {
-            if (
-              bg == currentBG &&
-              bgDressExceptions[bg].includes(currentDress)
-            ) {
-              while (inputSVGs[0] == `assets/Bros/background/${bg}.svg`) {
-                if (!document.getElementById("background-fixed").checked) {
-                  const selectElement = document.getElementById("background");
-                  const options = selectElement.options;
-                  const randomIndex = Math.floor(
-                    Math.random() * options.length
-                  );
-                  selectElement.selectedIndex = randomIndex;
-                  inputSVGs[0] =
-                    "assets/Bros/background/" +
-                    document.getElementById("background").value +
-                    ".svg";
-                }
+        for (const bg in bgDressExceptions) {
+          if (bg == currentBG && bgDressExceptions[bg].includes(currentDress)) {
+            while (inputSVGs[0] == `assets/Bros/background/${bg}.svg`) {
+              if (!document.getElementById("background-fixed").checked) {
+                const selectElement = document.getElementById("background");
+                const options = selectElement.options;
+                const randomIndex = Math.floor(Math.random() * options.length);
+                selectElement.selectedIndex = randomIndex;
+                inputSVGs[0] =
+                  "assets/Bros/background/" +
+                  document.getElementById("background").value +
+                  ".svg";
               }
             }
           }
