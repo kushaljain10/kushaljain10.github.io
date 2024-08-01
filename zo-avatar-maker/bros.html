@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zo Bro Maker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .header {
+        background-color: #f0f0f0;
+        padding: 20px 0;
+        width: 100%;
+      }
+      .header h3 {
+        text-align: center;
+      }
+      .save-button {
+        position: fixed;
+        background-color: #fff;
+        padding: 10px 15px;
+        color: #222;
+        cursor: pointer;
+        top: 120px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a.active {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h3>
+        <a href="/zo-bro-maker/baes-renamer.html">Baes Traits Reviewer</a
+        >&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/zo-bro-maker/bros-renamer.html"
+          >Bros Traits Reviewer</a
+        >&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/zo-bro-maker/baes.html"
+          >Zo Bae Maker</a
+        >&nbsp;&nbsp; | &nbsp;&nbsp;<a
+          class="active"
+          href="/zo-bro-maker/bros.html"
+          >Zo Bro Maker</a
+        >
+      </h3>
+    </div>
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-4">Zo Bro Maker</h1>
+
+      <div class="grid grid-cols-6">
+        <div class="col-span-3">
+          <form id="bro-form" class="bg-white p-4 rounded shadow-md mr-4">
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="background"
+                  >Background:</label
+                >
+                <select
+                  onchange="generateBro()"
+                  id="background"
+                  name="background"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="background-fixed">Fixed?</label>
+                <input id="background-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="skin">Skin:</label>
+                <select
+                  onchange="generateBro()"
+                  id="skin"
+                  name="skin"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="skin-fixed">Fixed?</label>
+                <input id="skin-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="dress">Dress:</label>
+                <select
+                  onchange="generateBro()"
+                  id="dress"
+                  name="dress"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="dress-fixed">Fixed?</label>
+                <input id="dress-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="mouth">Mouth:</label>
+                <select
+                  onchange="generateBro()"
+                  id="mouth"
+                  name="mouth"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="mouth-fixed">Fixed?</label>
+                <input id="mouth-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="head">Head:</label>
+                <select
+                  onchange="generateBro()"
+                  id="head"
+                  name="head"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="head-fixed">Fixed?</label>
+                <input id="head-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="eyes">Eyes:</label>
+                <select
+                  onchange="generateBro()"
+                  id="eyes"
+                  name="eyes"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="eyes-fixed">Fixed?</label>
+                <input id="eyes-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="eyewear"
+                  >Eyewear:</label
+                >
+                <select
+                  onchange="generateBro()"
+                  id="eyewear"
+                  name="eyewear"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="eyewear-fixed">Fixed?</label>
+                <input id="eyewear-fixed" type="checkbox" />
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="beard">Beard:</label>
+                <select
+                  onchange="generateBro()"
+                  id="beard"
+                  name="beard"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="beard-fixed">Fixed?</label>
+                <input id="beard-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <button
+              id="generate-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="generateBro()"
+            >
+              Generate Bro
+            </button>
+            <button
+              id="random-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="randomBro(true)"
+            >
+              Randomise
+            </button>
+            <button
+              id="animate-btn"
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="animateRandomBro(3000, 150)"
+            >
+              Animated Randomise
+            </button>
+          </form>
+        </div>
+        <div class="col-span-3" style="max-width: 500px">
+          <div id="result" class="mb-4"></div>
+          <div>
+            <a
+              id="download-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              style="
+                margin-top: 10px;
+                display: none;
+                margin: 0 auto;
+                width: 150px;
+                text-align: center;
+              "
+              onclick="download()"
+              download="bro.svg"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Assuming you have an array of folder names
+      const traitNames = [
+        "background",
+        "dress",
+        "eyes",
+        "eyewear",
+        "head",
+        "mouth",
+        "beard",
+        "skin",
+      ];
+
+      window.onload = () => {
+        const fetchPromises = [];
+
+        function readCSV(file) {
+          const csvString = file;
+          const lines = csvString.split("\n");
+          return lines.slice(1).map((line) => line.trim());
+        }
+
+        function populateSelect(selectId, options) {
+          const select = document.getElementById(selectId);
+          options.forEach((option) => {
+            const optionElement = document.createElement("option");
+            const parts = option.split(","); // Split the string on comma
+            optionElement.value = parts[0];
+            optionElement.text = parts[1];
+            select.add(optionElement);
+          });
+        }
+
+        traitNames.forEach((folderName) => {
+          const fetchPromise = fetch(`assets/Bros/${folderName}/list2.csv`)
+            .then((response) => response.text())
+            .then((csvData) => {
+              const options = readCSV(csvData);
+              populateSelect(folderName, options);
+            })
+            .catch((error) => {
+              console.error(`Error loading CSV file for ${folderName}:`, error);
+            });
+          fetchPromises.push(fetchPromise);
+        });
+
+        Promise.all(fetchPromises)
+          .then(() => {
+            generateBro();
+          })
+          .catch((error) => {
+            console.error("Error fetching CSV files:", error);
+          });
+      };
+
+      function randomBro(displayImmediately = false) {
+        traitNames.forEach(function (trait) {
+          if (!document.getElementById(trait + "-fixed").checked) {
+            const selectElement = document.getElementById(trait);
+            const options = selectElement.options;
+            const randomIndex = Math.floor(Math.random() * options.length);
+            selectElement.selectedIndex = randomIndex;
+          }
+        });
+        if (displayImmediately) {
+          generateBro();
+        }
+      }
+
+      const downloadLink = document.getElementById("download-btn");
+      downloadLink.addEventListener("click", () => {
+        downloadLink.href =
+          "data:image/svg+xml;charset=utf-8," +
+          encodeURIComponent(document.getElementById("result").innerHTML);
+      });
+
+      function generateBro() {
+        const inputSVGs = [
+          "assets/Bros/background/" +
+            document.getElementById("background").value +
+            ".svg",
+          "assets/Bros/skin/" + document.getElementById("skin").value + ".svg",
+          "assets/Bros/dress/" +
+            document.getElementById("dress").value +
+            ".svg",
+          "assets/Bros/eyes/" + document.getElementById("eyes").value + ".svg",
+          "assets/Bros/head/" + document.getElementById("head").value + ".svg",
+          "assets/Bros/beard/" +
+            document.getElementById("beard").value +
+            ".svg",
+          "assets/Bros/mouth/" +
+            document.getElementById("mouth").value +
+            ".svg",
+          "assets/Bros/eyewear/" +
+            document.getElementById("eyewear").value +
+            ".svg",
+        ];
+
+        // if eyes laser, no eyewear
+        if (
+          inputSVGs[3] == "assets/Bros/eyes/6.svg" ||
+          inputSVGs[3] == "assets/Bros/eyes/7.svg"
+        ) {
+          inputSVGs[7] = "assets/Bros/eyewear/none.svg";
+        }
+        // if hoodie, no head, no beard
+        if (
+          inputSVGs[2] == "assets/Bros/dress/12.svg" ||
+          inputSVGs[2] == "assets/Bros/dress/13.svg"
+        ) {
+          inputSVGs[4] = "assets/Bros/head/none.svg";
+          inputSVGs[5] = "assets/Bros/beard/none.svg";
+        }
+        // if head is white helmet, no eyewear
+        if (
+          inputSVGs[4] == "assets/Bros/head/16.svg" ||
+          inputSVGs[4] == "assets/Bros/head/18.svg"
+        ) {
+          inputSVGs[5] = "assets/Bros/beard/none.svg";
+          inputSVGs[7] = "assets/Bros/eyewear/none.svg";
+        }
+        // if head is ninja, no mouth, no beard
+        if (inputSVGs[4] == "assets/Bros/head/5.svg") {
+          inputSVGs[5] = "assets/Bros/beard/none.svg";
+          inputSVGs[6] = "assets/Bros/mouth/none.svg";
+        }
+        // if eyewear is red in colour then no red BG
+        if (
+          inputSVGs[7] == "assets/Bros/eyewear/12.svg" ||
+          inputSVGs[7] == "assets/Bros/eyewear/18.svg" ||
+          inputSVGs[7] == "assets/Bros/eyewear/20.svg"
+        ) {
+          while (inputSVGs[0] == "assets/Bros/background/5.svg") {
+            if (!document.getElementById("background-fixed").checked) {
+              const selectElement = document.getElementById("background");
+              const options = selectElement.options;
+              const randomIndex = Math.floor(Math.random() * options.length);
+              selectElement.selectedIndex = randomIndex;
+              inputSVGs[0] =
+                "assets/Bros/background/" +
+                document.getElementById("background").value +
+                ".svg";
+            }
+          }
+        }
+        // if eyewear is yellow in colour then no yellow bg
+        if (inputSVGs[7] == "assets/Bros/eyewear/10.svg") {
+          while (inputSVGs[0] == "assets/Bros/background/0.svg") {
+            if (!document.getElementById("background-fixed").checked) {
+              const selectElement = document.getElementById("background");
+              const options = selectElement.options;
+              const randomIndex = Math.floor(Math.random() * options.length);
+              selectElement.selectedIndex = randomIndex;
+              inputSVGs[0] =
+                "assets/Bros/background/" +
+                document.getElementById("background").value +
+                ".svg";
+            }
+          }
+        }
+
+        const readSVGFile = (filePath) => {
+          return fetch(filePath)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(
+                  `Failed to fetch SVG file (${response.status} ${response.statusText})`
+                );
+              }
+              return response.text();
+            })
+            .catch((error) => {
+              console.error(`Error loading SVG file for ${filePath}:`, error);
+              throw error;
+            });
+        };
+
+        const promises = inputSVGs.map((filePath) => readSVGFile(filePath));
+
+        Promise.all(promises)
+          .then((svgContents) => {
+            let mergedSVG = "";
+            svgContents.forEach((svgContent, index) => {
+              mergedSVG += `<g id="layer${index + 1}">${svgContent}</g>`;
+            });
+            mergedSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">${mergedSVG}</svg>`;
+            document.getElementById("result").innerHTML = mergedSVG;
+            document.getElementById("download-btn").style.display = "block";
+          })
+          .catch((error) => {
+            console.error("Error generating Bro:", error);
+          });
+      }
+
+      let animationInterval = null;
+
+      function animateRandomBro(duration = 6000, interval = 150) {
+        if (animationInterval) clearInterval(animationInterval);
+
+        animationInterval = setInterval(() => {
+          randomBro(true);
+        }, interval);
+
+        setTimeout(() => {
+          clearInterval(animationInterval);
+          generateBro();
+        }, duration);
+      }
+    </script>
+  </body>
+</html>

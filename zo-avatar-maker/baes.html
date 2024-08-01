@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zo Bae Maker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .header {
+        background-color: #f0f0f0;
+        padding: 20px 0;
+        width: 100%;
+      }
+      .header h3 {
+        text-align: center;
+      }
+      .save-button {
+        position: fixed;
+        background-color: #fff;
+        padding: 10px 15px;
+        color: #222;
+        cursor: pointer;
+        top: 120px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a.active {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h3>
+        <a href="/zo-bro-maker/baes-renamer.html">Baes Traits Reviewer</a
+        >&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/zo-bro-maker/bros-renamer.html"
+          >Bros Traits Reviewer</a
+        >&nbsp;&nbsp; | &nbsp;&nbsp;<a
+          class="active"
+          href="/zo-bro-maker/baes.html"
+          >Zo Bae Maker</a
+        >&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/zo-bro-maker/bros.html"
+          >Zo Bro Maker</a
+        >
+      </h3>
+    </div>
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-4">Zo Bae Maker</h1>
+
+      <div class="grid grid-cols-6">
+        <div class="col-span-3">
+          <form id="bae-form" class="bg-white p-4 rounded shadow-md mr-4">
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="background"
+                  >Background:</label
+                >
+                <select
+                  onchange="generateBae()"
+                  id="background"
+                  name="background"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="background-fixed">Fixed?</label>
+                <input id="background-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="skin">Skin:</label>
+                <select
+                  onchange="generateBae()"
+                  id="skin"
+                  name="skin"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="skin-fixed">Fixed?</label>
+                <input id="skin-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="dress">Dress:</label>
+                <select
+                  onchange="generateBae()"
+                  id="dress"
+                  name="dress"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="dress-fixed">Fixed?</label>
+                <input id="dress-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="mouth">Mouth:</label>
+                <select
+                  onchange="generateBae()"
+                  id="mouth"
+                  name="mouth"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="mouth-fixed">Fixed?</label>
+                <input id="mouth-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="head">Head:</label>
+                <select
+                  onchange="generateBae()"
+                  id="head"
+                  name="head"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="head-fixed">Fixed?</label>
+                <input id="head-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="eyes">Eyes:</label>
+                <select
+                  onchange="generateBae()"
+                  id="eyes"
+                  name="eyes"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="eyes-fixed">Fixed?</label>
+                <input id="eyes-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="eyewear"
+                  >Eyewear:</label
+                >
+                <select
+                  onchange="generateBae()"
+                  id="eyewear"
+                  name="eyewear"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="eyewear-fixed">Fixed?</label>
+                <input id="eyewear-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="earrings"
+                  >Earrings:</label
+                >
+                <select
+                  onchange="generateBae()"
+                  id="earrings"
+                  name="earrings"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="earrings-fixed">Fixed?</label>
+                <input id="earrings-fixed" type="checkbox" />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap mb-4">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="neck">Neck:</label>
+                <select
+                  onchange="generateBae()"
+                  id="neck"
+                  name="neck"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="neck-fixed">Fixed?</label>
+                <input id="neck-fixed" type="checkbox" />
+              </div>
+
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block mb-2 font-bold" for="hair">Hair:</label>
+                <select
+                  onchange="generateBae()"
+                  id="hair"
+                  name="hair"
+                  class="block w-full p-2 border border-gray-300 rounded"
+                ></select>
+                <label for="hair-fixed">Fixed?</label>
+                <input id="hair-fixed" type="checkbox" />
+              </div>
+            </div>
+            <button
+              id="generate-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="generateBae()"
+            >
+              Generate Bae
+            </button>
+            <button
+              id="random-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="randomBae(true)"
+            >
+              Randomise
+            </button>
+            <button
+              id="animate-btn"
+              class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onclick="animateRandomBae(3000, 150)"
+            >
+              Animated Randomise
+            </button>
+          </form>
+        </div>
+        <div class="col-span-3" style="max-width: 500px">
+          <div id="result" class="mb-4"></div>
+          <div>
+            <a
+              id="download-btn"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              style="
+                margin-top: 10px;
+                display: none;
+                margin: 0 auto;
+                width: 150px;
+                text-align: center;
+              "
+              onclick="download()"
+              download="bae.svg"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const traitNames = [
+        "background",
+        "dress",
+        "earrings",
+        "eyes",
+        "eyewear",
+        "head",
+        "hair",
+        "mouth",
+        "neck",
+        "skin",
+      ];
+
+      window.onload = () => {
+        const fetchPromises = [];
+
+        function readCSV(file) {
+          const csvString = file;
+          const lines = csvString.split("\n");
+          return lines.slice(1).map((line) => line.trim());
+        }
+
+        function populateSelect(selectId, options) {
+          const select = document.getElementById(selectId);
+          options.forEach((option) => {
+            const optionElement = document.createElement("option");
+            const parts = option.split(","); // Split the string on comma
+            optionElement.value = parts[0];
+            optionElement.text = parts[1];
+            select.add(optionElement);
+          });
+        }
+
+        traitNames.forEach((folderName) => {
+          const fetchPromise = fetch(`assets/Baes/${folderName}/list2.csv`)
+            .then((response) => response.text())
+            .then((csvData) => {
+              const options = readCSV(csvData);
+              populateSelect(folderName, options);
+            })
+            .catch((error) => {
+              console.error(`Error loading CSV file for ${folderName}:`, error);
+            });
+          fetchPromises.push(fetchPromise);
+        });
+
+        Promise.all(fetchPromises)
+          .then(() => {
+            generateBae();
+          })
+          .catch((error) => {
+            console.error("Error fetching CSV files:", error);
+          });
+      };
+
+      function randomBae(displayImmediately = false) {
+        traitNames.forEach(function (trait) {
+          if (!document.getElementById(trait + "-fixed").checked) {
+            const selectElement = document.getElementById(trait);
+            const options = selectElement.options;
+            const randomIndex = Math.floor(Math.random() * options.length);
+            selectElement.selectedIndex = randomIndex;
+          }
+        });
+        if (displayImmediately) {
+          generateBae();
+        }
+      }
+
+      const downloadLink = document.getElementById("download-btn");
+      downloadLink.addEventListener("click", () => {
+        downloadLink.href =
+          "data:image/svg+xml;charset=utf-8," +
+          encodeURIComponent(document.getElementById("result").innerHTML);
+      });
+
+      function generateBae() {
+        const inputSVGs = [
+          "assets/Baes/background/" +
+            document.getElementById("background").value +
+            ".svg",
+          "assets/Baes/skin/" + document.getElementById("skin").value + ".svg",
+          "assets/Baes/eyes/" + document.getElementById("eyes").value + ".svg",
+          "assets/Baes/hair/" + document.getElementById("hair").value + ".svg",
+          "assets/Baes/earrings/" +
+            document.getElementById("earrings").value +
+            ".svg",
+          "assets/Baes/eyewear/" +
+            document.getElementById("eyewear").value +
+            ".svg",
+          "assets/Baes/mouth/" +
+            document.getElementById("mouth").value +
+            ".svg",
+          "assets/Baes/head/" + document.getElementById("head").value + ".svg",
+          "assets/Baes/dress/" +
+            document.getElementById("dress").value +
+            ".svg",
+          "assets/Baes/neck/" + document.getElementById("neck").value + ".svg",
+        ];
+
+        if (
+          inputSVGs[2] == "assets/Baes/eyes/6.svg" ||
+          inputSVGs[2] == "assets/Baes/eyes/7.svg"
+        ) {
+          inputSVGs[5] = "assets/Baes/eyewear/none.svg";
+        }
+
+        if (inputSVGs[8] == "assets/Baes/dress/13.svg") {
+          inputSVGs[7] = "assets/Baes/head/none.svg";
+          inputSVGs[9] = "assets/Baes/neck/none.svg";
+          inputSVGs[3] = "assets/Baes/hair/none.svg";
+          inputSVGs[4] = "assets/Baes/earrings/none.svg";
+        }
+
+        if (
+          inputSVGs[5] == "assets/Baes/eyewear/12.svg" ||
+          inputSVGs[5] == "assets/Baes/eyewear/18.svg"
+        ) {
+          while (inputSVGs[0] == "assets/Baes/background/6.svg") {
+            if (!document.getElementById("background-fixed").checked) {
+              const selectElement = document.getElementById("background");
+              const options = selectElement.options;
+              const randomIndex = Math.floor(Math.random() * options.length);
+              selectElement.selectedIndex = randomIndex;
+              inputSVGs[0] =
+                "assets/Baes/background/" +
+                document.getElementById("background").value +
+                ".svg";
+            }
+          }
+        }
+
+        if (inputSVGs[5] == "assets/Baes/eyewear/10.svg") {
+          while (inputSVGs[0] == "assets/Baes/background/0.svg") {
+            if (!document.getElementById("background-fixed").checked) {
+              const selectElement = document.getElementById("background");
+              const options = selectElement.options;
+              const randomIndex = Math.floor(Math.random() * options.length);
+              selectElement.selectedIndex = randomIndex;
+              inputSVGs[0] =
+                "assets/Baes/background/" +
+                document.getElementById("background").value +
+                ".svg";
+            }
+          }
+        }
+
+        if (
+          ![
+            "1",
+            "2",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "11",
+            "12",
+            "38",
+            "40",
+            "43",
+          ].includes(document.getElementById("dress").value)
+        ) {
+          inputSVGs[9] = "assets/Baes/neck/none.svg";
+        }
+
+        const readSVGFile = (filePath) => {
+          return fetch(filePath)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(
+                  `Failed to fetch SVG file (${response.status} ${response.statusText})`
+                );
+              }
+              return response.text();
+            })
+            .catch((error) => {
+              console.error(`Error loading SVG file for ${filePath}:`, error);
+              throw error;
+            });
+        };
+
+        const promises = inputSVGs.map((filePath) => readSVGFile(filePath));
+
+        Promise.all(promises)
+          .then((svgContents) => {
+            let mergedSVG = "";
+            svgContents.forEach((svgContent, index) => {
+              mergedSVG += `<g id="layer${index + 1}">${svgContent}</g>`;
+            });
+            mergedSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">${mergedSVG}</svg>`;
+            document.getElementById("result").innerHTML = mergedSVG;
+            document.getElementById("download-btn").style.display = "block";
+          })
+          .catch((error) => {
+            console.error("Error generating Bae:", error);
+          });
+      }
+
+      let animationInterval = null;
+
+      function animateRandomBae(duration = 3000, interval = 150) {
+        if (animationInterval) clearInterval(animationInterval);
+
+        animationInterval = setInterval(() => {
+          randomBae(true);
+        }, interval);
+
+        setTimeout(() => {
+          clearInterval(animationInterval);
+          generateBae();
+        }, duration);
+      }
+    </script>
+  </body>
+</html>
