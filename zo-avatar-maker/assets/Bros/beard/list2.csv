@@ -1,12 +1,12 @@
-file_name,new_name,selected,rarity
-0,Washington,TRUE,
-1,Austin,TRUE,
-2,Tehran,TRUE,
-3,Hulk,TRUE,
-4,Lebanon,TRUE,
-5,Seedphrase,TRUE,
-6,Rhodes,TRUE,
-7,Moscow,TRUE,
-8,Dil Chahta Hai,TRUE,
-9,Muscat,TRUE,
-none,none,TRUE,
+file_name,new_name
+0,Washington
+1,Austin
+2,Tehran
+3,Hulk
+4,Lebanon
+5,Seedphrase
+6,Rhodes
+7,Moscow
+8,Dil Chahta Hai
+9,Muscat
+none,none

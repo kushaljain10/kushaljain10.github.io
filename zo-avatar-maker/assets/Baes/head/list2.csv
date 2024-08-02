@@ -1,8 +1,8 @@
-file_name,new_name,selected,rarity
-0,AirPods,TRUE,
-1,Angel,TRUE,
-2,Hell,TRUE,
-3,Music,TRUE,
-4,Blossom,TRUE,
-5,Frida Kahlo,TRUE,
-none,none,TRUE,
+file_name,new_name
+0,AirPods
+1,Angel
+2,Hell
+3,Music
+4,Blossom
+5,Frida Kahlo
+none,none
