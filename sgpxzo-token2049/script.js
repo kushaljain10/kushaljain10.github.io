@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const formattedDateTime = formatDateTime(row["Date & Time"]);
             const popupContent = `
               <strong>${row["Event Name"] || "N/A"}</strong>
-              <p>Location: ${row.Location || "N/A"}</p>
-              <p>Date & Time: ${formattedDateTime}</p>
-              <p>Price: ${row["Price"] || "N/A"}</p>
+              <p>📍 ${row.Location || "N/A"}</p>
+              <p>📅 ${formattedDateTime}</p>
+              <p>💰 ${row["Price"] || "N/A"}</p>
               <div class="popup-buttons">
                 ${
                   row.Link
@@ -109,57 +109,74 @@ document.addEventListener("DOMContentLoaded", function () {
             const listItem = document.createElement("li");
             listItem.className = "event-item";
             listItem.innerHTML = `
-              <div class="event-item-content">
+              <div class="event-item-header">
                 <h3>${row["Event Name"] || "N/A"}</h3>
-                <p>Location: ${row.Location || "N/A"}</p>
-                <p>Date & Time: ${formattedDateTime}</p>
-                <p>Price: ${row["Price"] || "N/A"}</p>
+                <span class="chevron">&#9662;</span>
               </div>
-              <div class="list-item-buttons">
-                ${
-                  row.Link
-                    ? `<a href="${row.Link}" target="_blank" class="list-button">Registration Link</a>`
-                    : ""
-                }
-                <a href="${directionsLink}" target="_blank" class="list-button">Directions</a>
+              <div class="event-item-content">
+                <p>📍 ${row.Location || "N/A"}</p>
+                <p>📅 ${formattedDateTime}</p>
+                <p>💰 ${row["Price"] || "N/A"}</p>
+                <div class="list-item-buttons">
+                  ${
+                    row.Link
+                      ? `<a href="${row.Link}" target="_blank" class="list-button">Registration Link</a>`
+                      : ""
+                  }
+                  <a href="${directionsLink}" target="_blank" class="list-button">Directions</a>
+                </div>
               </div>
             `;
             eventList.appendChild(listItem);
 
-            // Modify the click event listener
+            // Add click event for accordion functionality
+            const header = listItem.querySelector(".event-item-header");
+            const content = listItem.querySelector(".event-item-content");
+            const chevron = listItem.querySelector(".chevron");
+
+            header.addEventListener("click", function () {
+              content.classList.toggle("active");
+              chevron.classList.toggle("active");
+            });
+
+            // Modify the click event listener for the entire list item
             listItem.addEventListener("click", function (e) {
-              if (e.target.tagName !== "A") {
-                map.setView(
-                  [parseFloat(row.Latitude), parseFloat(row.Longitude)],
-                  15
-                );
-                marker.openPopup();
+              if (
+                e.target.closest(".event-item-header") ||
+                e.target.tagName === "A"
+              )
+                return;
 
-                // Remove active class from previous marker
-                if (activeMarker) {
-                  L.DomUtil.removeClass(activeMarker._icon, "active-marker");
-                  updateMarkerColor(activeMarker, false);
-                }
+              map.setView(
+                [parseFloat(row.Latitude), parseFloat(row.Longitude)],
+                15
+              );
+              marker.openPopup();
 
-                // Add active class to current marker
-                L.DomUtil.addClass(marker._icon, "active-marker");
-                updateMarkerColor(marker, true);
-                activeMarker = marker;
+              // Remove active class from previous marker
+              if (activeMarker) {
+                L.DomUtil.removeClass(activeMarker._icon, "active-marker");
+                updateMarkerColor(activeMarker, false);
+              }
 
-                // Highlight the clicked item
-                document
-                  .querySelectorAll(".event-item")
-                  .forEach((item) => item.classList.remove("active"));
-                this.classList.add("active");
+              // Add active class to current marker
+              L.DomUtil.addClass(marker._icon, "active-marker");
+              updateMarkerColor(marker, true);
+              activeMarker = marker;
 
-                // If on mobile, switch to the map view
-                if (isMobile()) {
-                  setTimeout(() => {
-                    document
-                      .querySelector('.tab-button[data-view="map"]')
-                      .click();
-                  }, 100);
-                }
+              // Highlight the clicked item
+              document
+                .querySelectorAll(".event-item")
+                .forEach((item) => item.classList.remove("active"));
+              this.classList.add("active");
+
+              // If on mobile, switch to the map view
+              if (isMobile()) {
+                setTimeout(() => {
+                  document
+                    .querySelector('.tab-button[data-view="map"]')
+                    .click();
+                }, 100);
               }
             });
 
@@ -243,16 +260,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to set initial view based on device
   function setInitialView() {
     if (isMobile()) {
-      listContainer.style.display = "flex"; // Changed from "block" to "flex"
-      mapContainer.style.display = "none";
+      listContainer.style.display = "none";
+      mapContainer.style.display = "block";
       document
         .querySelector('.tab-button[data-view="list"]')
-        .classList.add("active");
+        .classList.remove("active");
       document
         .querySelector('.tab-button[data-view="map"]')
-        .classList.remove("active");
+        .classList.add("active");
     } else {
-      listContainer.style.display = "flex"; // Changed from "block" to "flex"
+      listContainer.style.display = "flex";
       mapContainer.style.display = "block";
     }
     resizeMap();

@@ -117,7 +117,7 @@ footer {
 }
 
 .leaflet-popup-content-wrapper {
-  background: rgba(22, 33, 62, 0.9);
+  background: var(--secondary-color);
   color: #fff;
   border-radius: 8px;
   backdrop-filter: blur(5px);
@@ -126,7 +126,7 @@ footer {
 }
 
 .leaflet-popup-tip {
-  background: rgba(22, 33, 62, 0.9);
+  background: var(--secondary-color);
 }
 
 .leaflet-popup-content {
@@ -347,23 +347,49 @@ footer {
   margin-bottom: 15px;
   transition: all 0.3s ease;
   cursor: pointer;
+  position: relative;
+}
+
+.event-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0; /* Reduced vertical padding */
+}
+
+.event-item-header h3 {
+  color: #ffffff; /* Changed to white */
+  margin: 0;
+  padding: 5px 0; /* Reduced vertical padding */
+}
+
+.accordion-arrow {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-arrow.active {
+  transform: rotate(180deg);
+}
+
+.event-item-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.event-item-content.active {
+  display: block;
 }
 
 .event-item:hover,
 .event-item.active {
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: var(
-    --secondary-color
-  ); /* Keep the background color the same */
+  background-color: var(--secondary-color);
 }
 
-.event-item-content {
-  pointer-events: none;
-}
-
-.list-item-buttons {
-  pointer-events: auto;
+.event-item-content p {
+  margin: 5px 0;
 }
 
 .list-item-buttons {
