@@ -194,7 +194,7 @@ footer {
 
 .popup-button:hover {
   background-color: #fff;
-  color: var(--text-color);
+  color: var (--text-color);
 }
 
 /* Remove the old styles for individual links */
@@ -353,7 +353,9 @@ footer {
 .event-item.active {
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: var(--accent-color);
+  background-color: var(
+    --secondary-color
+  ); /* Keep the background color the same */
 }
 
 .event-item-content {
