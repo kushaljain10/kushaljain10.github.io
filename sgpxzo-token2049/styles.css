@@ -1,0 +1,24 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #303030;
+  color: #fff;
+}
+
+.leaflet-popup-tip {
+  background: #303030;
+}
+
+.leaflet-popup-content-wrapper a {
+  color: #1abc9c;
+}
