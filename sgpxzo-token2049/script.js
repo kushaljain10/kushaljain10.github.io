@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize the map
-  const map = L.map("map").setView([1.3521, 103.8198], 12);
+  const map = L.map("map").setView([1.3521, 103.8198], 13);
 
   // Add the Mapbox tile layer
   L.tileLayer(
@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   ).addTo(map);
 
+  // Add custom icon
+  const customIcon = L.icon({
+    iconUrl: "./icon.png",
+    iconSize: [38, 38],
+    iconAnchor: [19, 38],
+    popupAnchor: [0, -38],
+  });
+
   // Function to parse CSV data and add markers
   function addMarkersFromCSV(data) {
     Papa.parse(data, {
@@ -24,17 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
       complete: function (results) {
         results.data.forEach(function (row) {
           if (row.Latitude && row.Longitude) {
-            const marker = L.marker([
-              parseFloat(row.Latitude),
-              parseFloat(row.Longitude),
-            ]).addTo(map);
+            const marker = L.marker(
+              [parseFloat(row.Latitude), parseFloat(row.Longitude)],
+              { icon: customIcon }
+            ).addTo(map);
 
-            // Create popup content (you'll need to add Event Name, Date & Time, and Price to your CSV)
+            // Create popup content with the new Link field
             const popupContent = `
                             <strong>${row.Location}</strong><br>
                             Event Name: ${row["Event Name"] || "N/A"}<br>
                             Date & Time: ${row["Date & Time"] || "N/A"}<br>
                             Price: ${row["Price"] || "N/A"}
+                            ${
+                              row.Link
+                                ? `<br><a href="${row.Link}" target="_blank">Event Registration</a>`
+                                : ""
+                            }
                         `;
 
             marker.bindPopup(popupContent);

@@ -1,11 +1,11 @@
-Location,Latitude,Longitude,Event Name,Date & Time,Price
-The Fullerton Bay Hotel Singapore,1.2873,103.8519,Tech Conference 2023,2023-09-15 09:00,SGD 250
-Marina Bay Sands,1.2873,103.8519,Art Exhibition,2023-09-20 10:00,SGD 20
-National Gallery Singapore,1.2925,103.8518,Cultural Festival,2023-09-25 11:00,Free
-Suntec Singapore Convention & Exhibition Centre,1.2958,103.8573,Business Expo,2023-10-01 08:30,SGD 100
-Gardens by the Bay,1.2824,103.8546,Night Light Show,2023-10-05 19:30,SGD 15
-ArtScience Museum,1.2873,103.8519,Interactive Exhibition,2023-10-10 10:00,SGD 25
-Esplanade - Theatres on the Bay,1.2897,103.8559,Music Concert,2023-10-15 20:00,SGD 80
-Singapore Flyer,1.2894,103.8631,Sunset Dinner,2023-10-20 18:00,SGD 150
-Clarke Quay,1.2907,103.8465,Food Festival,2023-10-25 17:00,SGD 40
-Sentosa Island,1.2494,103.8303,Beach Party,2023-11-01 14:00,SGD 30
+Location,Latitude,Longitude,Event Name,Date & Time,Price,Link
+The Fullerton Bay Hotel Singapore,1.2873,103.8519,Tech Conference 2023,2023-09-15 09:00,SGD 250,https://example.com/tech-conference
+Marina Bay Sands,1.2873,103.8519,Art Exhibition,2023-09-20 10:00,SGD 20,https://example.com/art-exhibition
+National Gallery Singapore,1.2925,103.8518,Cultural Festival,2023-09-25 11:00,Free,https://example.com/cultural-festival
+Suntec Singapore Convention & Exhibition Centre,1.2958,103.8573,Business Expo,2023-10-01 08:30,SGD 100,https://example.com/business-expo
+Gardens by the Bay,1.2824,103.8546,Night Light Show,2023-10-05 19:30,SGD 15,https://example.com/night-light-show
+ArtScience Museum,1.2873,103.8519,Interactive Exhibition,2023-10-10 10:00,SGD 25,https://example.com/interactive-exhibition
+Esplanade - Theatres on the Bay,1.2897,103.8559,Music Concert,2023-10-15 20:00,SGD 80,https://example.com/music-concert
+Singapore Flyer,1.2894,103.8631,Sunset Dinner,2023-10-20 18:00,SGD 150,https://example.com/sunset-dinner
+Clarke Quay,1.2907,103.8465,Food Festival,2023-10-25 17:00,SGD 40,https://example.com/food-festival
+Sentosa Island,1.2494,103.8303,Beach Party,2023-11-01 14:00,SGD 30,https://example.com/beach-party
