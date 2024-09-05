@@ -15,14 +15,48 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Token2049 Side Events</h1>
+    <header class="mobile-header">
+      <div class="header-content">
+        <div class="logo-container">
+          <img
+            src="token2049-sgp.webp"
+            alt="Token2049 Logo"
+            class="logo token2049-logo"
+          />
+          <img src="zo-white.png" alt="Zo World Logo" class="logo zo-logo" />
+        </div>
+        <h1>Side Events List</h1>
+      </div>
     </header>
-    <div id="map-container">
-      <div id="map"></div>
+    <header class="desktop-header">
+      <div class="header-content">
+        <img
+          src="token2049-sgp.webp"
+          alt="Token2049 Logo"
+          class="logo token2049-logo"
+        />
+        <h1>Side Events List</h1>
+        <img src="zo-white.png" alt="Zo World Logo" class="logo zo-logo" />
+      </div>
+    </header>
+    <div id="tab-switcher" class="mobile-only">
+      <button class="tab-button active" data-view="list">List</button>
+      <button class="tab-button" data-view="map">Map</button>
+    </div>
+    <div id="content-container">
+      <div id="list-container" class="active-view">
+        <h2 id="list-heading">All Events</h2>
+        <ul id="event-list"></ul>
+      </div>
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
     </div>
     <footer>
-      <p>Brought to you by <span class="highlight">Zo World</span></p>
+      <p>
+        Brought to you by
+        <span class="highlight"><a href="https://zo.xyz">Zo World</a></span>
+      </p>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
