@@ -23,7 +23,9 @@
             alt="Token2049 Logo"
             class="logo token2049-logo"
           />
-          <img src="zo-white.png" alt="Zo World Logo" class="logo zo-logo" />
+          <a href="https://zo.xyz" target="_blank">
+            <img src="zo-white.png" alt="Zo World Logo" class="logo zo-logo" />
+          </a>
         </div>
         <h1>Side Events List</h1>
       </div>
@@ -36,13 +38,11 @@
           class="logo token2049-logo"
         />
         <h1>Side Events List</h1>
-        <img src="zo-white.png" alt="Zo World Logo" class="logo zo-logo" />
+        <a href="https://zo.xyz" target="_blank">
+          <img src="zo-white.png" alt="Zo World Logo" class="logo zo-logo" />
+        </a>
       </div>
     </header>
-    <div id="tab-switcher" class="mobile-only">
-      <button class="tab-button active" data-view="list">List</button>
-      <button class="tab-button" data-view="map">Map</button>
-    </div>
     <div id="content-container">
       <div id="list-container" class="active-view">
         <h2 id="list-heading">All Events</h2>
@@ -52,12 +52,12 @@
         <div id="map"></div>
       </div>
     </div>
-    <footer>
-      <p>
-        Brought to you by
-        <span class="highlight"><a href="https://zo.xyz">Zo World</a></span>
-      </p>
-    </footer>
+    <div id="tab-switcher" class="mobile-only">
+      <div class="tab-buttons">
+        <button class="tab-button active" data-view="list">List</button>
+        <button class="tab-button" data-view="map">Map</button>
+      </div>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>

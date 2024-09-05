@@ -45,6 +45,7 @@ header {
 .logo {
   height: 40px;
   object-fit: contain;
+  display: block; /* This ensures the image doesn't have extra space below */
 }
 
 .token2049-logo {
@@ -107,12 +108,7 @@ h1 {
 } */
 
 footer {
-  background-color: var(
-    --primary-color
-  ); /* Changed from var(--secondary-color) to var(--primary-color) */
-  padding: 10px;
-  text-align: center;
-  font-size: 0.9rem;
+  display: none;
 }
 
 .highlight {
@@ -339,8 +335,8 @@ footer {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  overflow-y: auto; /* Add this */
-  flex-grow: 1; /* Add this */
+  overflow-y: auto; /* Add this line */
+  flex-grow: 1; /* Add this line */
 }
 
 .event-item {
@@ -438,17 +434,24 @@ footer {
 #tab-switcher {
   display: none;
   background-color: var(--secondary-color);
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
 }
 
-.tab-button {
+.tab-buttons {
+  display: flex;
   background-color: var(--primary-color);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+  flex: 1;
+  background-color: transparent;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  margin: 0 5px;
-  border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -456,34 +459,29 @@ footer {
 
 .tab-button.active {
   background-color: var(--text-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
   #tab-switcher {
     display: flex;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   #content-container {
-    flex-direction: column;
+    padding-bottom: 60px; /* Adjust based on the height of your tab switcher */
   }
 
   #list-container,
   #map-container {
-    display: none;
-    width: 100%;
     height: calc(
       100vh - 200px
     ); /* Adjust based on your header and tab switcher height */
-  }
-
-  #list-container.active-view,
-  #map-container.active-view {
-    display: block;
-  }
-
-  #map {
-    height: 100%;
   }
 }
 
@@ -550,12 +548,19 @@ footer {
   }
 
   .desktop-header .logo {
-    height: 60px; /* Increase this value as needed */
+    height: 60px; /* Increased height for both desktop and mobile */
+  }
+
+  /* Remove any margin or padding from the anchor tag */
+  .desktop-header a,
+  .mobile-header a {
+    display: inline-block;
+    line-height: 0;
   }
 
   @media (min-width: 769px) {
     .desktop-header .logo {
-      height: 60px; /* Ensure the same height is applied on larger screens */
+      height: 60px; /* Ensure the same height is applied on screens larger than 768px */
     }
   }
 }
@@ -567,4 +572,11 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Hide the list heading on mobile */
+@media (max-width: 768px) {
+  #list-heading {
+    display: none;
+  }
 }
