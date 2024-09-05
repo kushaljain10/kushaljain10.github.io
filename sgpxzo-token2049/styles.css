@@ -28,13 +28,13 @@ h1 {
   margin: 0;
   font-weight: 700;
   font-size: 2.5rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--text-color);
 }
 
 #map-container {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--accent-color);
 }
 
@@ -47,7 +47,7 @@ h1 {
 
 footer {
   background-color: var(--secondary-color);
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -73,6 +73,7 @@ footer {
 
 .leaflet-popup-content {
   font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
 }
 
 .leaflet-popup-content strong {
@@ -89,4 +90,41 @@ footer {
 
 .leaflet-popup-content a:hover {
   color: #ffffff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #map-container {
+    padding: 5px;
+  }
+
+  .leaflet-popup-content {
+    font-size: 12px;
+  }
+
+  .leaflet-control-zoom {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }

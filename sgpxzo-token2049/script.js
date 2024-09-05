@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Adjust initial view based on screen size
+  const isMobile = window.innerWidth <= 768;
+  const initialZoom = isMobile ? 12 : 13;
+  const initialCenter = isMobile ? [1.3521, 103.8198] : [1.3521, 103.8198];
+
   // Initialize the map
-  const map = L.map("map").setView([1.3521, 103.8198], 13);
+  const map = L.map("map").setView(initialCenter, initialZoom);
 
   // Add the Mapbox tile layer
   L.tileLayer(
