@@ -167,19 +167,6 @@ footer {
     padding: 5px;
   }
 
-  .leaflet-popup-content {
-    font-size: 12px;
-    padding: 12px;
-  }
-
-  .leaflet-control-zoom {
-    display: none;
-  }
-
-  .leaflet-popup-content-wrapper {
-    width: 90vw;
-  }
-
   .popup-button {
     font-size: 0.8em;
     padding: 6px 8px;
@@ -368,15 +355,6 @@ footer {
 
 /* Adjust font size for smaller screens */
 @media (max-width: 350px) {
-  .leaflet-popup-content-wrapper {
-    width: 250px; /* Adjusted for very small screens */
-  }
-
-  .leaflet-popup-content {
-    font-size: 12px;
-    padding: 12px;
-  }
-
   .popup-button {
     font-size: 0.8em;
     padding: 6px 8px;
@@ -385,10 +363,6 @@ footer {
 
 /* Adjust for smaller screens */
 @media (max-width: 450px) {
-  .leaflet-popup-content-wrapper {
-    width: 300px; /* Adjusted for smaller screens */
-  }
-
   .popup-buttons {
     flex-direction: column;
   }
