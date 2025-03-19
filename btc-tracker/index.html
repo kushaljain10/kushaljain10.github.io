@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Price Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="price-card">
+        <div class="bitcoin-icon">₿</div>
+        <h1>Bitcoin Price Tracker</h1>
+        <div class="price-container">
+          <span class="price" id="btcPrice">Loading...</span>
+          <span class="currency">USD</span>
+        </div>
+        <div class="price-change" id="priceChange">24h Change: --</div>
+      </div>
+
+      <div class="time-range-selector">
+        <button class="time-btn" data-range="1h">1H</button>
+        <button class="time-btn" data-range="24h">24H</button>
+        <button class="time-btn active" data-range="7d">7D</button>
+        <button class="time-btn" data-range="30d">30D</button>
+        <button class="time-btn" data-range="1y">1Y</button>
+      </div>
+
+      <div class="chart-card">
+        <canvas id="priceChart"></canvas>
+      </div>
+
+      <div class="update-time" id="lastUpdate">Last updated: --</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

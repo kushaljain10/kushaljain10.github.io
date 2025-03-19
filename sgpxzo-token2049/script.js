@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   mapboxgl.accessToken =
     "pk.eyJ1Ijoia3VzaGFsem8iLCJhIjoiY20wcDZtNjUwMDFxNzJpcjYxZjlsN2g3NiJ9.d194ACznKNqKJNfzKyanNQ";
 
-  const initialZoom = isMobile() ? 12.5 : 15.5;
-  const initialCenter = [103.8518, 1.3067]; // [longitude, latitude]
+  const initialZoom = isMobile() ? 12.5 : 18.5;
+  const initialCenter = [-122.40119962635396, 37.781759273685715]; // [longitude, latitude]37.781759273685715, -122.40119962635396
 
   const map = new mapboxgl.Map({
     container: "map",
